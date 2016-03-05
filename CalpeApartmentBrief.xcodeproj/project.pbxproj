@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840860BD1C8B6A11000AEC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860BC1C8B6A11000AEC6B /* AppDelegate.swift */; };
-		840860BF1C8B6A11000AEC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860BE1C8B6A11000AEC6B /* ViewController.swift */; };
 		840860C21C8B6A12000AEC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840860C01C8B6A12000AEC6B /* Main.storyboard */; };
-		840860C41C8B6A12000AEC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840860C31C8B6A12000AEC6B /* Assets.xcassets */; };
 		840860C71C8B6A12000AEC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840860C51C8B6A12000AEC6B /* LaunchScreen.storyboard */; };
+		840860D81C8B6CFE000AEC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860D61C8B6CFE000AEC6B /* AppDelegate.swift */; };
+		840860DB1C8B6D67000AEC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840860DA1C8B6D67000AEC6B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840860B91C8B6A11000AEC6B /* CalpeApartmentBrief.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalpeApartmentBrief.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		840860BC1C8B6A11000AEC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840860BE1C8B6A11000AEC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840860C11C8B6A12000AEC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		840860C31C8B6A12000AEC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840860C61C8B6A12000AEC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		840860C81C8B6A12000AEC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840860D61C8B6CFE000AEC6B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CalpeApartmentBrief/Utility/AppDelegate.swift; sourceTree = "<group>"; };
+		840860D71C8B6CFE000AEC6B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CalpeApartmentBrief/Utility/Info.plist; sourceTree = "<group>"; };
+		840860DA1C8B6D67000AEC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,74 @@
 		840860BB1C8B6A11000AEC6B /* CalpeApartmentBrief */ = {
 			isa = PBXGroup;
 			children = (
-				840860BC1C8B6A11000AEC6B /* AppDelegate.swift */,
-				840860BE1C8B6A11000AEC6B /* ViewController.swift */,
+				840860CE1C8B6A4E000AEC6B /* Model */,
+				840860CF1C8B6A56000AEC6B /* View */,
+				840860D01C8B6A66000AEC6B /* Controller */,
+				840860D11C8B6A79000AEC6B /* Utility */,
+				840860D31C8B6B0C000AEC6B /* Resources */,
+				840860D51C8B6C34000AEC6B /* Frameworks */,
 				840860C01C8B6A12000AEC6B /* Main.storyboard */,
-				840860C31C8B6A12000AEC6B /* Assets.xcassets */,
 				840860C51C8B6A12000AEC6B /* LaunchScreen.storyboard */,
-				840860C81C8B6A12000AEC6B /* Info.plist */,
 			);
 			path = CalpeApartmentBrief;
+			sourceTree = "<group>";
+		};
+		840860CE1C8B6A4E000AEC6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				840860D41C8B6B25000AEC6B /* DataServices */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		840860CF1C8B6A56000AEC6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		840860D01C8B6A66000AEC6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		840860D11C8B6A79000AEC6B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				840860D61C8B6CFE000AEC6B /* AppDelegate.swift */,
+				840860D71C8B6CFE000AEC6B /* Info.plist */,
+			);
+			name = Utility;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		840860D31C8B6B0C000AEC6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				840860DA1C8B6D67000AEC6B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		840860D41C8B6B25000AEC6B /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataServices;
+			sourceTree = "<group>";
+		};
+		840860D51C8B6C34000AEC6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				840860C71C8B6A12000AEC6B /* LaunchScreen.storyboard in Resources */,
-				840860C41C8B6A12000AEC6B /* Assets.xcassets in Resources */,
 				840860C21C8B6A12000AEC6B /* Main.storyboard in Resources */,
+				840860DB1C8B6D67000AEC6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840860BF1C8B6A11000AEC6B /* ViewController.swift in Sources */,
-				840860BD1C8B6A11000AEC6B /* AppDelegate.swift in Sources */,
+				840860D81C8B6CFE000AEC6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CalpeApartmentBrief/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalpeApartmentBrief/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.shvedov.CalpeApartmentBrief;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CalpeApartmentBrief/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalpeApartmentBrief/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.shvedov.CalpeApartmentBrief;
 				PRODUCT_NAME = "$(TARGET_NAME)";
