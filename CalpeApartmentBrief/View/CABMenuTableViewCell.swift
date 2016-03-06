@@ -23,11 +23,28 @@ class CABMenuTableViewCell: UITableViewCell
 		self.selectedBackgroundView = bkgView
 		
 		nameLabel.text = menuSection.name
+		
+		if CABAppResponse.sharedInstance.appState == AppState.Welcome {
+			let originalX = nameLabel.frame.origin.x
+			
+			nameLabel.frame.origin.x = ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelStartXPoint
+			nameLabel.alpha = ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelInitialAlpha
+			
+			UIView.animateWithDuration(ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelDuration,
+				delay: NSTimeInterval(Double(menuSection.rawValue) * ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelBethDelay),
+				usingSpringWithDamping: ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelDamping,
+				initialSpringVelocity: ConstantMagicNumbers.MenuCellAnimation.WelcomeLabelVelocity,
+				options: [],
+				animations: {
+					self.nameLabel.frame.origin.x = originalX
+					self.nameLabel.alpha = 1.0
+				},
+				completion: nil)
+		}
 	}
 	
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -36,12 +53,10 @@ class CABMenuTableViewCell: UITableViewCell
 		switch selected {
 		case true:
 			nameLabel.textColor = UIColor.blackColor()
-			nameLabel.alpha = ConstantMagicNumbers.MenuCellAnimation.InitialAlpha
-			UIView.animateWithDuration(ConstantMagicNumbers.MenuCellAnimation.Duration) { self.nameLabel.alpha = 1.0 }
+			nameLabel.alpha = ConstantMagicNumbers.MenuCellAnimation.SelectedLabelInitialAlpha
+			UIView.animateWithDuration(ConstantMagicNumbers.MenuCellAnimation.SelectedLabelDuration) { self.nameLabel.alpha = 1.0 }
 		case false: nameLabel.textColor = UIColor.whiteColor()
 		}
-		
-		
     }
 
 }

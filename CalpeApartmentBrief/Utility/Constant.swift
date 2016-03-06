@@ -33,8 +33,14 @@ struct ConstantRowHeight {
 
 struct ConstantMagicNumbers {
 	struct MenuCellAnimation {
-		static let InitialAlpha: CGFloat = 0.1
-		static let Duration: NSTimeInterval = 0.8
+		static let SelectedLabelInitialAlpha: CGFloat = 0.1
+		static let SelectedLabelDuration: NSTimeInterval = 0.8
+		static let WelcomeLabelStartXPoint: CGFloat = -200
+		static let WelcomeLabelDuration: NSTimeInterval = 1.0
+		static let WelcomeLabelDamping: CGFloat = 0.8
+		static let WelcomeLabelVelocity: CGFloat = 10.0
+		static let WelcomeLabelBethDelay: Double = 0.1
+		static let WelcomeLabelInitialAlpha: CGFloat = 0.1
 	}
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
