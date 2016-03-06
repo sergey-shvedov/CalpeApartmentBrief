@@ -18,6 +18,9 @@
 		840860F11C8BA245000AEC6B /* CABAppRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860F01C8BA245000AEC6B /* CABAppRespose.swift */; };
 		840860F31C8BA256000AEC6B /* CABThemeOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860F21C8BA256000AEC6B /* CABThemeOrange.swift */; };
 		840860F51C8BA264000AEC6B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860F41C8BA264000AEC6B /* UIColor+Extension.swift */; };
+		840860F71C8BAC4E000AEC6B /* CABMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840860F61C8BAC4E000AEC6B /* CABMenuTableViewCell.swift */; };
+		840860FF1C8BD289000AEC6B /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840860FE1C8BD289000AEC6B /* Photos.xcassets */; };
+		840861011C8BD53C000AEC6B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840861001C8BD53C000AEC6B /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		840860F01C8BA245000AEC6B /* CABAppRespose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAppRespose.swift; path = CalpeApartmentBrief/Utility/CABAppRespose.swift; sourceTree = "<group>"; };
 		840860F21C8BA256000AEC6B /* CABThemeOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABThemeOrange.swift; path = CalpeApartmentBrief/Utility/CABThemeOrange.swift; sourceTree = "<group>"; };
 		840860F41C8BA264000AEC6B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "CalpeApartmentBrief/Utility/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		840860F61C8BAC4E000AEC6B /* CABMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABMenuTableViewCell.swift; path = CalpeApartmentBrief/View/CABMenuTableViewCell.swift; sourceTree = "<group>"; };
+		840860FE1C8BD289000AEC6B /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Photos.xcassets; path = Resources/Photos.xcassets; sourceTree = "<group>"; };
+		840861001C8BD53C000AEC6B /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "CalpeApartmentBrief/Utility/UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		840860CF1C8B6A56000AEC6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				840860F61C8BAC4E000AEC6B /* CABMenuTableViewCell.swift */,
 			);
 			name = View;
 			path = ..;
@@ -113,6 +120,7 @@
 				840860E81C8B85A1000AEC6B /* CABThemeProtocol.swift */,
 				840860F21C8BA256000AEC6B /* CABThemeOrange.swift */,
 				840860F41C8BA264000AEC6B /* UIColor+Extension.swift */,
+				840861001C8BD53C000AEC6B /* UIImage+Extension.swift */,
 				840860D61C8B6CFE000AEC6B /* AppDelegate.swift */,
 				840860D71C8B6CFE000AEC6B /* Info.plist */,
 			);
@@ -124,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				840860DA1C8B6D67000AEC6B /* Assets.xcassets */,
+				840860FE1C8BD289000AEC6B /* Photos.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840860FF1C8BD289000AEC6B /* Photos.xcassets in Resources */,
 				840860C71C8B6A12000AEC6B /* LaunchScreen.storyboard in Resources */,
 				840860C21C8B6A12000AEC6B /* Main.storyboard in Resources */,
 				840860DB1C8B6D67000AEC6B /* Assets.xcassets in Resources */,
@@ -222,6 +232,8 @@
 				840860E91C8B85A1000AEC6B /* CABThemeProtocol.swift in Sources */,
 				840860F31C8BA256000AEC6B /* CABThemeOrange.swift in Sources */,
 				840860E51C8B79CF000AEC6B /* CABSections.swift in Sources */,
+				840861011C8BD53C000AEC6B /* UIImage+Extension.swift in Sources */,
+				840860F71C8BAC4E000AEC6B /* CABMenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

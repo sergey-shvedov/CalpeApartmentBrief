@@ -3,24 +3,41 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Menu Table View Controller-->
         <scene sceneID="mhe-jY-2w4">
             <objects>
                 <tableViewController id="lRc-qS-sEa" customClass="CABMenuTableViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hUn-gU-8UO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="hUn-gU-8UO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Item Cell" id="Tae-G5-RmB">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Item Cell" rowHeight="75" id="Tae-G5-RmB" customClass="CABMenuTableViewCell" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tae-G5-RmB" id="JrB-Nv-exM">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-Nd-8tv">
+                                            <rect key="frame" x="28" y="24.5" width="57.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="IBR-Nd-8tv" firstAttribute="centerY" secondItem="JrB-Nv-exM" secondAttribute="centerY" id="Buo-Fn-Heb"/>
+                                        <constraint firstItem="IBR-Nd-8tv" firstAttribute="leading" secondItem="JrB-Nv-exM" secondAttribute="leadingMargin" constant="20" id="V1q-H7-qdb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.83529411764705885" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="nameLabel" destination="IBR-Nd-8tv" id="mS7-Yv-i0U"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -31,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQR-NA-8DJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="-355"/>
+            <point key="canvasLocation" x="370" y="-330"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R6Z-Hp-Aey">
@@ -57,7 +74,7 @@
                 <splitViewController id="Tje-UY-qHp" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZZ5-vv-NIm" kind="relationship" relationship="detailViewController" id="73F-2d-8yY"/>
-                        <segue destination="lRc-qS-sEa" kind="relationship" relationship="masterViewController" id="l00-JS-L9G"/>
+                        <segue destination="lRc-qS-sEa" kind="relationship" relationship="masterViewController" id="CP6-r9-XT7"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqt-i9-oDA" userLabel="First Responder" sceneMemberID="firstResponder"/>

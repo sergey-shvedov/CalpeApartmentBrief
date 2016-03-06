@@ -16,7 +16,11 @@ struct CABThemeOrange: CABTheme {
 	
 	func colorOfMenuItemWithIndex(index: Int) -> UIColor {
 		var proportion = Double(index) / Double(CABAppResponse.sharedInstance.numberOfMenuItems)
-		if proportion > 1 { proportion = 1 }
+		if proportion > 1.0 { proportion = 1.0 }
 		return UIColor(between: CABThemeOrange.startMenuColor, andColor: CABThemeOrange.endMenuColor, withProportion: proportion)
+	}
+	
+	func imageForMenuBackground() -> UIImage {
+		return UIImage.gradientImageFrom(CABThemeOrange.startMenuColor, toEndColor: CABThemeOrange.endMenuColor, usingVerlicalDirection: true)
 	}
 }

@@ -11,4 +11,5 @@ import UIKit
 
 protocol CABTheme {
 	func colorOfMenuItemWithIndex(index: Int) -> UIColor
+	func imageForMenuBackground() -> UIImage
 }

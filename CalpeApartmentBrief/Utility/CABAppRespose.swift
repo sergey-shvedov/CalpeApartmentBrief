@@ -8,7 +8,8 @@
 
 import Foundation
 
-class CABAppResponse {
+class CABAppResponse
+{
 	static let sharedInstance = CABAppResponse()
 	
 	let currentTheme: CABTheme = CABThemeOrange()
