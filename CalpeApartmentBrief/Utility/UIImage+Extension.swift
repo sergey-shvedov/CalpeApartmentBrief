@@ -16,7 +16,7 @@ extension UIImage
 		var result = UIImage()
 		
 		let layer = CAGradientLayer()
-		layer.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: ConstantMenuBackground.Size)
+		layer.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: ConstantMagicNumbers.MenuBackground.Size)
 		layer.colors = [startColor.CGColor, endColor.CGColor]
 		layer.locations = [0.0 , 1.0]
 		
@@ -25,7 +25,7 @@ extension UIImage
 		case false: layer.startPoint = CGPoint(x: 0.0, y: 0.5); layer.endPoint = CGPoint(x: 1.0, y: 0.5)
 		}
 		
-		UIGraphicsBeginImageContext(ConstantMenuBackground.Size)
+		UIGraphicsBeginImageContext(ConstantMagicNumbers.MenuBackground.Size)
 		if let context = UIGraphicsGetCurrentContext() {
 			layer.renderInContext(context)
 			result = UIGraphicsGetImageFromCurrentImageContext()

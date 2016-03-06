@@ -34,9 +34,14 @@ class CABMenuTableViewCell: UITableViewCell
         super.setSelected(selected, animated: animated)
 
 		switch selected {
-		case true: nameLabel.textColor = UIColor.blackColor()
+		case true:
+			nameLabel.textColor = UIColor.blackColor()
+			nameLabel.alpha = ConstantMagicNumbers.MenuCellAnimation.InitialAlpha
+			UIView.animateWithDuration(ConstantMagicNumbers.MenuCellAnimation.Duration) { self.nameLabel.alpha = 1.0 }
 		case false: nameLabel.textColor = UIColor.whiteColor()
 		}
+		
+		
     }
 
 }

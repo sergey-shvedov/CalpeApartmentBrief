@@ -31,6 +31,12 @@ struct ConstantRowHeight {
 	static let Large: CGFloat = 80.0
 }
 
-struct ConstantMenuBackground {
-	static let Size: CGSize = CGSize(width: 1, height: 300)
+struct ConstantMagicNumbers {
+	struct MenuCellAnimation {
+		static let InitialAlpha: CGFloat = 0.1
+		static let Duration: NSTimeInterval = 0.8
+	}
+	struct MenuBackground {
+		static let Size: CGSize = CGSize(width: 1, height: 300)
+	}
 }
