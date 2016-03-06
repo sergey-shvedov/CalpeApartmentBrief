@@ -45,4 +45,8 @@ struct ConstantMagicNumbers {
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
 	}
+	struct SplitView {
+		static let WidthFraction: CGFloat = 0.3
+		static let MinimumWidth: CGFloat = 70
+	}
 }

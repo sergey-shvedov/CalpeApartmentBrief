@@ -50,17 +50,16 @@ class CABMenuTableViewController: UITableViewController
 		return result
 	}
 	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-	// Get the new view controller using segue.destinationViewController.
-	// Pass the selected object to the new view controller.
+		if let justCell = sender as? CABMenuTableViewCell {
+			CABAppResponse.sharedInstance.confirmPrimaryState()
+			
+			// TODO: Implement segue preparations
+			switch justCell.section
+			{
+			default: break
+			}
+		}
 	}
-	*/
-	
-	
-
 
 }

@@ -13,7 +13,12 @@ class CABMenuTableViewCell: UITableViewCell
 
 	@IBOutlet private weak var nameLabel: UILabel!
 	
+	private(set) var section: CABMenuSection?
+	
 	func configureBasedOn(menuSection: CABMenuSection) {
+		
+		self.section = menuSection
+		
 		self.backgroundColor = menuSection.favoriteColor()
 		let selectedBackgroundColor = UIColor(between: menuSection.favoriteColor(), andColor: UIColor.yellowColor(), withProportion: 0.5)
 

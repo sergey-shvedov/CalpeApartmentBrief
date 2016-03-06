@@ -37,7 +37,7 @@
                                 <color key="backgroundColor" red="1" green="0.83529411764705885" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="nameLabel" destination="IBR-Nd-8tv" id="mS7-Yv-i0U"/>
-                                    <segue destination="ZMH-F7-vei" kind="showDetail" id="9z0-f7-Wzu"/>
+                                    <segue destination="ZMH-F7-vei" kind="showDetail" id="nc2-xm-S83"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -46,15 +46,16 @@
                             <outlet property="delegate" destination="lRc-qS-sEa" id="8rC-ge-4jV"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="FNb-FP-qkD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQR-NA-8DJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="-330"/>
+            <point key="canvasLocation" x="1182" y="-330"/>
         </scene>
-        <!--View Controller-->
+        <!--Base Section View Controller-->
         <scene sceneID="SdU-xQ-5HK">
             <objects>
-                <viewController id="ZMH-F7-vei" sceneMemberID="viewController">
+                <viewController id="ZMH-F7-vei" customClass="CABBaseSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wIU-cK-egR"/>
                         <viewControllerLayoutGuide type="bottom" id="YwU-Ac-der"/>
@@ -62,17 +63,31 @@
                     <view key="view" contentMode="scaleToFill" id="raq-7D-cJm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-W1-35t">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="printStatus:" destination="ZMH-F7-vei" eventType="touchUpInside" id="uDo-qQ-nor"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.061057419809999999" green="0.84973675270000004" blue="0.47366211530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TVh-W1-35t" firstAttribute="centerX" secondItem="raq-7D-cJm" secondAttribute="centerX" id="KoV-iP-Oem"/>
+                            <constraint firstItem="TVh-W1-35t" firstAttribute="centerY" secondItem="raq-7D-cJm" secondAttribute="centerY" id="l6c-OM-n4Z"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="syf-WT-FlE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWx-IY-7CR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="-579"/>
+            <point key="canvasLocation" x="2092" y="-330"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="R6Z-Hp-Aey">
             <objects>
-                <viewController id="ZZ5-vv-NIm" sceneMemberID="viewController">
+                <viewController id="ZZ5-vv-NIm" customClass="CABWelcomeViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ak4-DN-v3s"/>
                         <viewControllerLayoutGuide type="bottom" id="2re-43-NEM"/>
@@ -80,7 +95,28 @@
                     <view key="view" contentMode="scaleToFill" id="o5z-HF-45A">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhi-3A-HQT">
+                                <rect key="frame" x="264.5" y="289.5" width="71" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f94-fQ-hvj">
+                                <rect key="frame" x="277" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showMenu:" destination="ZZ5-vv-NIm" eventType="touchUpInside" id="QSE-nU-mvL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.83529411760000005" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f94-fQ-hvj" firstAttribute="centerX" secondItem="mhi-3A-HQT" secondAttribute="centerX" id="7sy-nA-O1W"/>
+                            <constraint firstItem="f94-fQ-hvj" firstAttribute="top" secondItem="mhi-3A-HQT" secondAttribute="bottom" constant="8" id="U7k-l8-X9g"/>
+                            <constraint firstItem="mhi-3A-HQT" firstAttribute="centerX" secondItem="o5z-HF-45A" secondAttribute="centerX" id="VvP-ga-gIx"/>
+                            <constraint firstItem="mhi-3A-HQT" firstAttribute="centerY" secondItem="o5z-HF-45A" secondAttribute="centerY" id="zpL-69-ykD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IK8-tK-cAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,15 +126,42 @@
         <!--Split View Controller-->
         <scene sceneID="dJB-L2-0Pn">
             <objects>
-                <splitViewController id="Tje-UY-qHp" sceneMemberID="viewController">
+                <splitViewController id="Tje-UY-qHp" customClass="CABSplitViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZZ5-vv-NIm" kind="relationship" relationship="detailViewController" id="73F-2d-8yY"/>
-                        <segue destination="lRc-qS-sEa" kind="relationship" relationship="masterViewController" id="CP6-r9-XT7"/>
+                        <segue destination="Z5M-dV-IZr" kind="relationship" relationship="masterViewController" id="CP6-r9-XT7"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqt-i9-oDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-450" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zxx-80-6du">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Z5M-dV-IZr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J98-3C-xpn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lRc-qS-sEa" kind="relationship" relationship="rootViewController" id="lpK-eB-NGf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNm-Ja-K1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-330"/>
         </scene>
     </scenes>
 </document>
