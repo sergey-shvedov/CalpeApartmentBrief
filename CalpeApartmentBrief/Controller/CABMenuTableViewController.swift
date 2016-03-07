@@ -50,14 +50,19 @@ class CABMenuTableViewController: UITableViewController
 		return result
 	}
 	
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if let justCell = sender as? CABMenuTableViewCell {
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		if let justCell = tableView.cellForRowAtIndexPath(indexPath) as? CABMenuTableViewCell, let justSection = justCell.section {
+			performSegueWithIdentifier(justSection.generateSegueIdentifier(), sender: justCell)
 			CABAppResponse.sharedInstance.confirmPrimaryState()
-			
-			// TODO: Implement segue preparations
-			switch justCell.section
-			{
-			default: break
+		}
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let justCell = sender as? CABMenuTableViewCell, let justSection = justCell.section {
+			if let justDestinationVC = segue.destinationViewController as? CABBaseSectionViewController {
+				
+				// TODO: Implement segue preparations
+				justDestinationVC.section = justSection
 			}
 		}
 	}

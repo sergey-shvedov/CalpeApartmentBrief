@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -37,7 +38,6 @@
                                 <color key="backgroundColor" red="1" green="0.83529411764705885" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="nameLabel" destination="IBR-Nd-8tv" id="mS7-Yv-i0U"/>
-                                    <segue destination="ZMH-F7-vei" kind="showDetail" id="nc2-xm-S83"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -47,15 +47,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="FNb-FP-qkD"/>
+                    <connections>
+                        <segue destination="ZMH-F7-vei" kind="showDetail" identifier="Show Arrival" id="SUF-kF-egb"/>
+                        <segue destination="v3h-EO-FGY" kind="showDetail" identifier="Show Departure" id="gmO-Rq-wFD"/>
+                        <segue destination="zm7-bh-D5w" kind="showDetail" identifier="Show Route" id="Wgr-Xs-GMI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQR-NA-8DJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1182" y="-330"/>
         </scene>
-        <!--Base Section View Controller-->
+        <!--Arrival Section View Controller-->
         <scene sceneID="SdU-xQ-5HK">
             <objects>
-                <viewController id="ZMH-F7-vei" customClass="CABBaseSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZMH-F7-vei" customClass="CABArrivalSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wIU-cK-egR"/>
                         <viewControllerLayoutGuide type="bottom" id="YwU-Ac-der"/>
@@ -64,25 +69,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-W1-35t">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2q2-0J-erV">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <connections>
-                                    <action selector="printStatus:" destination="ZMH-F7-vei" eventType="touchUpInside" id="uDo-qQ-nor"/>
+                                    <segue destination="Wds-ao-ebe" kind="embed" identifier="Show Background View" id="ZVX-FL-Wnr"/>
                                 </connections>
-                            </button>
+                            </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.061057419809999999" green="0.84973675270000004" blue="0.47366211530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TVh-W1-35t" firstAttribute="centerX" secondItem="raq-7D-cJm" secondAttribute="centerX" id="KoV-iP-Oem"/>
-                            <constraint firstItem="TVh-W1-35t" firstAttribute="centerY" secondItem="raq-7D-cJm" secondAttribute="centerY" id="l6c-OM-n4Z"/>
+                            <constraint firstItem="2q2-0J-erV" firstAttribute="leading" secondItem="raq-7D-cJm" secondAttribute="leading" id="1IT-x2-148"/>
+                            <constraint firstItem="2q2-0J-erV" firstAttribute="top" secondItem="raq-7D-cJm" secondAttribute="top" id="5FM-1L-mv5"/>
+                            <constraint firstItem="2q2-0J-erV" firstAttribute="top" secondItem="wIU-cK-egR" secondAttribute="bottom" id="In4-WB-pTK"/>
+                            <constraint firstItem="YwU-Ac-der" firstAttribute="top" secondItem="2q2-0J-erV" secondAttribute="bottom" id="UN7-fC-ICV"/>
+                            <constraint firstAttribute="trailing" secondItem="2q2-0J-erV" secondAttribute="trailing" id="jBO-KH-0Y8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5FM-1L-mv5"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="syf-WT-FlE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWx-IY-7CR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="-330"/>
+            <point key="canvasLocation" x="2340" y="-1665"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="R6Z-Hp-Aey">
@@ -121,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IK8-tK-cAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="367"/>
+            <point key="canvasLocation" x="376" y="583"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="dJB-L2-0Pn">
@@ -163,5 +175,131 @@
             </objects>
             <point key="canvasLocation" x="370" y="-330"/>
         </scene>
+        <!--Departure Section View Controller-->
+        <scene sceneID="Wp3-vo-6tz">
+            <objects>
+                <viewController id="v3h-EO-FGY" customClass="CABDepartureSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YgW-9i-7JZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4rZ-ui-Bfg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fP-Ys-ix6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a36-df-a3W">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <segue destination="Wds-ao-ebe" kind="embed" identifier="Show Background View" id="3SN-v6-W1X"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-Gz-03Y">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a36-df-a3W" firstAttribute="top" secondItem="3fP-Ys-ix6" secondAttribute="top" id="3rR-qP-sbz"/>
+                            <constraint firstItem="LSa-Gz-03Y" firstAttribute="centerX" secondItem="3fP-Ys-ix6" secondAttribute="centerX" id="DU9-fH-gGK"/>
+                            <constraint firstItem="a36-df-a3W" firstAttribute="top" secondItem="YgW-9i-7JZ" secondAttribute="bottom" id="LoE-OL-tyU"/>
+                            <constraint firstItem="a36-df-a3W" firstAttribute="leading" secondItem="3fP-Ys-ix6" secondAttribute="leading" id="Sqo-A5-tPn"/>
+                            <constraint firstItem="4rZ-ui-Bfg" firstAttribute="top" secondItem="a36-df-a3W" secondAttribute="bottom" id="iH7-u9-UYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="a36-df-a3W" secondAttribute="trailing" id="l8F-Gs-uER"/>
+                            <constraint firstItem="LSa-Gz-03Y" firstAttribute="centerY" secondItem="3fP-Ys-ix6" secondAttribute="centerY" id="zzi-Fv-qKL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3rR-qP-sbz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="2pK-Ji-bTF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nI7-2k-m8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-925"/>
+        </scene>
+        <!--Base Background View Controller-->
+        <scene sceneID="WA9-al-VrN">
+            <objects>
+                <viewController id="Wds-ao-ebe" customClass="CABBaseBackgroundViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MA3-cX-hF9"/>
+                        <viewControllerLayoutGuide type="bottom" id="DgA-D6-6bg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z2x-rP-po8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-ze-g6z">
+                                <rect key="frame" x="40" y="-115" width="1170.5" height="299"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="250"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nd4-ze-g6z" firstAttribute="leading" secondItem="Z2x-rP-po8" secondAttribute="leading" constant="40" id="5J4-TC-9D1"/>
+                            <constraint firstItem="Nd4-ze-g6z" firstAttribute="centerY" secondItem="Z2x-rP-po8" secondAttribute="top" constant="35" id="653-ZQ-Voh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="Nd4-ze-g6z" id="psb-vH-c3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4b-T5-mcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="-2415"/>
+        </scene>
+        <!--Route Section View Controller-->
+        <scene sceneID="4wL-iQ-pfj">
+            <objects>
+                <viewController id="zm7-bh-D5w" customClass="CABRouteSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G28-Ac-weC"/>
+                        <viewControllerLayoutGuide type="bottom" id="4be-ut-Uoa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15W-k0-iTy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdI-1y-Zhe">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <segue destination="Wds-ao-ebe" kind="embed" identifier="Show Background View" id="Ykn-mO-oKB"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYm-Ge-lPQ">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SYm-Ge-lPQ" firstAttribute="centerX" secondItem="15W-k0-iTy" secondAttribute="centerX" id="9fQ-F1-tmi"/>
+                            <constraint firstAttribute="trailing" secondItem="mdI-1y-Zhe" secondAttribute="trailing" id="DHp-fO-YZ2"/>
+                            <constraint firstItem="SYm-Ge-lPQ" firstAttribute="centerY" secondItem="15W-k0-iTy" secondAttribute="centerY" id="Gi4-KL-R4R"/>
+                            <constraint firstItem="mdI-1y-Zhe" firstAttribute="top" secondItem="15W-k0-iTy" secondAttribute="top" id="LmW-v0-8KG"/>
+                            <constraint firstItem="mdI-1y-Zhe" firstAttribute="top" secondItem="G28-Ac-weC" secondAttribute="bottom" id="QGY-rE-A2v"/>
+                            <constraint firstItem="mdI-1y-Zhe" firstAttribute="leading" secondItem="15W-k0-iTy" secondAttribute="leading" id="RLT-dY-uKY"/>
+                            <constraint firstItem="4be-ut-Uoa" firstAttribute="top" secondItem="mdI-1y-Zhe" secondAttribute="bottom" id="b3G-a5-OJp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LmW-v0-8KG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="hJ6-Na-rhr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAG-aI-W6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-184"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ykn-mO-oKB"/>
+    </inferredMetricsTieBreakers>
 </document>

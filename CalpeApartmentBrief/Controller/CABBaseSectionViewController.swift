@@ -10,6 +10,7 @@ import UIKit
 
 class CABBaseSectionViewController: UIViewController
 {
+	var section: CABMenuSection?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +23,19 @@ class CABBaseSectionViewController: UIViewController
 		}
 	}
 	
+		
 	private func hideNavigationBar(hidden: Bool, animated: Bool) {
 		if let justNavController = navigationController {
 			justNavController.setNavigationBarHidden(hidden, animated: animated)
 		}
 	}
-
-	@IBAction func printStatus(sender: AnyObject) {
-		print(navigationController)
-		print(splitViewController)
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == ConstantSegueIdentifier.BackgroundView {
+			if let justDestinationVC = segue.destinationViewController as? CABBaseBackgroundViewController {
+				justDestinationVC.section = section
+			}
+		}
 	}
+	
 }

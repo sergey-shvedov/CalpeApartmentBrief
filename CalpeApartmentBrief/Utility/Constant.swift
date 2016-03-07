@@ -14,15 +14,24 @@ struct ConstantIdentifier {
 }
 
 struct ConstantMenuIdentifier {
-	static let Arrival = "Arrival"
-	static let Departure = "Departure"
-	static let Route = "Route"
-	static let POI = "POI"
-	static let Tips = "Tips"
+	static let Arrival =	"Arrival"
+	static let Departure =	"Departure"
+	static let Route =		"Route"
+	static let POI =		"POI"
+	static let Tips =		"Tips"
 	static let Appliances = "Appliances"
-	static let Rules = "Rules"
-	static let Phone = "Phone"
-	static let Book = "Book"
+	static let Rules =		"Rules"
+	static let Phone =		"Phone"
+	static let Book =		"Book"
+}
+
+struct ConstantSegueIdentifier {
+	static let Prefix = "Show "
+	static func fromMenuSection(menuSection: CABMenuSection) -> String {
+		return menuSection.generateSegueIdentifier()
+	}
+	
+	static let BackgroundView = "Show Background View"
 }
 
 struct ConstantRowHeight {
@@ -41,6 +50,7 @@ struct ConstantMagicNumbers {
 		static let WelcomeLabelVelocity: CGFloat = 10.0
 		static let WelcomeLabelBethDelay: Double = 0.1
 		static let WelcomeLabelInitialAlpha: CGFloat = 0.1
+		static let BackgroundSectionLabelStartXPoint: CGFloat = -500
 	}
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
