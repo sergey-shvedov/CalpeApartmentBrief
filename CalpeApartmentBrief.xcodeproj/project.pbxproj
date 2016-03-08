@@ -27,6 +27,15 @@
 		840861291C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */; };
 		8408612B1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */; };
 		8408612D1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */; };
+		84531B041C8E06EF00171C06 /* BaseSectionBackground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84531B031C8E06EF00171C06 /* BaseSectionBackground.storyboard */; };
+		8484F6111C8E3DEE00F84218 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484F6101C8E3DEE00F84218 /* Posts.storyboard */; };
+		8484F6131C8E40E600F84218 /* CABPostBaseSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */; };
+		8484F6171C8E422600F84218 /* CABPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6161C8E422600F84218 /* CABPostType.swift */; };
+		8484F6191C8E486200F84218 /* CABPostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6181C8E486200F84218 /* CABPostProtocol.swift */; };
+		8484F61B1C8E4B8A00F84218 /* CABInspectableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F61A1C8E4B8A00F84218 /* CABInspectableLabel.swift */; };
+		8484F61D1C8E629000F84218 /* CABStandartPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8484F61C1C8E629000F84218 /* CABStandartPostView.xib */; };
+		8484F61F1C8E648700F84218 /* CABStandartPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F61E1C8E648700F84218 /* CABStandartPostView.swift */; };
+		8484F6211C8E7A5F00F84218 /* CABSuperPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */; };
 		84BB94F61C8D1022003DF34B /* CABRouteSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB94F51C8D1022003DF34B /* CABRouteSectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +62,15 @@
 		840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABArrivalSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABArrivalSectionViewController.swift; sourceTree = "<group>"; };
 		8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABDepartureSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABDepartureSectionViewController.swift; sourceTree = "<group>"; };
 		8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABBaseBackgroundViewController.swift; path = CalpeApartmentBrief/Controller/CABBaseBackgroundViewController.swift; sourceTree = "<group>"; };
+		84531B031C8E06EF00171C06 /* BaseSectionBackground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaseSectionBackground.storyboard; sourceTree = "<group>"; };
+		8484F6101C8E3DEE00F84218 /* Posts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostBaseSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABPostBaseSectionViewController.swift; sourceTree = "<group>"; };
+		8484F6161C8E422600F84218 /* CABPostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostType.swift; path = CalpeApartmentBrief/Model/CABPostType.swift; sourceTree = "<group>"; };
+		8484F6181C8E486200F84218 /* CABPostProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostProtocol.swift; path = CalpeApartmentBrief/Model/CABPostProtocol.swift; sourceTree = "<group>"; };
+		8484F61A1C8E4B8A00F84218 /* CABInspectableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABInspectableLabel.swift; path = CalpeApartmentBrief/View/CABInspectableLabel.swift; sourceTree = "<group>"; };
+		8484F61C1C8E629000F84218 /* CABStandartPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABStandartPostView.xib; path = CalpeApartmentBrief/View/CABStandartPostView.xib; sourceTree = "<group>"; };
+		8484F61E1C8E648700F84218 /* CABStandartPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABStandartPostView.swift; path = CalpeApartmentBrief/View/CABStandartPostView.swift; sourceTree = "<group>"; };
+		8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABSuperPostView.swift; path = CalpeApartmentBrief/View/CABSuperPostView.swift; sourceTree = "<group>"; };
 		84BB94F51C8D1022003DF34B /* CABRouteSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRouteSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABRouteSectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +121,8 @@
 			children = (
 				840860D41C8B6B25000AEC6B /* DataServices */,
 				840860E41C8B79CF000AEC6B /* CABSections.swift */,
+				8484F6161C8E422600F84218 /* CABPostType.swift */,
+				8484F6181C8E486200F84218 /* CABPostProtocol.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -111,6 +131,12 @@
 		840860CF1C8B6A56000AEC6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8484F6101C8E3DEE00F84218 /* Posts.storyboard */,
+				8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */,
+				8484F61C1C8E629000F84218 /* CABStandartPostView.xib */,
+				8484F61E1C8E648700F84218 /* CABStandartPostView.swift */,
+				84531B031C8E06EF00171C06 /* BaseSectionBackground.storyboard */,
+				8484F61A1C8E4B8A00F84218 /* CABInspectableLabel.swift */,
 				840860F61C8BAC4E000AEC6B /* CABMenuTableViewCell.swift */,
 			);
 			name = View;
@@ -124,6 +150,7 @@
 				840860EE1C8BA1F0000AEC6B /* CABMenuTableViewController.swift */,
 				840861021C8C7CA8000AEC6B /* CABWelcomeViewController.swift */,
 				840861041C8C7FB1000AEC6B /* CABBaseSectionViewController.swift */,
+				8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */,
 				8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */,
 				840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */,
 				8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */,
@@ -231,8 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8484F6111C8E3DEE00F84218 /* Posts.storyboard in Resources */,
+				84531B041C8E06EF00171C06 /* BaseSectionBackground.storyboard in Resources */,
 				840860FF1C8BD289000AEC6B /* Photos.xcassets in Resources */,
 				840860C71C8B6A12000AEC6B /* LaunchScreen.storyboard in Resources */,
+				8484F61D1C8E629000F84218 /* CABStandartPostView.xib in Resources */,
 				840860C21C8B6A12000AEC6B /* Main.storyboard in Resources */,
 				840860DB1C8B6D67000AEC6B /* Assets.xcassets in Resources */,
 			);
@@ -254,14 +284,20 @@
 				840861051C8C7FB1000AEC6B /* CABBaseSectionViewController.swift in Sources */,
 				840860F51C8BA264000AEC6B /* UIColor+Extension.swift in Sources */,
 				840860EF1C8BA1F0000AEC6B /* CABMenuTableViewController.swift in Sources */,
+				8484F6171C8E422600F84218 /* CABPostType.swift in Sources */,
 				840860DD1C8B704B000AEC6B /* Constant.swift in Sources */,
+				8484F6131C8E40E600F84218 /* CABPostBaseSectionViewController.swift in Sources */,
+				8484F61B1C8E4B8A00F84218 /* CABInspectableLabel.swift in Sources */,
 				840861031C8C7CA8000AEC6B /* CABWelcomeViewController.swift in Sources */,
 				840860E91C8B85A1000AEC6B /* CABThemeProtocol.swift in Sources */,
+				8484F6191C8E486200F84218 /* CABPostProtocol.swift in Sources */,
 				840860F31C8BA256000AEC6B /* CABThemeOrange.swift in Sources */,
 				840860E51C8B79CF000AEC6B /* CABSections.swift in Sources */,
 				840861011C8BD53C000AEC6B /* UIImage+Extension.swift in Sources */,
 				840860F71C8BAC4E000AEC6B /* CABMenuTableViewCell.swift in Sources */,
+				8484F61F1C8E648700F84218 /* CABStandartPostView.swift in Sources */,
 				840861291C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift in Sources */,
+				8484F6211C8E7A5F00F84218 /* CABSuperPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

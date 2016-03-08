@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+struct ConstantGlobal {
+	static let Prefix = "CAB"
+}
+
 struct ConstantIdentifier {
 	static let CellMenuItem = "Menu Item Cell"
 }
@@ -32,6 +36,11 @@ struct ConstantSegueIdentifier {
 	}
 	
 	static let BackgroundView = "Show Background View"
+}
+
+struct ConstantNibPostIdentifier {
+	static let Prefix = ConstantGlobal.Prefix
+	static let Postfix = "PostView"
 }
 
 struct ConstantRowHeight {

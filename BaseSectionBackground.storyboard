@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wds-ao-ebe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Base Background View Controller-->
+        <scene sceneID="WA9-al-VrN">
+            <objects>
+                <viewController id="Wds-ao-ebe" customClass="CABBaseBackgroundViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MA3-cX-hF9"/>
+                        <viewControllerLayoutGuide type="bottom" id="DgA-D6-6bg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z2x-rP-po8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-ze-g6z">
+                                <rect key="frame" x="40" y="-115" width="1170.5" height="299"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="250"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nd4-ze-g6z" firstAttribute="leading" secondItem="Z2x-rP-po8" secondAttribute="leading" constant="40" id="5J4-TC-9D1"/>
+                            <constraint firstItem="Nd4-ze-g6z" firstAttribute="centerY" secondItem="Z2x-rP-po8" secondAttribute="top" constant="35" id="653-ZQ-Voh"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="600" height="580"/>
+                        <size key="landscapeSize" width="580" height="600"/>
+                    </fixedSimulatedSizeMetrics>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="Nd4-ze-g6z" id="psb-vH-c3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4b-T5-mcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="-2415"/>
+        </scene>
+    </scenes>
+</document>

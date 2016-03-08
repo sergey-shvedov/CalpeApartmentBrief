@@ -42,6 +42,10 @@ enum CABMenuSection: Int {
 		return result
 	}
 	
+	var segueIdentifier: String {
+		return generateSegueIdentifier()
+	}
+	
 	func generateSegueIdentifier() -> String {
 		return ConstantSegueIdentifier.Prefix + self.name
 	}

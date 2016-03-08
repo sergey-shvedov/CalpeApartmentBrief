@@ -11,10 +11,44 @@ import UIKit
 class CABArrivalSectionViewController: CABBaseSectionViewController
 {
 
+	@IBOutlet weak var stackView: UIStackView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		
+		showPosts()
     }
+	
+	private func showPosts() {
+		
+		dispatch_async(dispatch_get_main_queue(), { () -> Void in
+			
+			for _ in 0...6 {
+//				let child = self.storyboard!.instantiateViewControllerWithIdentifier("SrandartPost")
+//				self.addChildViewController(child)
+//				child.view.hidden = true
+//				child.view.alpha = 0.0
+//				self.stackView.addArrangedSubview(child.view)
+				
+				if let post = CABStandartPostView.instanceFromPostType(CABPostType.Standart) {
+					post.hidden = true
+					post.alpha = 0.0
+					self.stackView.addArrangedSubview(post)
+				}
+				
+			}
+			
+			self.animatePostAppearing()
+		})
+	}
+	
+	private func animatePostAppearing() {
+		for (index, justView) in stackView.arrangedSubviews.enumerate() {
+			UIView.animateWithDuration(0.5, delay: 0.3 * Double(index), options: [], animations: {
+				justView.hidden = false
+				justView.alpha = 1.0
+				}, completion: nil)
+		}
+	}
 
 }
