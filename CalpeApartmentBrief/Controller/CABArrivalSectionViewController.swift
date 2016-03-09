@@ -23,7 +23,7 @@ class CABArrivalSectionViewController: CABBaseSectionViewController
 		
 		dispatch_async(dispatch_get_main_queue(), { () -> Void in
 			
-			for _ in 0...6 {
+			for _ in 0...3 {
 //				let child = self.storyboard!.instantiateViewControllerWithIdentifier("SrandartPost")
 //				self.addChildViewController(child)
 //				child.view.hidden = true
@@ -31,6 +31,12 @@ class CABArrivalSectionViewController: CABBaseSectionViewController
 //				self.stackView.addArrangedSubview(child.view)
 				
 				if let post = CABStandartPostView.instanceFromPostType(CABPostType.Standart) {
+					post.hidden = true
+					post.alpha = 0.0
+					self.stackView.addArrangedSubview(post)
+				}
+				
+				if let post = CABSuperPostView.instanceFromPostType(CABPostType.TitledButton) {
 					post.hidden = true
 					post.alpha = 0.0
 					self.stackView.addArrangedSubview(post)
