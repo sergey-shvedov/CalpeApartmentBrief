@@ -36,7 +36,7 @@ class CABArrivalSectionViewController: CABBaseSectionViewController
 					self.stackView.addArrangedSubview(post)
 				}
 				
-				if let post = CABSuperPostView.instanceFromPostType(CABPostType.TitledButton) {
+				if let post = CABSuperPostView.instanceFromPostType(CABPostType.NumberedItemWithImage) {
 					post.hidden = true
 					post.alpha = 0.0
 					self.stackView.addArrangedSubview(post)

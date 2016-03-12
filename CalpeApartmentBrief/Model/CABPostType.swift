@@ -13,9 +13,9 @@ enum CABPostType: String {
 	case TitledImage
 	case TitledButton
 	case TitledParagraph
+	case CommentedButton
 	case NumberedItem
 	case NumberedItemWithImage
-
 	
 	var nibIdentifier: String {
 		return ConstantNibPostIdentifier.Prefix + self.rawValue + ConstantNibPostIdentifier.Postfix
