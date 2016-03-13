@@ -94,7 +94,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                    <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="vertical"/>
                 </stackView>
             </subviews>
             <constraints>

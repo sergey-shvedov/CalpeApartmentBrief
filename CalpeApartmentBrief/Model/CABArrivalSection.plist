@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-1</string>
+		<key>Post-type</key>
+		<string>Standart</string>
+		<key>Title</key>
+		<string>We are pleased to welcome you!</string>
+		<key>Body</key>
+		<string>This manual is intended to answer any questions that you may have while living in the apartment as well as provide the rules and regulations of the property.</string>
+		<key>Image-name</key>
+		<string>sample2</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-2</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
+		<key>Button-text</key>
+		<string>+34 693 777 099</string>
+		<key>Action-id</key>
+		<string>call-elena</string>
+	</dict>
+</array>
+</plist>

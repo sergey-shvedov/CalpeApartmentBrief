@@ -26,11 +26,13 @@
                             <subviews>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="To get the keys, please call Elena for 20-30 minutes before arrival" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="esQ-D9-ec4">
                                     <rect key="frame" x="10" y="0.0" width="340" height="115"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="To get the keys, please call Elena for 20-30 minutes before arrival" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-gB-jKH">
                                     <rect key="frame" x="10" y="0.0" width="340" height="115"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>

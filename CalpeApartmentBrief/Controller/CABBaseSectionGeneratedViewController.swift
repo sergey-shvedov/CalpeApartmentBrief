@@ -1,14 +1,14 @@
 //
-//  CABRouteSectionViewController.swift
+//  CABBaseSectionGeneratedViewController.swift
 //  CalpeApartmentBrief
 //
-//  Created by Sergey Shvedov on 07.03.16.
+//  Created by Sergey Shvedov on 13.03.16.
 //  Copyright © 2016 Sergey Shvedov. All rights reserved.
 //
 
 import UIKit
 
-class CABRouteSectionViewController: CABBaseSectionViewController
+class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 {
 
 	@IBOutlet weak var stackView: UIStackView!
@@ -30,17 +30,17 @@ class CABRouteSectionViewController: CABBaseSectionViewController
 				//				child.view.alpha = 0.0
 				//				self.stackView.addArrangedSubview(child.view)
 				
-				let post = CABStandartPostView()
+				if let post = CABStandartPostView.instanceFromPostType(CABPostType.Standart) {
 					post.hidden = true
 					post.alpha = 0.0
 					self.stackView.addArrangedSubview(post)
+				}
 				
-				
-				let post2 = CABNumberedItemWithImagePostView()
-					post2.hidden = true
-					post2.alpha = 0.0
-					self.stackView.addArrangedSubview(post2)
-				
+				if let post = CABSuperPostView.instanceFromPostType(CABPostType.NumberedItemWithImage) {
+					post.hidden = true
+					post.alpha = 0.0
+					self.stackView.addArrangedSubview(post)
+				}
 				
 			}
 			
@@ -56,6 +56,5 @@ class CABRouteSectionViewController: CABBaseSectionViewController
 				}, completion: nil)
 		}
 	}
-	
-	
+
 }

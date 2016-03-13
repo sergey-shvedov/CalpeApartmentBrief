@@ -41,8 +41,9 @@ class CABArrivalSectionViewController: CABBaseSectionViewController
 					post.alpha = 0.0
 					self.stackView.addArrangedSubview(post)
 				}
-				
+
 			}
+		
 			
 			self.animatePostAppearing()
 		})

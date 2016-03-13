@@ -27,7 +27,10 @@
 		840861291C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */; };
 		8408612B1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */; };
 		8408612D1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */; };
-		8484F6131C8E40E600F84218 /* CABPostBaseSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */; };
+		844DA9031C94F63F0022EC5B /* CABArrivalSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */; };
+		844DA9081C94FD320022EC5B /* CABPostStandart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DA9071C94FD320022EC5B /* CABPostStandart.swift */; };
+		84705AED1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84705AEC1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib */; };
+		84705AEF1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84705AEE1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift */; };
 		8484F6171C8E422600F84218 /* CABPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6161C8E422600F84218 /* CABPostType.swift */; };
 		8484F6191C8E486200F84218 /* CABPostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6181C8E486200F84218 /* CABPostProtocol.swift */; };
 		8484F61B1C8E4B8A00F84218 /* CABInspectableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F61A1C8E4B8A00F84218 /* CABInspectableLabel.swift */; };
@@ -36,11 +39,17 @@
 		8484F6211C8E7A5F00F84218 /* CABSuperPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */; };
 		8484F6231C8F1C7D00F84218 /* CABTitledImagePostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8484F6221C8F1C7D00F84218 /* CABTitledImagePostView.xib */; };
 		8484F6251C8F59EE00F84218 /* CABTitledImagePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F6241C8F59EE00F84218 /* CABTitledImagePostView.swift */; };
+		84A6840E1C9503F2001B4B8E /* CABPostTitledImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6840D1C9503F2001B4B8E /* CABPostTitledImage.swift */; };
+		84A684101C950414001B4B8E /* CABPostTitledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6840F1C950414001B4B8E /* CABPostTitledButton.swift */; };
+		84A684121C950433001B4B8E /* CABPostTitledParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684111C950433001B4B8E /* CABPostTitledParagraph.swift */; };
+		84A684141C950459001B4B8E /* CABPostCommentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684131C950459001B4B8E /* CABPostCommentedButton.swift */; };
+		84A684161C950472001B4B8E /* CABPostNumberedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684151C950472001B4B8E /* CABPostNumberedItem.swift */; };
+		84A684181C95048F001B4B8E /* CABPostNumberedItemWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684171C95048F001B4B8E /* CABPostNumberedItemWithImage.swift */; };
 		84BB94F61C8D1022003DF34B /* CABRouteSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB94F51C8D1022003DF34B /* CABRouteSectionViewController.swift */; };
 		84EB59731C9379B800B778E2 /* CABTitledParagraphPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB59721C9379B800B778E2 /* CABTitledParagraphPostView.xib */; };
 		84EB59751C938FA900B778E2 /* CABNumberedItemPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB59741C938FA900B778E2 /* CABNumberedItemPostView.xib */; };
 		84EB59781C93946D00B778E2 /* CABRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB59771C93946D00B778E2 /* CABRoundView.swift */; };
-		84EB597A1C939ACD00B778E2 /* CABNumberedItemWithImagePostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB59791C939ACD00B778E2 /* CABNumberedItemWithImagePostView.xib */; };
+		84EB597C1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB597B1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift */; };
 		84EED0C01C912DE40027A153 /* BaseSectionBackground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */; };
 		84EED0C21C912DFF0027A153 /* CABTitledButtonPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0C11C912DFF0027A153 /* CABTitledButtonPostView.xib */; };
 		84EED0C41C912E090027A153 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0C31C912E090027A153 /* Posts.storyboard */; };
@@ -71,7 +80,10 @@
 		840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABArrivalSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABArrivalSectionViewController.swift; sourceTree = "<group>"; };
 		8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABDepartureSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABDepartureSectionViewController.swift; sourceTree = "<group>"; };
 		8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABBaseBackgroundViewController.swift; path = CalpeApartmentBrief/Controller/CABBaseBackgroundViewController.swift; sourceTree = "<group>"; };
-		8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostBaseSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABPostBaseSectionViewController.swift; sourceTree = "<group>"; };
+		844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CABArrivalSection.plist; path = CalpeApartmentBrief/Model/CABArrivalSection.plist; sourceTree = "<group>"; };
+		844DA9071C94FD320022EC5B /* CABPostStandart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostStandart.swift; path = CalpeApartmentBrief/Model/CABPostStandart.swift; sourceTree = "<group>"; };
+		84705AEC1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABNumberedItemWithImagePostView.xib; path = CalpeApartmentBrief/View/CABNumberedItemWithImagePostView.xib; sourceTree = "<group>"; };
+		84705AEE1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABBaseSectionGeneratedViewController.swift; path = CalpeApartmentBrief/Controller/CABBaseSectionGeneratedViewController.swift; sourceTree = "<group>"; };
 		8484F6161C8E422600F84218 /* CABPostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostType.swift; path = CalpeApartmentBrief/Model/CABPostType.swift; sourceTree = "<group>"; };
 		8484F6181C8E486200F84218 /* CABPostProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostProtocol.swift; path = CalpeApartmentBrief/Model/CABPostProtocol.swift; sourceTree = "<group>"; };
 		8484F61A1C8E4B8A00F84218 /* CABInspectableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABInspectableLabel.swift; path = CalpeApartmentBrief/View/CABInspectableLabel.swift; sourceTree = "<group>"; };
@@ -80,11 +92,17 @@
 		8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABSuperPostView.swift; path = CalpeApartmentBrief/View/CABSuperPostView.swift; sourceTree = "<group>"; };
 		8484F6221C8F1C7D00F84218 /* CABTitledImagePostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABTitledImagePostView.xib; path = CalpeApartmentBrief/View/CABTitledImagePostView.xib; sourceTree = "<group>"; };
 		8484F6241C8F59EE00F84218 /* CABTitledImagePostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABTitledImagePostView.swift; path = CalpeApartmentBrief/View/CABTitledImagePostView.swift; sourceTree = "<group>"; };
+		84A6840D1C9503F2001B4B8E /* CABPostTitledImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostTitledImage.swift; path = CalpeApartmentBrief/Model/CABPostTitledImage.swift; sourceTree = "<group>"; };
+		84A6840F1C950414001B4B8E /* CABPostTitledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostTitledButton.swift; path = CalpeApartmentBrief/Model/CABPostTitledButton.swift; sourceTree = "<group>"; };
+		84A684111C950433001B4B8E /* CABPostTitledParagraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostTitledParagraph.swift; path = CalpeApartmentBrief/Model/CABPostTitledParagraph.swift; sourceTree = "<group>"; };
+		84A684131C950459001B4B8E /* CABPostCommentedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostCommentedButton.swift; path = CalpeApartmentBrief/Model/CABPostCommentedButton.swift; sourceTree = "<group>"; };
+		84A684151C950472001B4B8E /* CABPostNumberedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostNumberedItem.swift; path = CalpeApartmentBrief/Model/CABPostNumberedItem.swift; sourceTree = "<group>"; };
+		84A684171C95048F001B4B8E /* CABPostNumberedItemWithImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABPostNumberedItemWithImage.swift; sourceTree = "<group>"; };
 		84BB94F51C8D1022003DF34B /* CABRouteSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRouteSectionViewController.swift; path = CalpeApartmentBrief/Controller/CABRouteSectionViewController.swift; sourceTree = "<group>"; };
 		84EB59721C9379B800B778E2 /* CABTitledParagraphPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABTitledParagraphPostView.xib; path = CalpeApartmentBrief/View/CABTitledParagraphPostView.xib; sourceTree = "<group>"; };
 		84EB59741C938FA900B778E2 /* CABNumberedItemPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABNumberedItemPostView.xib; path = CalpeApartmentBrief/View/CABNumberedItemPostView.xib; sourceTree = "<group>"; };
 		84EB59771C93946D00B778E2 /* CABRoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRoundView.swift; path = CalpeApartmentBrief/View/CABRoundView.swift; sourceTree = "<group>"; };
-		84EB59791C939ACD00B778E2 /* CABNumberedItemWithImagePostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABNumberedItemWithImagePostView.xib; path = CalpeApartmentBrief/View/CABNumberedItemWithImagePostView.xib; sourceTree = "<group>"; };
+		84EB597B1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABNumberedItemWithImagePostView.swift; path = CalpeApartmentBrief/View/CABNumberedItemWithImagePostView.swift; sourceTree = "<group>"; };
 		84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BaseSectionBackground.storyboard; path = CalpeApartmentBrief/View/BaseSectionBackground.storyboard; sourceTree = "<group>"; };
 		84EED0C11C912DFF0027A153 /* CABTitledButtonPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABTitledButtonPostView.xib; path = CalpeApartmentBrief/View/CABTitledButtonPostView.xib; sourceTree = "<group>"; };
 		84EED0C31C912E090027A153 /* Posts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Posts.storyboard; path = CalpeApartmentBrief/View/Posts.storyboard; sourceTree = "<group>"; };
@@ -138,9 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				840860D41C8B6B25000AEC6B /* DataServices */,
+				844DA9011C94F5F70022EC5B /* DataResources */,
+				844DA9041C94FB430022EC5B /* ModelObjects */,
 				840860E41C8B79CF000AEC6B /* CABSections.swift */,
 				8484F6161C8E422600F84218 /* CABPostType.swift */,
-				8484F6181C8E486200F84218 /* CABPostProtocol.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -152,16 +171,17 @@
 				84EB59761C93941C00B778E2 /* BaseInspectableViews */,
 				84EED0C31C912E090027A153 /* Posts.storyboard */,
 				84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */,
-				84EB59721C9379B800B778E2 /* CABTitledParagraphPostView.xib */,
-				84EB59791C939ACD00B778E2 /* CABNumberedItemWithImagePostView.xib */,
 				8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */,
-				84EB59741C938FA900B778E2 /* CABNumberedItemPostView.xib */,
-				84EED0C11C912DFF0027A153 /* CABTitledButtonPostView.xib */,
 				8484F61C1C8E629000F84218 /* CABStandartPostView.xib */,
 				8484F61E1C8E648700F84218 /* CABStandartPostView.swift */,
-				84EED0C51C912E580027A153 /* CABCommentedButtonPostView.xib */,
 				8484F6221C8F1C7D00F84218 /* CABTitledImagePostView.xib */,
 				8484F6241C8F59EE00F84218 /* CABTitledImagePostView.swift */,
+				84EED0C11C912DFF0027A153 /* CABTitledButtonPostView.xib */,
+				84EB59721C9379B800B778E2 /* CABTitledParagraphPostView.xib */,
+				84EED0C51C912E580027A153 /* CABCommentedButtonPostView.xib */,
+				84EB59741C938FA900B778E2 /* CABNumberedItemPostView.xib */,
+				84705AEC1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib */,
+				84EB597B1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift */,
 				840860F61C8BAC4E000AEC6B /* CABMenuTableViewCell.swift */,
 			);
 			name = View;
@@ -174,8 +194,8 @@
 				840861061C8C8C5D000AEC6B /* CABSplitViewController.swift */,
 				840860EE1C8BA1F0000AEC6B /* CABMenuTableViewController.swift */,
 				840861021C8C7CA8000AEC6B /* CABWelcomeViewController.swift */,
+				84705AEE1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift */,
 				840861041C8C7FB1000AEC6B /* CABBaseSectionViewController.swift */,
-				8484F6121C8E40E600F84218 /* CABPostBaseSectionViewController.swift */,
 				8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */,
 				840861281C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift */,
 				8408612A1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift */,
@@ -223,6 +243,29 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		844DA9011C94F5F70022EC5B /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */,
+			);
+			name = DataResources;
+			sourceTree = "<group>";
+		};
+		844DA9041C94FB430022EC5B /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8484F6181C8E486200F84218 /* CABPostProtocol.swift */,
+				844DA9071C94FD320022EC5B /* CABPostStandart.swift */,
+				84A6840D1C9503F2001B4B8E /* CABPostTitledImage.swift */,
+				84A6840F1C950414001B4B8E /* CABPostTitledButton.swift */,
+				84A684111C950433001B4B8E /* CABPostTitledParagraph.swift */,
+				84A684131C950459001B4B8E /* CABPostCommentedButton.swift */,
+				84A684151C950472001B4B8E /* CABPostNumberedItem.swift */,
+				84A684171C95048F001B4B8E /* CABPostNumberedItemWithImage.swift */,
+			);
+			name = ModelObjects;
 			sourceTree = "<group>";
 		};
 		84EB59761C93941C00B778E2 /* BaseInspectableViews */ = {
@@ -296,6 +339,7 @@
 				84EB59731C9379B800B778E2 /* CABTitledParagraphPostView.xib in Resources */,
 				84EED0C41C912E090027A153 /* Posts.storyboard in Resources */,
 				84EED0C01C912DE40027A153 /* BaseSectionBackground.storyboard in Resources */,
+				844DA9031C94F63F0022EC5B /* CABArrivalSection.plist in Resources */,
 				840860FF1C8BD289000AEC6B /* Photos.xcassets in Resources */,
 				8484F6231C8F1C7D00F84218 /* CABTitledImagePostView.xib in Resources */,
 				84EED0C61C912E580027A153 /* CABCommentedButtonPostView.xib in Resources */,
@@ -304,7 +348,7 @@
 				84EB59751C938FA900B778E2 /* CABNumberedItemPostView.xib in Resources */,
 				840860C21C8B6A12000AEC6B /* Main.storyboard in Resources */,
 				840860DB1C8B6D67000AEC6B /* Assets.xcassets in Resources */,
-				84EB597A1C939ACD00B778E2 /* CABNumberedItemWithImagePostView.xib in Resources */,
+				84705AED1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib in Resources */,
 				84EED0C21C912DFF0027A153 /* CABTitledButtonPostView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,30 +362,38 @@
 			files = (
 				8408612D1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift in Sources */,
 				840860F11C8BA245000AEC6B /* CABAppRespose.swift in Sources */,
+				84A684121C950433001B4B8E /* CABPostTitledParagraph.swift in Sources */,
 				84BB94F61C8D1022003DF34B /* CABRouteSectionViewController.swift in Sources */,
 				8408612B1C8CEEA1000AEC6B /* CABDepartureSectionViewController.swift in Sources */,
 				840860D81C8B6CFE000AEC6B /* AppDelegate.swift in Sources */,
 				840861071C8C8C5D000AEC6B /* CABSplitViewController.swift in Sources */,
 				840861051C8C7FB1000AEC6B /* CABBaseSectionViewController.swift in Sources */,
 				840860F51C8BA264000AEC6B /* UIColor+Extension.swift in Sources */,
+				84A684101C950414001B4B8E /* CABPostTitledButton.swift in Sources */,
 				840860EF1C8BA1F0000AEC6B /* CABMenuTableViewController.swift in Sources */,
+				844DA9081C94FD320022EC5B /* CABPostStandart.swift in Sources */,
 				8484F6171C8E422600F84218 /* CABPostType.swift in Sources */,
+				84705AEF1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift in Sources */,
 				840860DD1C8B704B000AEC6B /* Constant.swift in Sources */,
-				8484F6131C8E40E600F84218 /* CABPostBaseSectionViewController.swift in Sources */,
 				8484F61B1C8E4B8A00F84218 /* CABInspectableLabel.swift in Sources */,
 				840861031C8C7CA8000AEC6B /* CABWelcomeViewController.swift in Sources */,
 				84EB59781C93946D00B778E2 /* CABRoundView.swift in Sources */,
 				840860E91C8B85A1000AEC6B /* CABThemeProtocol.swift in Sources */,
 				8484F6191C8E486200F84218 /* CABPostProtocol.swift in Sources */,
+				84A684161C950472001B4B8E /* CABPostNumberedItem.swift in Sources */,
 				840860F31C8BA256000AEC6B /* CABThemeOrange.swift in Sources */,
 				840860E51C8B79CF000AEC6B /* CABSections.swift in Sources */,
+				84A684181C95048F001B4B8E /* CABPostNumberedItemWithImage.swift in Sources */,
 				840861011C8BD53C000AEC6B /* UIImage+Extension.swift in Sources */,
 				840860F71C8BAC4E000AEC6B /* CABMenuTableViewCell.swift in Sources */,
 				8484F61F1C8E648700F84218 /* CABStandartPostView.swift in Sources */,
 				840861291C8CEE6C000AEC6B /* CABArrivalSectionViewController.swift in Sources */,
 				84EED0CA1C91323F0027A153 /* CABInspectableTextView.swift in Sources */,
+				84A684141C950459001B4B8E /* CABPostCommentedButton.swift in Sources */,
+				84A6840E1C9503F2001B4B8E /* CABPostTitledImage.swift in Sources */,
 				8484F6211C8E7A5F00F84218 /* CABSuperPostView.swift in Sources */,
 				8484F6251C8F59EE00F84218 /* CABTitledImagePostView.swift in Sources */,
+				84EB597C1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

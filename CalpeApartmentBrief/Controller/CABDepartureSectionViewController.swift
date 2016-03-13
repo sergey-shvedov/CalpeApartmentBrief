@@ -11,10 +11,20 @@ import UIKit
 class CABDepartureSectionViewController: CABBaseSectionViewController
 {
 
+	@IBOutlet weak var stackView: UIStackView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        animatePostAppearing()
     }
 
+	private func animatePostAppearing() {
+		for (index, justView) in stackView.arrangedSubviews.enumerate() {
+			UIView.animateWithDuration(0.5, delay: 0.3 * Double(index), options: [], animations: {
+				justView.hidden = false
+				justView.alpha = 1.0
+				}, completion: nil)
+		}
+	}
 }
