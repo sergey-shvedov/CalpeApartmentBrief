@@ -13,6 +13,8 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 
 	@IBOutlet weak var stackView: UIStackView!
 	
+	private var postStructure: [CABPost]?
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -21,36 +23,48 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 	
 	private func showPosts() {
 		
-		dispatch_async(dispatch_get_main_queue(), { () -> Void in
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
+			self.loadPosts()
 			
-			for _ in 0...3 {
-				//				let child = self.storyboard!.instantiateViewControllerWithIdentifier("SrandartPost")
-				//				self.addChildViewController(child)
-				//				child.view.hidden = true
-				//				child.view.alpha = 0.0
-				//				self.stackView.addArrangedSubview(child.view)
-				
-				if let post = CABStandartPostView.instanceFromPostType(CABPostType.Standart) {
-					post.hidden = true
-					post.alpha = 0.0
-					self.stackView.addArrangedSubview(post)
+			dispatch_async(dispatch_get_main_queue()) {
+			
+				if let justPostStructure = self.postStructure {
+					for justPost in justPostStructure {
+						var aPost: CABSuperPostView?
+						
+						switch justPost.type {
+						case .Standart: aPost = CABStandartPostView()
+						case .TitledImage: aPost = CABTitledImagePostView()
+						case .TitledButton: aPost = CABTitledButtonPostView()
+						case .TitledParagraph: aPost = CABTitledParagraphPostView()
+						case .CommentedButton: aPost = CABCommentedButtonPostView()
+						case .NumberedItem: aPost = CABNumberedItemPostView()
+						case .NumberedItemWithImage: aPost = CABNumberedItemWithImagePostView()
+						}
+						
+						if let createdPost = aPost {
+							createdPost.configureUIWithData(post: justPost)
+							createdPost.hidden = true
+							createdPost.alpha = 0.0
+							self.stackView.addArrangedSubview(createdPost)
+						}
+					}
 				}
 				
-				if let post = CABSuperPostView.instanceFromPostType(CABPostType.NumberedItemWithImage) {
-					post.hidden = true
-					post.alpha = 0.0
-					self.stackView.addArrangedSubview(post)
-				}
-				
+				self.animatePostAppearing()
 			}
-			
-			self.animatePostAppearing()
-		})
+		}
+	}
+	
+	private func loadPosts() {
+		if let justSection = section {
+			self.postStructure = CABDataProvider.sharedInstance.providePostSructureForSection(justSection)
+		}
 	}
 	
 	private func animatePostAppearing() {
 		for (index, justView) in stackView.arrangedSubviews.enumerate() {
-			UIView.animateWithDuration(0.5, delay: 0.3 * Double(index), options: [], animations: {
+			UIView.animateWithDuration(ConstantMagicNumbers.PostAppearingAnimation.Duration, delay: ConstantMagicNumbers.PostAppearingAnimation.BethDelay * Double(index), options: [], animations: {
 				justView.hidden = false
 				justView.alpha = 1.0
 				}, completion: nil)

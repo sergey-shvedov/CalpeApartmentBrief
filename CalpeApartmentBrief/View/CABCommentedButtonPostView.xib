@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABCommentedButtonPostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Bgf-DZ-n4L" id="V1X-iy-km1"/>
+                <outlet property="commentTextView" destination="cB8-tA-Lxq" id="wmB-rr-sbH"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -22,6 +27,9 @@
                             <state key="normal" title="GET THE ROUTE">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="tappedButton:" destination="-1" eventType="touchUpInside" id="pmb-Z3-k75"/>
+                            </connections>
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cB8-tA-Lxq">
                             <rect key="frame" x="75" y="63" width="450" height="42.5"/>

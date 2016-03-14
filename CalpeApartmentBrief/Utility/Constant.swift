@@ -61,6 +61,10 @@ struct ConstantMagicNumbers {
 		static let WelcomeLabelInitialAlpha: CGFloat = 0.1
 		static let BackgroundSectionLabelStartXPoint: CGFloat = -500
 	}
+	struct PostAppearingAnimation {
+		static let Duration: NSTimeInterval = 0.5
+		static let BethDelay: Double = 0.3
+	}
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
 	}

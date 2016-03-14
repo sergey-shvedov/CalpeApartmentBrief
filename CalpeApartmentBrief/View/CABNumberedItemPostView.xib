@@ -7,7 +7,14 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABNumberedItemPostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyTextView" destination="gQV-D2-klr" id="6o3-zK-ztx"/>
+                <outlet property="iconImageView" destination="OWj-QJ-T1i" id="XNc-K1-3i1"/>
+                <outlet property="numberLabel" destination="Umc-e8-wMb" id="3Wu-Th-mCI"/>
+                <outlet property="titleLabel" destination="bxy-gm-u7U" id="Lgh-TY-lOx"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>

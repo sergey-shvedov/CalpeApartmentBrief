@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol CABPostViewConfigurable {
+	func configureUI()
+}
+
 @IBDesignable
 class CABSuperPostView: UIView
 {
 	var view: UIView!
+	private(set) var post: CABPost?
 	
 	class func instanceFromPostType(postType: CABPostType) -> UIView? {
 		return UINib(nibName: postType.nibIdentifier, bundle: nil).instantiateWithOwner(nil, options: nil)[0] as? UIView
@@ -25,6 +30,10 @@ class CABSuperPostView: UIView
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		setupNib()
+	}
+	
+	func attachData(post aPost: CABPost) {
+		post = aPost
 	}
 	
 	private func setupNib() {
@@ -44,6 +53,15 @@ class CABSuperPostView: UIView
 		
 		let result = (nil != view ? view! : UIView())
 		return result
+	}
+	
+	func configureUI() {
+		print("configureUI() – Must be called on a subclass of CABSuperPostView")
+	}
+	
+	func configureUIWithData(post aPost: CABPost) {
+		post = aPost
+		configureUI()
 	}
 
 }

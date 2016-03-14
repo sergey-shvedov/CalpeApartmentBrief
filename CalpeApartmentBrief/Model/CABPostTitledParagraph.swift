@@ -14,7 +14,7 @@ struct CABPostTitledParagraph: CABPost
 	private(set) var title: String?
 	private(set) var body: String?
 	
-	init(type aType: CABPostType, title aTitle: String?, body aBody: String?) {
+	init(title aTitle: String?, body aBody: String?) {
 		title = aTitle
 		body = aBody
 	}

@@ -87,6 +87,10 @@
                 <constraint firstAttribute="bottom" secondItem="6mF-dk-Eqb" secondAttribute="bottom" id="l3W-2Z-CEt"/>
                 <constraint firstItem="hVT-Yj-d81" firstAttribute="leading" secondItem="BBl-Zr-fIJ" secondAttribute="leading" id="nyH-kO-U4R"/>
             </constraints>
+            <connections>
+                <outlet property="imageView" destination="Hkb-YV-6iP" id="Yxz-8C-JvY"/>
+                <outlet property="titleLabel" destination="VuJ-3t-o4K" id="lj1-8M-yhf"/>
+            </connections>
             <point key="canvasLocation" x="550" y="440"/>
         </view>
     </objects>
