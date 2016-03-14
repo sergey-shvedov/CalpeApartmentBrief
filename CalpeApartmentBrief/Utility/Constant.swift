@@ -44,9 +44,10 @@ struct ConstantNibPostIdentifier {
 }
 
 struct ConstantRowHeight {
-	static let Small: CGFloat = 44.0
-	static let Medium: CGFloat = 65.0
-	static let Large: CGFloat = 80.0
+	private static let multiplier: CGFloat = 1.5
+	static let Small: CGFloat = CGFloat(Int(multiplier * 44.0))
+	static let Medium: CGFloat = CGFloat(Int(multiplier * 65.0))
+	static let Large: CGFloat = CGFloat(Int(multiplier * 80.0))
 }
 
 struct ConstantMagicNumbers {

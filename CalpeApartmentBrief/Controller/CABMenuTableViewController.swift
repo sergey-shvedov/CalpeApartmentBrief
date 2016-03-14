@@ -31,8 +31,12 @@ class CABMenuTableViewController: UITableViewController
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(ConstantIdentifier.CellMenuItem, forIndexPath: indexPath)
 		
-		if let aCell = cell as? CABMenuTableViewCell, let menuSection = CABMenuSection(rawValue: indexPath.row) {
-			aCell.configureBasedOn(menuSection)
+		if let aCell = cell as? CABMenuTableViewCell {
+			let menu = CABAppResponse.sharedInstance.menu
+			if indexPath.row < menu.count {
+				let menuSection = menu[indexPath.row]
+				aCell.configureBasedOn(menuSection)
+			}
 		}
 
         return cell

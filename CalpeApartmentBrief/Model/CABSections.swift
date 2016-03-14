@@ -51,8 +51,11 @@ enum CABMenuSection: Int {
 	}
 	
 	func favoriteColor() -> UIColor {
-		
-		return CABAppResponse.sharedInstance.currentTheme.colorOfMenuItemWithIndex(self.rawValue)
+		var result = UIColor.clearColor()
+		if let justIndex = CABAppResponse.sharedInstance.indexOfMenuItem(self) {
+			result = CABAppResponse.sharedInstance.currentTheme.colorOfMenuItemWithIndex(justIndex)
+		}
+		return result
 	}
 	
 	
