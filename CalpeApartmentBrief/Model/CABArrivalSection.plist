@@ -10,13 +10,23 @@
 		<key>Title</key>
 		<string>We are pleased to welcome you!</string>
 		<key>Body</key>
-		<string>This manual is intended to answer any questions that you may have while living in the apartment as well as provide the rules and regulations of the property.</string>
+		<string>Our charming bungalow is a ground floor apartment with direct access to the parking and swimming pools. It&apos;s located near pine forest and less than 2 km to the central beach. Small private community, 2 pools, Parking, A/C, Heating, BBQ, WiFi.</string>
 		<key>Image-name</key>
-		<string>sample2</string>
+		<string>photoHouse</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>
 		<string>ar-2</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Check-in time is flexible</string>
+		<key>Body</key>
+		<string>If our previous guests leave the apartment on the same day, it may take some time to prepare the apartment for your arrival. In this case your check-in time can be only after 14:00. Anyway please call for 20-30 minutes before your arrival to Calpe (+34 693 777 099). It&apos;s will be useful if you tell us the approximate time of your arrival.</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
 		<key>Post-type</key>
 		<string>TitledButton</string>
 		<key>Title</key>
@@ -25,6 +35,48 @@
 		<string>+34 693 777 099</string>
 		<key>Action-id</key>
 		<string>call-elena</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-4</string>
+		<key>Post-type</key>
+		<string>TitledImage</string>
+		<key>Title</key>
+		<string>Calpe, province of Alicante</string>
+		<key>Image-name</key>
+		<string>photoTown</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-5</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Address: 31F Partida Garduix, Calpe, Spain, 03710</string>
+		<key>Body</key>
+		<string>We are 60 minutes from Alicante International Airport and 80 minutes from Valencia Airport. Please note that you&apos;ll need a car to get around comfortably. GPS Navigators often indicate a wrong location of the apartment, so we recommend use provided routing instructions or set raw coordinates with your GPS Navigator.</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>ROUTING</string>
+		<key>Action-id</key>
+		<string>goto-route</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-7</string>
+		<key>Post-type</key>
+		<string>TitledImage</string>
+		<key>Title</key>
+		<string>Residential complex</string>
+		<key>Image-name</key>
+		<string>photoResidental</string>
 	</dict>
 </array>
 </plist>

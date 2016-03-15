@@ -6,9 +6,14 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABTitledImagePostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="Hkb-YV-6iP" id="Itl-wS-Xex"/>
+                <outlet property="titleLabel" destination="VuJ-3t-o4K" id="3th-9C-h6Q"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="BBl-Zr-fIJ" customClass="CABTitledImagePostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="BBl-Zr-fIJ">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -87,10 +92,6 @@
                 <constraint firstAttribute="bottom" secondItem="6mF-dk-Eqb" secondAttribute="bottom" id="l3W-2Z-CEt"/>
                 <constraint firstItem="hVT-Yj-d81" firstAttribute="leading" secondItem="BBl-Zr-fIJ" secondAttribute="leading" id="nyH-kO-U4R"/>
             </constraints>
-            <connections>
-                <outlet property="imageView" destination="Hkb-YV-6iP" id="Yxz-8C-JvY"/>
-                <outlet property="titleLabel" destination="VuJ-3t-o4K" id="lj1-8M-yhf"/>
-            </connections>
             <point key="canvasLocation" x="550" y="440"/>
         </view>
     </objects>

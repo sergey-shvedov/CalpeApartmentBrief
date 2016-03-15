@@ -22,7 +22,7 @@ class CABTitledButtonPostView: CABSuperPostView, CABPostViewConfigurable
 	override func configureUI() {
 		if let justPost = post as? CABPostTitledButton {
 			titleLeftTextView.text = justPost.title
-			titleLeftTextView.text = justPost.title
+			titleRightTextView.text = justPost.title
 			button.setTitle(justPost.buttonTitle, forState: .Normal)
 		}
 	}

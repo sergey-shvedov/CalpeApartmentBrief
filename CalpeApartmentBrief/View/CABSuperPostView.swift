@@ -49,7 +49,7 @@ class CABSuperPostView: UIView
 		let bundle = NSBundle(forClass: self.dynamicType)
 		let nib = UINib(nibName: nibName, bundle: bundle)
 		let view = nib.instantiateWithOwner(self, options: nil)[0] as? UIView
-		if nil == view { print("Insantiation from '\(nibName)' nib file failed!") }
+		if nil == view { print("Insantiation from '\(nibName)' nib file failed!") } else {print("+")}
 		
 		let result = (nil != view ? view! : UIView())
 		return result
@@ -63,5 +63,15 @@ class CABSuperPostView: UIView
 		post = aPost
 		configureUI()
 	}
+	
+	func fitText(string: String) -> String {
+		return string
+	}
+	
+	func fitImage(imageName: String) -> UIImage? {
+		return UIImage(named: imageName)
+	}
+	
+	
 
 }

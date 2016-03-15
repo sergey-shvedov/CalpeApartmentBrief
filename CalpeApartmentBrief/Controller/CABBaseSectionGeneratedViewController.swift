@@ -12,6 +12,7 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 {
 
 	@IBOutlet weak var stackView: UIStackView!
+	@IBOutlet weak var spinner: UIActivityIndicatorView!
 	
 	private var postStructure: [CABPost]?
 	
@@ -22,6 +23,8 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 	}
 	
 	private func showPosts() {
+		
+		turnSpinnerOn(true)
 		
 		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
 			self.loadPosts()
@@ -51,6 +54,7 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 					}
 				}
 				
+				self.turnSpinnerOn(false)
 				self.animatePostAppearing()
 			}
 		}
@@ -68,6 +72,22 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 				justView.hidden = false
 				justView.alpha = 1.0
 				}, completion: nil)
+		}
+	}
+	
+	private func turnSpinnerOn(isWorking: Bool) {
+		if isWorking {
+			spinner.alpha = 0.0
+			UIView.animateWithDuration(ConstantMagicNumbers.SpinnerAppearingAnimation.Duration) {
+				self.spinner.alpha = ConstantMagicNumbers.SpinnerAppearingAnimation.TargetAlpha
+			}
+			spinner.startAnimating()
+		} else {
+			UIView.animateWithDuration(ConstantMagicNumbers.SpinnerAppearingAnimation.OutDuration, animations: {
+				self.spinner.alpha = 0.0
+				}) { (isComplete) in
+					self.spinner.stopAnimating()
+			}
 		}
 	}
 

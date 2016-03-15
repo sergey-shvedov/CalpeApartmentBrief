@@ -66,6 +66,11 @@ struct ConstantMagicNumbers {
 		static let Duration: NSTimeInterval = 0.5
 		static let BethDelay: Double = 0.3
 	}
+	struct SpinnerAppearingAnimation {
+		static let Duration: NSTimeInterval = 2.0
+		static let TargetAlpha: CGFloat = 0.5
+		static let OutDuration: NSTimeInterval = 0.5
+	}
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
 	}

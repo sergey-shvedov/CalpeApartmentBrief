@@ -1,0 +1,41 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown4Gb.jpg",
+      "memory" : "4GB",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown@2x.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown4Gb@2x.jpg",
+      "memory" : "4GB",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown@3x.jpg",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "photoTown4Gb@3x.jpg",
+      "memory" : "4GB",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

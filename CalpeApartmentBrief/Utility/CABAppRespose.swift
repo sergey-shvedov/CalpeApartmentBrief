@@ -21,11 +21,11 @@ class CABAppResponse
 	private(set) var appState: AppState = .Welcome
 	
 	let menu: [CABMenuSection] = [
-						CABMenuSection.Arrival,
-						CABMenuSection.Departure,
-						CABMenuSection.Route,
-						CABMenuSection.Appliances,
-						CABMenuSection.Rules]
+				CABMenuSection.Arrival,
+				CABMenuSection.Departure,
+				CABMenuSection.Route,
+				CABMenuSection.Appliances,
+				CABMenuSection.Rules]
 	var numberOfMenuItems: Int {
 		return menu.count
 	}
