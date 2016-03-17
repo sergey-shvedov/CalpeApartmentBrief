@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
+		<key>Button-text</key>
+		<string>+34 693 777 099</string>
+		<key>Action-id</key>
+		<string>call-elena</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>ROUTING</string>
+		<key>Action-id</key>
+		<string>goto-route</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
+		<key>Button-text</key>
+		<string>+34 693 777 099</string>
+		<key>Action-id</key>
+		<string>call-elena</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>ROUTING</string>
+		<key>Action-id</key>
+		<string>goto-route</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
+		<key>Button-text</key>
+		<string>+34 693 777 099</string>
+		<key>Action-id</key>
+		<string>call-elena</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>ROUTING</string>
+		<key>Action-id</key>
+		<string>goto-route</string>
+	</dict>
+</array>
+</plist>

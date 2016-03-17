@@ -19,7 +19,11 @@ class CABDataProvider
 		if let justPosts = parsedSections[section] {
 			result = justPosts
 		} else {
-			let fileName = ModelConstant.PLIST.ArrivalSection
+			var fileName = ModelConstant.PLIST.ArrivalSection
+			switch section {
+			case .Arrival: fileName = ModelConstant.PLIST.ArrivalSection
+			default : fileName = ModelConstant.PLIST.DepartureSection
+			}
 			let bundle: String? = nil
 			result = parsePostsWithContentsOfFileName(fileName: fileName, bundle: bundle)
 			parsedSections[section] = result

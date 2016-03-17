@@ -11,6 +11,7 @@ import Foundation
 struct ModelConstant {
 	struct PLIST {
 		static let ArrivalSection = "CABArrivalSection.plist"
+		static let DepartureSection = "CABDepartureSection.plist"
 	}
 	
 	struct Post {

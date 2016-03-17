@@ -46,10 +46,11 @@ class CABSuperPostView: UIView
 	
 	private func loadViewFromNib() -> UIView {
 		let nibName = String(self.dynamicType)
+		//if nibName == "CABTitledButtonPostView" { nibName = "CABTitledButtonPostViewMod" }
 		let bundle = NSBundle(forClass: self.dynamicType)
 		let nib = UINib(nibName: nibName, bundle: bundle)
 		let view = nib.instantiateWithOwner(self, options: nil)[0] as? UIView
-		if nil == view { print("Insantiation from '\(nibName)' nib file failed!") } else {print("+")}
+		if nil == view { print("Insantiation from '\(nibName)' nib file failed!") } 
 		
 		let result = (nil != view ? view! : UIView())
 		return result
