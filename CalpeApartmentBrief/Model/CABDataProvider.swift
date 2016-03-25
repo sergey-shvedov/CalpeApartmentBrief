@@ -49,6 +49,7 @@ class CABDataProvider
 					case CABPostType.CommentedButton.rawValue : post = createCommentedButtonFrom(justPost)
 					case CABPostType.NumberedItem.rawValue :	post = createNumberedItemFrom(justPost)
 					case CABPostType.NumberedItemWithImage.rawValue : post = createNumberedItemWithImageFrom(justPost)
+					case CABPostType.PinnedMap.rawValue :		post = createPinnedMapFrom(justPost)
 					default : break
 					}
 					
@@ -168,4 +169,18 @@ extension CABDataProvider {
 		
 		return result
 	}
+	
+	private func createPinnedMapFrom(aDictionary: Dictionary<String, String>) -> CABPostPinnedMap? {
+		var result: CABPostPinnedMap?
+		
+		if let latStr = aDictionary[ModelConstant.Post.PinnedMapLatitudeKey],
+			let longStr = aDictionary[ModelConstant.Post.PinnedMapLongitudeKey],
+			let justLatitude = Double(latStr),
+			let justLongitude = Double(longStr) {
+				result = CABPostPinnedMap(latitude: justLatitude, longitude: justLongitude)
+		}
+		
+		return result
+	}
+	
 }

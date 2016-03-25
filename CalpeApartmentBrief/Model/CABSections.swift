@@ -22,7 +22,7 @@ enum CABMenuSection: Int {
 	
 	static let caseCount: Int = {
 		var max = 0
-		while let _ = CABMenuSection(rawValue: ++max) {}
+		while let _ = CABMenuSection(rawValue: max) { max += 1}
 		return max
 	}()
 	

@@ -43,6 +43,7 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 						case .CommentedButton: aPost = CABCommentedButtonPostView()
 						case .NumberedItem: aPost = CABNumberedItemPostView()
 						case .NumberedItemWithImage: aPost = CABNumberedItemWithImagePostView()
+						case .PinnedMap: aPost = CABPinnedMapPostView()
 						}
 						
 						if let createdPost = aPost {
