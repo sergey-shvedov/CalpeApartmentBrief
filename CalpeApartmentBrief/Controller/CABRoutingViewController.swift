@@ -9,9 +9,25 @@
 import UIKit
 import MapKit
 
-class CABRoutingViewController: UIViewController, CLLocationManagerDelegate {
+class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
+{
 	
-	let locationManager = CLLocationManager()
+	@IBOutlet weak var mapView: MKMapView! {
+		didSet {
+			mapView.delegate = self
+		}
+	}
+	@IBOutlet weak var stackView: UIStackView!
+	@IBOutlet var loadingView: UIView!
+	
+	@IBOutlet var moveView: UIView!
+	var destination: MKMapItem?
+	
+	@IBAction func moveToDestination(sender: UIButton) {
+		destination?.openInMapsWithLaunchOptions([MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
+	}
+	
+	private let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +38,17 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate {
 		if CLLocationManager.locationServicesEnabled() {
 			locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
 			locationManager.requestLocation()
+			let span = MKCoordinateSpan(latitudeDelta: ConstantMagicNumbers.MapView.SpanLatitude, longitudeDelta: ConstantMagicNumbers.MapView.SpanLongitude)
+			if let justLocation = locationManager.location {
+				mapView.region = MKCoordinateRegion(center: justLocation.coordinate, span: span)
+			} else if let justDestinationLocation = destination?.placemark {
+				mapView.region = MKCoordinateRegion(center: justDestinationLocation.coordinate, span: span)
+			}
+			calculateDirection()
 		}
+		addDestinationAnnotation()
+		makeLoadingView(visible: true)
+		
     }
 	
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -31,6 +57,92 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate {
 	
 	func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
 		
+	}
+	
+	func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+		let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+		let baseColor = CABAppResponse.sharedInstance.currentTheme.baseColor
+		if (overlay is MKPolyline) {
+			polylineRenderer.strokeColor = baseColor
+			polylineRenderer.lineWidth = 5
+		}
+		return polylineRenderer
+	}
+	
+	private func calculateDirection() {
+		let request = MKDirectionsRequest()
+		request.source = MKMapItem.mapItemForCurrentLocation()
+		request.destination = destination
+		request.transportType = .Automobile
+		let directions = MKDirections(request: request)
+		directions.calculateDirectionsWithCompletionHandler { (response: MKDirectionsResponse?, error: NSError?) in
+			if let justRoutes = response?.routes {
+				if let justRoute = justRoutes.first {
+					self.makeLoadingView(visible: false)
+					self.makeMoveView(visible: true)
+					self.setupPolyline(justRoute)
+				} else {
+					self.generateAlert()
+				}
+			} else if let justError = error {
+				self.generateAlert()
+			}
+		}
+	}
+	
+	private func addDestinationAnnotation() {
+		if let justCoordinate = destination?.placemark.coordinate {
+			let annotation = CABMapPoint(latitude: justCoordinate.latitude, longitude: justCoordinate.longitude, withIconName: ConstantAnnotationIdentifier.HomeIconName)
+			mapView.addAnnotation(annotation)
+		}
+	}
+	
+	private func makeLoadingView(visible visible: Bool) {
+		if visible {
+			stackView.addArrangedSubview(loadingView)
+		} else {
+			stackView.removeArrangedSubview(loadingView)
+		}
+	}
+	
+	private func makeMoveView(visible visible: Bool) {
+		if visible {
+			stackView.addArrangedSubview(moveView)
+		} else {
+			stackView.removeArrangedSubview(moveView)
+		}
+	}
+	
+	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+		if annotation is MKUserLocation { return nil }
+		
+		var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
+		if nil == view {
+			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
+			view?.canShowCallout = false
+			
+		} else {
+			view!.annotation = annotation
+		}
+		return view
+	}
+	
+	private func generateAlert() {
+		let alert = UIAlertController(title: nil, message: "Directions not available.", preferredStyle: .Alert)
+		let okButton = UIAlertAction(title: "OK", style: .Cancel) { (alert) -> Void in
+			self.navigationController?.popViewControllerAnimated(true)
+		}
+		alert.addAction(okButton)
+		self.presentViewController(alert, animated: true, completion: nil)
+	}
+	
+	private func setupPolyline(route: MKRoute) {
+		mapView.addOverlay(route.polyline)
+		if mapView.overlays.count == 1 {
+				mapView.setVisibleMapRect(route.polyline.boundingMapRect,
+	                          edgePadding: UIEdgeInsetsMake(20.0, 20.0, 20.0, 20.0),
+	                          animated: true)
+		}
 	}
 
 }

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol CABTheme {
+	var baseColor: UIColor { get }
 	func colorOfMenuItemWithIndex(index: Int) -> UIColor
 	func imageForMenuBackground() -> UIImage
 }

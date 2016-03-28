@@ -40,6 +40,7 @@ struct ConstantSegueIdentifier {
 		return menuSection.generateSegueIdentifier()
 	}
 	static let BackgroundView = "Show Background View"
+	static let RoutingMapView = "Show Route"
 }
 
 struct ConstantNibPostIdentifier {
@@ -77,6 +78,10 @@ struct ConstantMagicNumbers {
 	}
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
+	}
+	struct MapView {
+		static let SpanLatitude: Double = 0.100
+		static let SpanLongitude: Double = 0.100
 	}
 	struct SplitView {
 		static let WidthFraction: CGFloat = 0.3

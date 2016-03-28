@@ -13,6 +13,7 @@ struct CABThemeOrange: CABTheme {
 	
 	private static let startMenuColor = UIColor.init(red: 255/255, green: 213/255, blue: 36/255, alpha: 1.0)
 	private static let endMenuColor =	UIColor.init(red: 255/255, green: 085/255, blue: 00/255, alpha: 1.0)
+	let baseColor =	UIColor.init(red: 255/255, green: 235/255, blue: 59/255, alpha: 1.0)
 	
 	func colorOfMenuItemWithIndex(index: Int) -> UIColor {
 		var proportion = Double(index) / Double(CABAppResponse.sharedInstance.numberOfMenuItems)

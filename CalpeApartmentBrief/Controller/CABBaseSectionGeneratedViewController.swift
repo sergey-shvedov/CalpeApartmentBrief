@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABButtonPostViewDelegate
 {
@@ -102,8 +103,20 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 				UIApplication.sharedApplication().openURL(url)
 			}
 		case "goto-route":
-			performSegueWithIdentifier("Show Route", sender: nil)
+			performSegueWithIdentifier(ConstantSegueIdentifier.RoutingMapView, sender: nil)
 		default: break
+		}
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let justIdentifier = segue.identifier {
+			switch justIdentifier {
+			case ConstantSegueIdentifier.RoutingMapView:
+				if let justRoutingVC = segue.destinationViewController as? CABRoutingViewController {
+					justRoutingVC.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 38.657705, longitude: 0.0477460), addressDictionary: nil))
+				}
+			default: break
+			}
 		}
 	}
 
