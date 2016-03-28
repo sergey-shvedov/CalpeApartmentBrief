@@ -35,22 +35,28 @@ class CABDataProvider
 	private func parsePostsWithContentsOfFileName(fileName aFileName: String, bundle aBundle: String?) -> [CABPost] {
 		var result = [CABPost]()
 		
-		if let rawArray = NSArray(contentsOfFileNamed: aFileName, inBundle: aBundle) as? Array<[String: String]> {
+		if let rawArray = NSArray(contentsOfFileNamed: aFileName, inBundle: aBundle) as? Array<[String: AnyObject]> {
 			for justPost in rawArray {
-				if let postType = justPost[ModelConstant.Post.TypeKey] {
+				if let postType = justPost[ModelConstant.Post.TypeKey] as? String {
 					
 					var post: CABPost?
 					
-					switch postType {
-					case CABPostType.Standart.rawValue :		post = createStandartPostFrom(justPost)
-					case CABPostType.TitledImage.rawValue :		post = createTitledImageFrom(justPost)
-					case CABPostType.TitledButton.rawValue :	post = createTitledButtonFrom(justPost)
-					case CABPostType.TitledParagraph.rawValue : post = createTitledParagraphFrom(justPost)
-					case CABPostType.CommentedButton.rawValue : post = createCommentedButtonFrom(justPost)
-					case CABPostType.NumberedItem.rawValue :	post = createNumberedItemFrom(justPost)
-					case CABPostType.NumberedItemWithImage.rawValue : post = createNumberedItemWithImageFrom(justPost)
-					case CABPostType.PinnedMap.rawValue :		post = createPinnedMapFrom(justPost)
-					default : break
+					if let justStringPost = justPost as? [String: String] {
+						switch postType {
+						case CABPostType.Standart.rawValue :		post = createStandartPostFrom(justStringPost)
+						case CABPostType.TitledImage.rawValue :		post = createTitledImageFrom(justStringPost)
+						case CABPostType.TitledButton.rawValue :	post = createTitledButtonFrom(justStringPost)
+						case CABPostType.TitledParagraph.rawValue : post = createTitledParagraphFrom(justStringPost)
+						case CABPostType.CommentedButton.rawValue : post = createCommentedButtonFrom(justStringPost)
+						case CABPostType.NumberedItem.rawValue :	post = createNumberedItemFrom(justStringPost)
+						case CABPostType.NumberedItemWithImage.rawValue : post = createNumberedItemWithImageFrom(justStringPost)
+						default : break
+						}
+					} else {
+						switch postType {
+						case CABPostType.PinnedMap.rawValue :		post = createPinnedMapFrom(justPost)
+						default : break
+						}
 					}
 					
 					if let createdPost = post {
@@ -170,14 +176,21 @@ extension CABDataProvider {
 		return result
 	}
 	
-	private func createPinnedMapFrom(aDictionary: Dictionary<String, String>) -> CABPostPinnedMap? {
+	private func createPinnedMapFrom(aDictionary: Dictionary<String, AnyObject>) -> CABPostPinnedMap? {
 		var result: CABPostPinnedMap?
 		
-		if let latStr = aDictionary[ModelConstant.Post.PinnedMapLatitudeKey],
-			let longStr = aDictionary[ModelConstant.Post.PinnedMapLongitudeKey],
-			let justLatitude = Double(latStr),
-			let justLongitude = Double(longStr) {
-				result = CABPostPinnedMap(latitude: justLatitude, longitude: justLongitude)
+		if let rawAnnotations = aDictionary[ModelConstant.Post.PinnedMapAnnotationsKey] as? Array<Dictionary<String, String>> {
+			var annotations = [CABMapPoint]()
+			for nextRawAnnotation in rawAnnotations {
+				if let rawLatitude = nextRawAnnotation[ModelConstant.Post.PinnedMapLatitudeKey],
+					let rawLongitude = nextRawAnnotation[ModelConstant.Post.PinnedMapLongitudeKey],
+					let justLatitude = Double(rawLatitude),
+					let justLongitude = Double(rawLongitude) {
+						let iconName = nextRawAnnotation[ModelConstant.Post.PinnedMapIconNameKey]
+					annotations.append(CABMapPoint(latitude: justLatitude, longitude: justLongitude, withIconName: iconName))
+				}
+			}
+			result = CABPostPinnedMap(annotations: annotations)
 		}
 		
 		return result

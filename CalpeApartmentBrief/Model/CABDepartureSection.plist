@@ -7,10 +7,41 @@
 		<string>ar-3</string>
 		<key>Post-type</key>
 		<string>PinnedMap</string>
-		<key>Latitude</key>
-		<string>38.657705</string>
-		<key>Longitude</key>
-		<string>0.0477460</string>
+		<key>Annotations</key>
+		<array>
+			<dict>
+				<key>Icon-name</key>
+				<string>iconHome</string>
+				<key>Latitude</key>
+				<string>38.657705</string>
+				<key>Longitude</key>
+				<string>0.0477460</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint1</string>
+				<key>Latitude</key>
+				<string>38.645923</string>
+				<key>Longitude</key>
+				<string>0.0481070</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint2</string>
+				<key>Latitude</key>
+				<string>38.650188</string>
+				<key>Longitude</key>
+				<string>0.0517120</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint3</string>
+				<key>Latitude</key>
+				<string>38.655417</string>
+				<key>Longitude</key>
+				<string>0.049150</string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>Post-id</key>

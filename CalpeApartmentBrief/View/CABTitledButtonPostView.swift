@@ -14,9 +14,12 @@ class CABTitledButtonPostView: CABSuperPostView, CABPostViewConfigurable
 	@IBOutlet weak var titleLeftTextView: UITextView!
 	@IBOutlet weak var titleRightTextView: UITextView!
 	@IBOutlet weak var button: UIButton!
+	weak var delegate: CABButtonPostViewDelegate?
 
 	@IBAction func tappedButton(sender: UIButton) {
-		
+		if let justPost = post as? CABPostTitledButton {
+			delegate?.performActionWithIdentifier(justPost.action)
+		}
 	}
 	
 	override func configureUI() {

@@ -143,18 +143,10 @@
             </objects>
             <point key="canvasLocation" x="370" y="1297"/>
         </scene>
-        <!--Posts-->
-        <scene sceneID="CEq-eO-fam">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SrandartPost" storyboardName="Posts" id="HvK-Y1-Pc8" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wvy-Qv-xEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-447" y="48"/>
-        </scene>
-        <!--View Controller-->
+        <!--Routing View Controller-->
         <scene sceneID="owV-WF-FXw">
             <objects>
-                <viewController id="8tk-or-Xnz" sceneMemberID="viewController">
+                <viewController id="8tk-or-Xnz" customClass="CABRoutingViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gno-HA-f4U"/>
                         <viewControllerLayoutGuide type="bottom" id="RO8-BW-RUU"/>
@@ -163,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="g8i-g7-180">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8i-g7-180">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>

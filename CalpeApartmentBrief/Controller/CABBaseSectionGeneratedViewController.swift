@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
+class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABButtonPostViewDelegate
 {
 
 	@IBOutlet weak var stackView: UIStackView!
@@ -39,8 +39,10 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 						case .Standart: aPost = CABStandartPostView()
 						case .TitledImage: aPost = CABTitledImagePostView()
 						case .TitledButton: aPost = CABTitledButtonPostView()
+								(aPost as! CABTitledButtonPostView).delegate = self
 						case .TitledParagraph: aPost = CABTitledParagraphPostView()
 						case .CommentedButton: aPost = CABCommentedButtonPostView()
+								(aPost as! CABCommentedButtonPostView).delegate = self
 						case .NumberedItem: aPost = CABNumberedItemPostView()
 						case .NumberedItemWithImage: aPost = CABNumberedItemWithImagePostView()
 						case .PinnedMap: aPost = CABPinnedMapPostView()
@@ -89,6 +91,19 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController
 				}) { (isComplete) in
 					self.spinner.stopAnimating()
 			}
+		}
+	}
+	
+	func performActionWithIdentifier(identifier: String) {
+		//TODO: Implement Action Handler
+		switch identifier {
+		case "call-elena":
+			if let url = NSURL(string: "tel://+34693777099") {
+				UIApplication.sharedApplication().openURL(url)
+			}
+		case "goto-route":
+			performSegueWithIdentifier("Show Route", sender: nil)
+		default: break
 		}
 	}
 

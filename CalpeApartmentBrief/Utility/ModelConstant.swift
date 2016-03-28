@@ -36,6 +36,8 @@ struct ModelConstant {
 		static let NumberedItemWithImageBodyKey =		"Body"
 		static let NumberedItemWithImageNumberKey =		"Number"
 		static let NumberedItemWithImageImageNameKey =	"Image-name"
+		static let PinnedMapAnnotationsKey =			"Annotations"
+		static let PinnedMapIconNameKey =				"Icon-name"
 		static let PinnedMapLatitudeKey =				"Latitude"
 		static let PinnedMapLongitudeKey =				"Longitude"
 	}

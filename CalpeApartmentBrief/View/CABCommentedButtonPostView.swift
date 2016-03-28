@@ -13,9 +13,12 @@ class CABCommentedButtonPostView: CABSuperPostView, CABPostViewConfigurable
 
 	@IBOutlet weak var commentTextView: UITextView!
 	@IBOutlet weak var button: UIButton!
+	weak var delegate: CABButtonPostViewDelegate?
 
 	@IBAction func tappedButton(sender: UIButton) {
-		
+		if let justPost = post as? CABPostCommentedButton {
+			delegate?.performActionWithIdentifier(justPost.action)
+		}
 	}
 	
 	override func configureUI() {

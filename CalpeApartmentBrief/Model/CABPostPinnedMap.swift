@@ -12,9 +12,9 @@ struct CABPostPinnedMap: CABPost
 {
 	let type = CABPostType.PinnedMap
 	
-	private(set) var mapPoint: CABMapPoint
+	private(set) var annotations: [CABMapPoint]
 	
-	init(latitude aLatitude: Double, longitude aLongitude: Double) {
-		mapPoint = CABMapPoint(latitude: aLatitude, longitude: aLongitude)
+	init(annotations anAnnotations: [CABMapPoint]) {
+		annotations = anAnnotations
 	}
 }
