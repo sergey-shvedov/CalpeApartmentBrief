@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import MapKit
 
 struct CABPostPinnedMap: CABPost
 {
 	let type = CABPostType.PinnedMap
 	
 	private(set) var annotations: [CABMapPoint]
-	
-	init(annotations anAnnotations: [CABMapPoint]) {
+	private(set) var region: MKCoordinateRegion?
+	init(annotations anAnnotations: [CABMapPoint], region aRegion: MKCoordinateRegion?) {
 		annotations = anAnnotations
+		region = aRegion
 	}
 }

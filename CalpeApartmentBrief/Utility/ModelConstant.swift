@@ -40,5 +40,9 @@ struct ModelConstant {
 		static let PinnedMapIconNameKey =				"Icon-name"
 		static let PinnedMapLatitudeKey =				"Latitude"
 		static let PinnedMapLongitudeKey =				"Longitude"
+		static let PinnedMapCenterLatitudeKey =			"Center-latitude"
+		static let PinnedMapCenterLongitudeKey =		"Center-longitude"
+		static let PinnedMapSpanLatitudeKey =			"Span-latitude"
+		static let PinnedMapSpanLongitudeKey =			"Span-longitude"
 	}
 }

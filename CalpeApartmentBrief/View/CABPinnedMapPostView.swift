@@ -27,17 +27,18 @@ class CABPinnedMapPostView: CABSuperPostView, CABPostViewConfigurable, MKMapView
 	override func configureUI() {
 		if let justPost = post as? CABPostPinnedMap {
 			mapView.addAnnotations(justPost.annotations)
+			if let justRegion = justPost.region {
+				mapView.region = justRegion
+			}
 		}
-		mapView.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 38.649156, longitude: 0.053655), span: MKCoordinateSpanMake(0.040, 0.040))
-		//mapView.addAnnotation(CABMapPoint(latitude: 38.657705, longitude: 0.047746, withIconName: nil))
 	}
 	
 	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
 		if annotation is MKUserLocation { return nil }
 		
-		var view = mapView.dequeueReusableAnnotationViewWithIdentifier("ident")
+		var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
 		if nil == view {
-			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: "ident", withIconName: (annotation as! CABMapPoint).iconName )
+			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
 			view?.canShowCallout = false
 			
 		} else {
@@ -49,12 +50,9 @@ class CABPinnedMapPostView: CABSuperPostView, CABPostViewConfigurable, MKMapView
 	func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
 		for view in views {
 			if let justView = view as? CABHomeAnnotationView {
-				if justView.iconName == "iconHome" {
+				if justView.iconName == ConstantAnnotationIdentifier.HomeIconName {
 					justView.superview?.bringSubviewToFront(justView)
 				}
-//				else {
-//					justView.superview?.sendSubviewToBack(justView)
-//				}
 			}
 		}
 	}

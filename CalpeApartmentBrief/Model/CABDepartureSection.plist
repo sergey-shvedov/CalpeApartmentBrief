@@ -42,6 +42,14 @@
 				<string>0.049150</string>
 			</dict>
 		</array>
+		<key>Center-latitude</key>
+		<string>38.649156</string>
+		<key>Center-longitude</key>
+		<string>0.053655</string>
+		<key>Span-latitude</key>
+		<string>0.040</string>
+		<key>Span-longitude</key>
+		<string>0.040</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 class CABDataProvider
 {
@@ -185,12 +186,27 @@ extension CABDataProvider {
 				if let rawLatitude = nextRawAnnotation[ModelConstant.Post.PinnedMapLatitudeKey],
 					let rawLongitude = nextRawAnnotation[ModelConstant.Post.PinnedMapLongitudeKey],
 					let justLatitude = Double(rawLatitude),
-					let justLongitude = Double(rawLongitude) {
-						let iconName = nextRawAnnotation[ModelConstant.Post.PinnedMapIconNameKey]
+					let justLongitude = Double(rawLongitude)
+				{
+					let iconName = nextRawAnnotation[ModelConstant.Post.PinnedMapIconNameKey]
 					annotations.append(CABMapPoint(latitude: justLatitude, longitude: justLongitude, withIconName: iconName))
 				}
 			}
-			result = CABPostPinnedMap(annotations: annotations)
+			
+			var region: MKCoordinateRegion?
+			if let rawCenterLatitude = aDictionary[ModelConstant.Post.PinnedMapCenterLatitudeKey] as? String,
+				let rawCenterLongitude = aDictionary[ModelConstant.Post.PinnedMapCenterLongitudeKey] as? String,
+				let rawSpanLatitude = aDictionary[ModelConstant.Post.PinnedMapSpanLatitudeKey] as? String,
+				let rawSpanLongitude = aDictionary[ModelConstant.Post.PinnedMapSpanLongitudeKey] as? String,
+				let justCenterLatitude = Double(rawCenterLatitude),
+				let justCenterLongitude = Double(rawCenterLongitude),
+				let justSpanLatitude = Double(rawSpanLatitude),
+				let justSpanLongitude = Double(rawSpanLongitude)
+			{
+				region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: justCenterLatitude, longitude: justCenterLongitude), span: MKCoordinateSpanMake(justSpanLatitude, justSpanLongitude))
+			}
+			
+			result = CABPostPinnedMap(annotations: annotations, region: region)
 		}
 		
 		return result

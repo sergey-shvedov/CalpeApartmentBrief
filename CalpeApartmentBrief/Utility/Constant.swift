@@ -29,12 +29,16 @@ struct ConstantMenuIdentifier {
 	static let Book =		"Book"
 }
 
+struct ConstantAnnotationIdentifier {
+	static let MapPost = "MapPost"
+	static let HomeIconName = "iconHome"
+}
+
 struct ConstantSegueIdentifier {
 	static let Prefix = "Show "
 	static func fromMenuSection(menuSection: CABMenuSection) -> String {
 		return menuSection.generateSegueIdentifier()
 	}
-	
 	static let BackgroundView = "Show Background View"
 }
 
