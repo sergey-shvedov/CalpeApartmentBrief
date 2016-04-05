@@ -67,49 +67,37 @@
 		<key>Post-id</key>
 		<string>ar-3</string>
 		<key>Post-type</key>
-		<string>TitledButton</string>
-		<key>Title</key>
-		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
-		<key>Button-text</key>
-		<string>+34 693 777 099</string>
-		<key>Action-id</key>
-		<string>call-elena</string>
-	</dict>
-	<dict>
-		<key>Post-id</key>
-		<string>ar-6</string>
-		<key>Post-type</key>
-		<string>TitledButton</string>
-		<key>Title</key>
-		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
-		<key>Button-text</key>
-		<string>ROUTING</string>
-		<key>Action-id</key>
-		<string>goto-route</string>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Moving along the main street from the highway, turn left at the &quot;Three Palms&quot; roundabout. It&apos;s before the pedestrian bridge and the shopping center. Your road goes down.</string>
+		<key>Number</key>
+		<string>1</string>
+		<key>Image-name</key>
+		<string>routeStep01</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>
 		<string>ar-3</string>
 		<key>Post-type</key>
-		<string>TitledButton</string>
-		<key>Title</key>
-		<string>To get the keys, please call Elena for 20-30 minutes before arrival</string>
-		<key>Button-text</key>
-		<string>+34 693 777 099</string>
-		<key>Action-id</key>
-		<string>call-elena</string>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Go straight 500 meters. Then cross the roundabout.Just 50 meters after it, you must turn Left signs for Valencia, Caviar restaurant, Colina Home Resort.</string>
+		<key>Number</key>
+		<string>2</string>
+		<key>Image-name</key>
+		<string>routeStep02</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>
-		<string>ar-6</string>
+		<string>ar-3</string>
 		<key>Post-type</key>
-		<string>TitledButton</string>
-		<key>Title</key>
-		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
-		<key>Button-text</key>
-		<string>ROUTING</string>
-		<key>Action-id</key>
-		<string>goto-route</string>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Continue straight ahead for 1 km, without turning, through the forest until you see the residential complex (as in the picture).You are there! Entry will be through the gate just above the street.</string>
+		<key>Number</key>
+		<string>3</string>
+		<key>Image-name</key>
+		<string>routeStep03</string>
 	</dict>
 </array>
 </plist>

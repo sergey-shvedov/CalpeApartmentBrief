@@ -13,7 +13,11 @@ class CABDataProvider
 {
 	static let sharedInstance = CABDataProvider()
 	
-	private var parsedSections = [CABMenuSection: [CABPost]]()
+	lazy private var parsedSections = [CABMenuSection: [CABPost]]()
+	lazy private var parsedArticles = [CABMenuSection: [String]]()
+	lazy private var parsedPartitions = [CABMenuSection: [CABTablePartition]]()
+	
+	// MARK: Parsing Post Objects
 	
 	func providePostSructureForSection(section: CABMenuSection) -> [CABPost] {
 		var result: [CABPost]!
@@ -70,9 +74,77 @@ class CABDataProvider
 		return result
 	}
 	
+	// MARK: Parsing Table Objects
+	
+	func provideArticlesForSection(section: CABMenuSection) -> [String] {
+		var result = [String]()
+		if let justArticles = parsedArticles[section] {
+			result = justArticles
+		} else {
+			var fileName: String?
+			switch section {
+			case .Rules: fileName = ModelConstant.PLIST.RulesSection
+			default : break
+			}
+			if let justFileName = fileName {
+				let bundle: String? = nil
+				result = parseArticlesWithContentsOfFileName(fileName: justFileName, bundle: bundle)
+				parsedArticles[section] = result
+			}
+		}
+		
+		return result
+	}
+
+	private func parseArticlesWithContentsOfFileName(fileName aFileName: String, bundle aBundle: String?) -> [String] {
+		var result = [String]()
+		
+		if let justArticles = NSArray(contentsOfFileNamed: aFileName, inBundle: aBundle) as? Array<String> {
+			result = justArticles
+		}
+		
+		return result
+	}
+	
+	func provideTablePartitionsForSection(section: CABMenuSection) -> [CABTablePartition] {
+		var result = [CABTablePartition]()
+		if let justPartitions = parsedPartitions[section] {
+			result = justPartitions
+		} else {
+			var fileName: String?
+			switch section {
+			case .Appliances: fileName = ModelConstant.PLIST.AppliancesSection
+			default : break
+			}
+			if let justFileName = fileName {
+				let bundle: String? = nil
+				result = parsePartitionsWithContentsOfFileName(fileName: justFileName, bundle: bundle)
+				parsedPartitions[section] = result
+			}
+		}
+		
+		return result
+	}
+	
+	private func parsePartitionsWithContentsOfFileName(fileName aFileName: String, bundle aBundle: String?) -> [CABTablePartition] {
+		var result = [CABTablePartition]()
+		
+		if let rawArray = NSArray(contentsOfFileNamed: aFileName, inBundle: aBundle) as? Array<[String: AnyObject]> {
+			for justRawPartition in rawArray {
+				if let justPartition = createPartitionTableArticlesFrom(justRawPartition) {
+					result.append(justPartition)
+				}
+			}
+		}
+		
+		return result
+	}
+	
 }
 
 extension CABDataProvider {
+	
+	// MARK: Creating Post Objects
 	
 	private func createStandartPostFrom(aDictionary: Dictionary<String, String>) -> CABPostStandart? {
 		var result: CABPostStandart?
@@ -177,6 +249,8 @@ extension CABDataProvider {
 		return result
 	}
 	
+	// MARK: Creating Map Objects
+	
 	private func createPinnedMapFrom(aDictionary: Dictionary<String, AnyObject>) -> CABPostPinnedMap? {
 		var result: CABPostPinnedMap?
 		
@@ -207,6 +281,47 @@ extension CABDataProvider {
 			}
 			
 			result = CABPostPinnedMap(annotations: annotations, region: region)
+		}
+		
+		return result
+	}
+	
+	// MARK: Creating Table Objects
+	
+	private func createPartitionTableArticlesFrom(aDictionary: Dictionary<String, AnyObject>) -> CABTablePartition? {
+		var result: CABTablePartition?
+		
+		let title = aDictionary[ModelConstant.TableArticle.PartitionTitleKey] as? String
+		let comment = aDictionary[ModelConstant.TableArticle.PartitionCommentKey] as? String
+		
+		if let rawArticles = aDictionary[ModelConstant.TableArticle.PartitionArticlesKey] as? Array<Dictionary<String, String>> {
+			var articles = [CABTableArticleWithImage]()
+			for nextRawArticle in rawArticles {
+				if let justArticle = createTableArticleFrom(nextRawArticle) {
+					articles.append(justArticle)
+				}
+			}
+			
+			result = CABTablePartition(articles: articles, title: title, comment: comment)
+		} else {
+			print("Articles are required to create CABTablePartition")
+		}
+		
+		return result
+	}
+	
+	private func createTableArticleFrom(aDictionary: Dictionary<String, String>) -> CABTableArticleWithImage? {
+		var result: CABTableArticleWithImage?
+		
+		let title = aDictionary[ModelConstant.TableArticle.TitleKey]
+		
+		if let justBody = aDictionary[ModelConstant.TableArticle.BodyKey],
+			let justImageName = aDictionary[ModelConstant.TableArticle.ImageNameKey]
+		{
+			result = CABTableArticleWithImage(title: title, body: justBody, imageName: justImageName)
+			
+		} else {
+			print("Body and ImageName are required to create CABTableArticleWithImage")
 		}
 		
 		return result

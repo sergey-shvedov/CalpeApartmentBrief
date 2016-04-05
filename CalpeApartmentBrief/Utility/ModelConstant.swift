@@ -10,8 +10,10 @@ import Foundation
 
 struct ModelConstant {
 	struct PLIST {
-		static let ArrivalSection = "CABArrivalSection.plist"
-		static let DepartureSection = "CABDepartureSection.plist"
+		static let ArrivalSection =		"CABArrivalSection.plist"
+		static let DepartureSection =	"CABDepartureSection.plist"
+		static let AppliancesSection =	"CABAppliances.plist"
+		static let RulesSection =		"CABCommunityRules.plist"
 	}
 	
 	struct Post {
@@ -44,5 +46,14 @@ struct ModelConstant {
 		static let PinnedMapCenterLongitudeKey =		"Center-longitude"
 		static let PinnedMapSpanLatitudeKey =			"Span-latitude"
 		static let PinnedMapSpanLongitudeKey =			"Span-longitude"
+	}
+	
+	struct TableArticle {
+		static let PartitionTitleKey =		"Section-title"
+		static let PartitionCommentKey =	"Section-comment"
+		static let PartitionArticlesKey =	"Articles"
+		static let TitleKey =		"Title"
+		static let BodyKey =		"Body"
+		static let ImageNameKey =	"Image-name"
 	}
 }

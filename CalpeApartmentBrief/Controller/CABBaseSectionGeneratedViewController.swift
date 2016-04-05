@@ -109,6 +109,8 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		super.prepareForSegue(segue, sender: sender)
+		
 		if let justIdentifier = segue.identifier {
 			switch justIdentifier {
 			case ConstantSegueIdentifier.RoutingMapView:

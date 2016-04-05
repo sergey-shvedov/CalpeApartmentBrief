@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWiFi</string>
+				<key>Title</key>
+				<string>WiFi</string>
+				<key>Body</key>
+				<string>WiFi network name: Sweden 
+Password: angelika</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHotWater</string>
+				<key>Title</key>
+				<string>Hot water</string>
+				<key>Body</key>
+				<string>Fully open the valve to the top left state. Wait about 30 seconds. Hot water should appear now.  Please do not reduce the water flow.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHeating</string>
+				<key>Title</key>
+				<string>Heating control</string>
+				<key>Body</key>
+				<string>The control unit is located in a living room, It reflects the room air temperature below which radiators will start heating. (Make sure that the boiler mode is &quot;Heating + Water&quot;)</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleAC</string>
+				<key>Title</key>
+				<string>Control of the air conditioner</string>
+				<key>Body</key>
+				<string>The control unit is located opposite the door to the bathroom. Operating modes: cold, heat, speed, timer. There is air conditioning in each room for your comfort. The air conditioner operates as the cooling and the heating. Please do not use the air conditioner with open windows.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleTV</string>
+				<key>Title</key>
+				<string>TV</string>
+				<key>Body</key>
+				<string>There are only Spanish cable channels. You can use the SmartTV function and watch videos on YouTube. You can also connect your USB-drive or laptop via HDMI (cable not included). You can choose your preferred menu language following the instructions below. Press MENU /МЕНЮ, select SETUP/ Настройки (a gear icon), then select Language /Язык to select your desired language to display the menus.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWashing</string>
+				<key>Title</key>
+				<string>Washing machine</string>
+				<key>Body</key>
+				<string>Use one of the following modes. </string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHood</string>
+				<key>Title</key>
+				<string>Extractor Hood</string>
+				<key>Body</key>
+				<string>Pull the hood over to gain access to the control panel.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleSafe</string>
+				<key>Title</key>
+				<string>Safe box</string>
+				<key>Body</key>
+				<string>You can use a safe box for storage of valuable things (It accommodates a laptop up to 15 inches). It is located in the brown bedroom on the bottom of a wardrobe. The key code: &quot;12041961&quot; + &quot;A&quot;</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleBin</string>
+				<key>Title</key>
+				<string>Garbage bins</string>
+				<key>Body</key>
+				<string>You need to take out the garbage in the green bins located down the street. </string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleLounge</string>
+				<key>Title</key>
+				<string>Sun lounges</string>
+				<key>Body</key>
+				<string>Each apartment has its own private sun lounges. Currently, you can use 4 white plastic sun lounges, marked «31F». There is also a small white round table, which can be used around a pool area. Since it’s not allowed to bring breakable materials in the pool area, there are several plastic dishes too. After relaxing on the community area, you need to clean up, stacked lounges, fold canopies (in general, leave in the same condition as it was).</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnElectro</string>
+				<key>Title</key>
+				<string>Electricity Supply</string>
+				<key>Body</key>
+				<string>The electricity consumer unit is located on the wall near the entrance. All switches must be turned on (top position).
+If any circuit is overloaded, the circuit breaker will trip cutting off the supply to the circuit. The relevant breaker in the consumer unit should be reset by switching it back to the &apos;on&apos; position.
+There is a special key in the electricity panel. It&apos;s responsible for turning on WiFi and the air conditioner. (You can&apos;t get it from panel in the &apos;on&apos; position).</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnWater</string>
+				<key>Title</key>
+				<string>Water Supply</string>
+				<key>Body</key>
+				<string>Master on/off tap is located on the kitchen next to the dishwasher. You need to enable only blue tap (to the top position).</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnGas</string>
+				<key>Title</key>
+				<string>Gas supply</string>
+				<key>Body</key>
+				<string>Gas valves are under the sink. When enabled, all valves should be set to &quot;along the pipe&quot;. Please follow gas safety rules.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnBoiler</string>
+				<key>Title</key>
+				<string>Heating boiler</string>
+				<key>Body</key>
+				<string>Make sure that all above listed supplies are OK before you&apos;ll turn on the gas boiler.
+The bottom left switch is responsible for turning (I - On, O- Off) and the right one is for the working mode (down position - only hot water, in the middle - heating and hot water).
+If you use the heating, note that the control unit is located in a living room.
+   
+ </string>
+			</dict>
+		</array>
+		<key>Section-title</key>
+		<string>Turning on the supplies</string>
+		<key>Section-comment</key>
+		<string>If some of supplies were not previously turned on, please follow this instructions.</string>
+	</dict>
+</array>
+</plist>

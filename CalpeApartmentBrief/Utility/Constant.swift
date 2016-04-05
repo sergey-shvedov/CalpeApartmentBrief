@@ -15,6 +15,12 @@ struct ConstantGlobal {
 
 struct ConstantIdentifier {
 	static let CellMenuItem = "Menu Item Cell"
+	static let CellRuleBlank = "Blank Cell"
+	static let CellRuleArticle = "Article Cell"
+	static let CellRuleThanks = "Thanks Cell"
+	static let CellAppliancesBlank = "Blank Cell"
+	static let CellAppliancesArticle = "Article Imaged Cell"
+	static let CellAppliancesHeader = "Partition Header Cell"
 }
 
 struct ConstantMenuIdentifier {
@@ -71,6 +77,10 @@ struct ConstantMagicNumbers {
 		static let Duration: NSTimeInterval = 0.5
 		static let BethDelay: Double = 0.3
 	}
+	struct TableAppearingAnimation {
+		static let Duration: NSTimeInterval = 1.0
+	}
+
 	struct SpinnerAppearingAnimation {
 		static let Duration: NSTimeInterval = 2.0
 		static let TargetAlpha: CGFloat = 0.5
