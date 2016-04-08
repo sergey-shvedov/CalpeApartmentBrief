@@ -11,10 +11,16 @@ import UIKit
 class CABWelcomeViewController: UIViewController
 {
 
+	@IBOutlet weak var backgroundImageView: UIImageView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		let randomIndex = Int(arc4random_uniform(UInt32(ConstantIntro.ImageNames.count)))
+		if let justImage = UIImage(named: ConstantIntro.ImageNames[randomIndex]) {
+			backgroundImageView.image = justImage
+		}
+        
     }
 
 	@IBAction func showMenu(sender: UIButton) {
@@ -22,4 +28,5 @@ class CABWelcomeViewController: UIViewController
 			justNavController.popToRootViewControllerAnimated(true)
 		}
 	}
+	
 }

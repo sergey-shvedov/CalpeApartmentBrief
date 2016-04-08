@@ -27,8 +27,24 @@ class CABSplitViewController: UISplitViewController, UISplitViewControllerDelega
 				justNavController.setNavigationBarHidden(false, animated: true)
 			}
 		}
+		if secondaryViewController is CABRoutingViewController {
+			if let justNavController = primaryViewController as? UINavigationController {
+				justNavController.setNavigationBarHidden(false, animated: true)
+			}
+		}
 		
 		return false
 	}
-
+	
+	func splitViewController(splitViewController: UISplitViewController, separateSecondaryViewControllerFromPrimaryViewController primaryViewController: UIViewController) -> UIViewController? {
+		var result: UIViewController?
+		if let justNavController = primaryViewController as? UINavigationController {
+			if justNavController.viewControllers.last is CABRoutingViewController {
+				result = justNavController.viewControllers.last
+				justNavController.popToRootViewControllerAnimated(false)
+			}
+		}
+		return result
+	}
+	
 }

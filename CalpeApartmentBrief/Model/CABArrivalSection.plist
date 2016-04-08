@@ -22,7 +22,7 @@
 		<key>Title</key>
 		<string>Check-in time is flexible</string>
 		<key>Body</key>
-		<string>If our previous guests leave the apartment on the same day, it may take some time to prepare the apartment for your arrival. In this case your check-in time can be only after 14:00. Anyway please call for 20-30 minutes before your arrival to Calpe (+34 693 777 099). It&apos;s will be useful if you tell us the approximate time of your arrival.</string>
+		<string>If our previous guests leave the apartment on the same day, it will take some time to prepare the apartment. In that case your check-in time can be only after 14:00. Anyway please call for 20-30 minutes before your arrival to Calpe (+34 693 777 099). And it will be useful if you tell us the approximate time of your arrival or your flight number.</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>
@@ -64,9 +64,9 @@
 		<key>Title</key>
 		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
 		<key>Button-text</key>
-		<string>ROUTING</string>
+		<string>GET DIRECTIONS</string>
 		<key>Action-id</key>
-		<string>goto-route</string>
+		<string>show-route-section</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>

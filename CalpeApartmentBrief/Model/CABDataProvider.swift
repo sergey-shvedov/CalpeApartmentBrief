@@ -27,6 +27,8 @@ class CABDataProvider
 			var fileName = ModelConstant.PLIST.ArrivalSection
 			switch section {
 			case .Arrival: fileName = ModelConstant.PLIST.ArrivalSection
+			case .Departure: fileName = ModelConstant.PLIST.DepartureSection
+			case .Route: fileName = ModelConstant.PLIST.RouteSection
 			default : fileName = ModelConstant.PLIST.DepartureSection
 			}
 			let bundle: String? = nil

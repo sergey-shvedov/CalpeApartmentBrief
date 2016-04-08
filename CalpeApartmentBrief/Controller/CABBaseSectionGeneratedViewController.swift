@@ -98,13 +98,31 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	func performActionWithIdentifier(identifier: String) {
 		//TODO: Implement Action Handler
 		switch identifier {
-		case "call-elena":
-			if let url = NSURL(string: "tel://+34693777099") {
+		case ConstantActionIdentifier.CallElena:
+			if let url = NSURL(string: ConstantActionIdentifier.ElenaNumber) {
 				UIApplication.sharedApplication().openURL(url)
 			}
-		case "goto-route":
+		case ConstantActionIdentifier.Routing:
 			performSegueWithIdentifier(ConstantSegueIdentifier.RoutingMapView, sender: nil)
+		case ConstantActionIdentifier.ShowRouteSection:
+			showRouteSection()
 		default: break
+		}
+	}
+	
+	private func showRouteSection() {
+		if let justNavController = navigationController {
+			
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			let destinationVC = storyboard.instantiateViewControllerWithIdentifier("GeneratedView")
+			if let justDestinationVC = destinationVC as? CABBaseSectionViewController {
+				justDestinationVC.section = CABMenuSection.Route
+			}
+			justNavController.popViewControllerAnimated(false)
+			justNavController.pushViewController(destinationVC, animated: false)
+			
+		} else if let justSplitController = splitViewController, let justNavController = justSplitController.viewControllers.first as? UINavigationController, let justMenuController = justNavController.viewControllers.first as? CABMenuTableViewController {
+			justMenuController.executeSegueWithSection(CABMenuSection.Route)
 		}
 	}
 	

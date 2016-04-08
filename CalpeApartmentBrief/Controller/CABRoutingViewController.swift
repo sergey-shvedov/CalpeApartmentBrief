@@ -19,15 +19,24 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 	}
 	@IBOutlet weak var stackView: UIStackView!
 	@IBOutlet var loadingView: UIView!
-	
 	@IBOutlet var moveView: UIView!
+	
 	var destination: MKMapItem?
+	var directions: MKDirections?
+	private let locationManager = CLLocationManager()
 	
 	@IBAction func moveToDestination(sender: UIButton) {
 		destination?.openInMapsWithLaunchOptions([MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
 	}
 	
-	private let locationManager = CLLocationManager()
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == ConstantSegueIdentifier.BackToRouteView {
+			if let destinationVC = segue.destinationViewController as? CABBaseSectionViewController {
+				destinationVC.section = CABMenuSection.Route
+			}
+			directions?.cancel()
+		}
+	}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +94,14 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 					self.generateAlert()
 				}
 			} else if let justError = error {
-				self.generateAlert()
+				let title = justError.localizedDescription
+				var text: String?
+				if let justSuggestion = justError.localizedRecoverySuggestion { text = justSuggestion }
+				else if let justReason = justError.localizedFailureReason { text = justReason }
+				
+				if self.isBeingPresented() {
+					self.generateAlertWithTitle(title, message: text)
+				}
 			}
 		}
 	}
@@ -127,13 +143,23 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 		return view
 	}
 	
-	private func generateAlert() {
-		let alert = UIAlertController(title: nil, message: "Directions not available.", preferredStyle: .Alert)
+	private func generateAlertWithTitle(title: String?, message: String?) {
+		let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
 		let okButton = UIAlertAction(title: "OK", style: .Cancel) { (alert) -> Void in
-			self.navigationController?.popViewControllerAnimated(true)
+			if let justNavController = self.navigationController {
+				justNavController.popViewControllerAnimated(true)
+			} else {
+				self.performSegueWithIdentifier(ConstantSegueIdentifier.BackToRouteView, sender: nil)
+			}
+			
 		}
 		alert.addAction(okButton)
-		self.presentViewController(alert, animated: true, completion: nil)
+		
+		presentViewController(alert, animated: true, completion: nil)
+	}
+	
+	private func generateAlert() {
+		generateAlertWithTitle(nil, message: "Directions not available")
 	}
 	
 	private func setupPolyline(route: MKRoute) {

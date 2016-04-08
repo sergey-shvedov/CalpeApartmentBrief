@@ -4,100 +4,26 @@
 <array>
 	<dict>
 		<key>Post-id</key>
-		<string>ar-3</string>
+		<string>ar-1</string>
 		<key>Post-type</key>
-		<string>PinnedMap</string>
-		<key>Annotations</key>
-		<array>
-			<dict>
-				<key>Icon-name</key>
-				<string>iconHome</string>
-				<key>Latitude</key>
-				<string>38.657705</string>
-				<key>Longitude</key>
-				<string>0.0477460</string>
-			</dict>
-			<dict>
-				<key>Icon-name</key>
-				<string>wayPoint1</string>
-				<key>Latitude</key>
-				<string>38.645923</string>
-				<key>Longitude</key>
-				<string>0.0481070</string>
-			</dict>
-			<dict>
-				<key>Icon-name</key>
-				<string>wayPoint2</string>
-				<key>Latitude</key>
-				<string>38.650188</string>
-				<key>Longitude</key>
-				<string>0.0517120</string>
-			</dict>
-			<dict>
-				<key>Icon-name</key>
-				<string>wayPoint3</string>
-				<key>Latitude</key>
-				<string>38.655417</string>
-				<key>Longitude</key>
-				<string>0.049150</string>
-			</dict>
-		</array>
-		<key>Center-latitude</key>
-		<string>38.649156</string>
-		<key>Center-longitude</key>
-		<string>0.053655</string>
-		<key>Span-latitude</key>
-		<string>0.040</string>
-		<key>Span-longitude</key>
-		<string>0.040</string>
-	</dict>
-	<dict>
-		<key>Post-id</key>
-		<string>ar-6</string>
-		<key>Post-type</key>
-		<string>TitledButton</string>
+		<string>Standart</string>
 		<key>Title</key>
-		<string>Use this coordinates with your GPS Navigator: 38.657705, 0.047746 </string>
-		<key>Button-text</key>
-		<string>GET THE ROUTE</string>
-		<key>Action-id</key>
-		<string>goto-route</string>
+		<string>We hope you enjoyed your stay.</string>
+		<key>Body</key>
+		<string>On departure, we ask you to leave the apartment in good condition. Dishes must be washed, trash must be collected and thrown into street containers. If the apartment will be left in a bad state it can be charged 40 euros for extra cleaning.
+</string>
+		<key>Image-name</key>
+		<string>photoDoor</string>
 	</dict>
 	<dict>
 		<key>Post-id</key>
-		<string>ar-3</string>
+		<string>ar-2</string>
 		<key>Post-type</key>
-		<string>NumberedItemWithImage</string>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Check-out time is by 11:00am</string>
 		<key>Body</key>
-		<string>Moving along the main street from the highway, turn left at the &quot;Three Palms&quot; roundabout. It&apos;s before the pedestrian bridge and the shopping center. Your road goes down.</string>
-		<key>Number</key>
-		<string>1</string>
-		<key>Image-name</key>
-		<string>routeStep01</string>
-	</dict>
-	<dict>
-		<key>Post-id</key>
-		<string>ar-3</string>
-		<key>Post-type</key>
-		<string>NumberedItemWithImage</string>
-		<key>Body</key>
-		<string>Go straight 500 meters. Then cross the roundabout.Just 50 meters after it, you must turn Left signs for Valencia, Caviar restaurant, Colina Home Resort.</string>
-		<key>Number</key>
-		<string>2</string>
-		<key>Image-name</key>
-		<string>routeStep02</string>
-	</dict>
-	<dict>
-		<key>Post-id</key>
-		<string>ar-3</string>
-		<key>Post-type</key>
-		<string>NumberedItemWithImage</string>
-		<key>Body</key>
-		<string>Continue straight ahead for 1 km, without turning, through the forest until you see the residential complex (as in the picture).You are there! Entry will be through the gate just above the street.</string>
-		<key>Number</key>
-		<string>3</string>
-		<key>Image-name</key>
-		<string>routeStep03</string>
+		<string>If it will be possible, your check-out time can be extended. On the day of your departure you don&apos;t need to call Elena again. Instead, please leave the keys on the table (all 2 sets) and shut the door when you will leave. Thank you for choosing our apartment.</string>
 	</dict>
 </array>
 </plist>

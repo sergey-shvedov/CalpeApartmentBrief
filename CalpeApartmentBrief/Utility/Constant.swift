@@ -40,6 +40,17 @@ struct ConstantAnnotationIdentifier {
 	static let HomeIconName = "iconHome"
 }
 
+struct ConstantIntro {
+	static let ImageNames = ["intro01", "intro02", "intro03", "intro04"]
+}
+
+struct ConstantActionIdentifier {
+	static let CallElena = "call-elena"
+	static let ElenaNumber = "tel://+34693777099"
+	static let ShowRouteSection = "show-route-section"
+	static let Routing = "goto-route"
+}
+
 struct ConstantSegueIdentifier {
 	static let Prefix = "Show "
 	static func fromMenuSection(menuSection: CABMenuSection) -> String {
@@ -47,6 +58,7 @@ struct ConstantSegueIdentifier {
 	}
 	static let BackgroundView = "Show Background View"
 	static let RoutingMapView = "Show Route"
+	static let BackToRouteView = "Back to Route"
 }
 
 struct ConstantNibPostIdentifier {

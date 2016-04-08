@@ -36,6 +36,7 @@
 		84288F621CA933050042C9A6 /* CABRoutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84288F611CA933050042C9A6 /* CABRoutingViewController.swift */; };
 		84288F641CA94E3B0042C9A6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84288F631CA94E3B0042C9A6 /* Icons.xcassets */; };
 		84288F661CA9510C0042C9A6 /* CABHomeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84288F651CA9510C0042C9A6 /* CABHomeAnnotationView.swift */; };
+		84410A191CB5450800C86AA5 /* CABRoureSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84410A181CB5450800C86AA5 /* CABRoureSection.plist */; };
 		844DA9031C94F63F0022EC5B /* CABArrivalSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */; };
 		844DA9081C94FD320022EC5B /* CABPostStandart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DA9071C94FD320022EC5B /* CABPostStandart.swift */; };
 		84705AED1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84705AEC1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib */; };
@@ -77,7 +78,6 @@
 		84EB59781C93946D00B778E2 /* CABRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB59771C93946D00B778E2 /* CABRoundView.swift */; };
 		84EB597C1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB597B1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift */; };
 		84EED0C01C912DE40027A153 /* BaseSectionBackground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */; };
-		84EED0C41C912E090027A153 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0C31C912E090027A153 /* Posts.storyboard */; };
 		84EED0C61C912E580027A153 /* CABCommentedButtonPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EED0C51C912E580027A153 /* CABCommentedButtonPostView.xib */; };
 		84EED0CA1C91323F0027A153 /* CABInspectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EED0C91C91323F0027A153 /* CABInspectableTextView.swift */; };
 /* End PBXBuildFile section */
@@ -114,6 +114,7 @@
 		84288F611CA933050042C9A6 /* CABRoutingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRoutingViewController.swift; path = CalpeApartmentBrief/Controller/CABRoutingViewController.swift; sourceTree = "<group>"; };
 		84288F631CA94E3B0042C9A6 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Resources/Icons.xcassets; sourceTree = "<group>"; };
 		84288F651CA9510C0042C9A6 /* CABHomeAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABHomeAnnotationView.swift; path = CalpeApartmentBrief/View/CABHomeAnnotationView.swift; sourceTree = "<group>"; };
+		84410A181CB5450800C86AA5 /* CABRoureSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CABRoureSection.plist; path = CalpeApartmentBrief/Model/CABRoureSection.plist; sourceTree = "<group>"; };
 		844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CABArrivalSection.plist; path = CalpeApartmentBrief/Model/CABArrivalSection.plist; sourceTree = "<group>"; };
 		844DA9071C94FD320022EC5B /* CABPostStandart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostStandart.swift; path = CalpeApartmentBrief/Model/CABPostStandart.swift; sourceTree = "<group>"; };
 		84705AEC1C94CA0400EA060A /* CABNumberedItemWithImagePostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABNumberedItemWithImagePostView.xib; path = CalpeApartmentBrief/View/CABNumberedItemWithImagePostView.xib; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		84EB59771C93946D00B778E2 /* CABRoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRoundView.swift; path = CalpeApartmentBrief/View/CABRoundView.swift; sourceTree = "<group>"; };
 		84EB597B1C94AAF500B778E2 /* CABNumberedItemWithImagePostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABNumberedItemWithImagePostView.swift; path = CalpeApartmentBrief/View/CABNumberedItemWithImagePostView.swift; sourceTree = "<group>"; };
 		84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BaseSectionBackground.storyboard; path = CalpeApartmentBrief/View/BaseSectionBackground.storyboard; sourceTree = "<group>"; };
-		84EED0C31C912E090027A153 /* Posts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Posts.storyboard; path = CalpeApartmentBrief/View/Posts.storyboard; sourceTree = "<group>"; };
 		84EED0C51C912E580027A153 /* CABCommentedButtonPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABCommentedButtonPostView.xib; path = CalpeApartmentBrief/View/CABCommentedButtonPostView.xib; sourceTree = "<group>"; };
 		84EED0C91C91323F0027A153 /* CABInspectableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABInspectableTextView.swift; path = CalpeApartmentBrief/View/CABInspectableTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				84EB59761C93941C00B778E2 /* BaseInspectableViews */,
-				84EED0C31C912E090027A153 /* Posts.storyboard */,
 				84EED0BF1C912DE30027A153 /* BaseSectionBackground.storyboard */,
 				8484F6201C8E7A5F00F84218 /* CABSuperPostView.swift */,
 				8484F61C1C8E629000F84218 /* CABStandartPostView.xib */,
@@ -318,6 +317,7 @@
 			children = (
 				844DA9021C94F63F0022EC5B /* CABArrivalSection.plist */,
 				84B1E7611C9A5843002FD998 /* CABDepartureSection.plist */,
+				84410A181CB5450800C86AA5 /* CABRoureSection.plist */,
 				84E76C301CAEE0FD005A197C /* CABAppliances.plist */,
 				84E76C321CAEE206005A197C /* CABCommunityRules.plist */,
 			);
@@ -412,8 +412,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EB59731C9379B800B778E2 /* CABTitledParagraphPostView.xib in Resources */,
-				84EED0C41C912E090027A153 /* Posts.storyboard in Resources */,
 				84EED0C01C912DE40027A153 /* BaseSectionBackground.storyboard in Resources */,
+				84410A191CB5450800C86AA5 /* CABRoureSection.plist in Resources */,
 				844DA9031C94F63F0022EC5B /* CABArrivalSection.plist in Resources */,
 				84E76C331CAEE206005A197C /* CABCommunityRules.plist in Resources */,
 				840860FF1C8BD289000AEC6B /* Photos.xcassets in Resources */,

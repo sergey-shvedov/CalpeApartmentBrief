@@ -12,6 +12,7 @@ struct ModelConstant {
 	struct PLIST {
 		static let ArrivalSection =		"CABArrivalSection.plist"
 		static let DepartureSection =	"CABDepartureSection.plist"
+		static let RouteSection =		"CABRoureSection.plist"
 		static let AppliancesSection =	"CABAppliances.plist"
 		static let RulesSection =		"CABCommunityRules.plist"
 	}

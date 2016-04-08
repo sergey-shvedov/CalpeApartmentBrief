@@ -64,11 +64,15 @@ class CABMenuTableViewController: UITableViewController
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		if let justCell = sender as? CABMenuTableViewCell, let justSection = justCell.section {
 			if let justDestinationVC = segue.destinationViewController as? CABBaseSectionViewController {
-				
-				// TODO: Implement segue preparations
 				justDestinationVC.section = justSection
 			}
 		}
+	}
+	
+	
+	func executeSegueWithSection(section: CABMenuSection) {
+		tableView.selectRowAtIndexPath(NSIndexPath(forRow: 2, inSection: 0), animated: false, scrollPosition: .None)
+		self.tableView(tableView, didSelectRowAtIndexPath: NSIndexPath(forRow: 2, inSection: 0))
 	}
 
 }
