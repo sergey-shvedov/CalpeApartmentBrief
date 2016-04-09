@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWiFi</string>
+				<key>Title</key>
+				<string>WiFi</string>
+				<key>Body</key>
+				<string>Имя WiFi сети: Sweden 
+Пароль: angelika</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHotWaterRu</string>
+				<key>Title</key>
+				<string>Горячая вода</string>
+				<key>Body</key>
+				<string>Полностью откройте кран в верхнее левое положение. Подождите около 30 секунд. Горячая вода должна появиться. Пожалуйста, не уменьшайте поток, чтобы нагрев воды не выключался.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHeating</string>
+				<key>Title</key>
+				<string>Управление отоплением</string>
+				<key>Body</key>
+				<string>Блок управления находится в большой комнате, отражает минимальную температуру при которой включатся батареи. (Предварительно убедитесь, что котел работает в режим «Отопление + вода»)</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleAC</string>
+				<key>Title</key>
+				<string>Управление кондиционером</string>
+				<key>Body</key>
+				<string>Блок управления находится напротив двери в ванную комнату. Режимы работы: холод, тепло, скорость, таймер. Кондиционер работает как на охлаждение, так и на нагрев. Не пользуйтесь кондиционером при открытых окнах, так как это приводит к большому расходу электроэнергии.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleTV</string>
+				<key>Title</key>
+				<string>Телевизор</string>
+				<key>Body</key>
+				<string>К телевизору подключены испанские кабельные каналы. Также вы можете воспользоваться функцией SmartTV на телевизоре и смотреть ролики на YouTube. Рекомендуем взять с собой несколько фильмов на флешке или жестком диске. USB-вход выведен отдельно около розетки. Вы можете также подключить ноутбук к телевизору через HDMI (кабель не прилагается).</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWashingRu</string>
+				<key>Title</key>
+				<string>Стиральная машина</string>
+				<key>Body</key>
+				<string>Предварительно оттряхните вещи от песка и используйте один из представленных режимов.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHood</string>
+				<key>Title</key>
+				<string>Вытяжка</string>
+				<key>Body</key>
+				<string>Чтобы получить доступ к панели управления вытяжки, ее нужно раскрыть, вытянув на себя.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleSafe</string>
+				<key>Title</key>
+				<string>Сейф</string>
+				<key>Body</key>
+				<string>Вы можете воспользоваться кодовым сейфом для хранения ценный вещей (вмещает ноутбук до 15 дюймов). Цифровой код: &quot;12041961&quot; + &quot;A&quot;</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleBin</string>
+				<key>Title</key>
+				<string>Мусорные контейнеры</string>
+				<key>Body</key>
+				<string>Вынос мусора осуществляется в зеленые мусорные контейнеры, расположенные на выходе с территории комплекса апартаментов вниз по улице. Плотно завязывайте пакеты с мусором и закрывайте крышки баков.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleLounge</string>
+				<key>Title</key>
+				<string>Шезлонги</string>
+				<key>Body</key>
+				<string>У каждых апартаментов частные шезлонги. В настоящее время вы можете использовать 4 белых пластиковых шезлонга, отмеченных «31F». В зоне бассейнов вы можете использовать круглый пластиковый столик, а также набор пластиковой посуды, поскольку рядом с бассейнами запрещено использовать бьющиеся предметы. После отдыха в общественной зоне, необходимо прибраться, штабелировать лежаки, сложить навесы, в общем, оставить в таком же состоянии как и было.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnElectro</string>
+				<key>Title</key>
+				<string>Электричество</string>
+				<key>Body</key>
+				<string>Электрический щит с выключателями-автоматами на все системы апартаментов расположен справа при входе. Все выключатели должны быть включены (положение - наверх).Ключ в щитке отвечает за работу кондиционера и WiFi (во включенном положении его нельзя достать)</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnWater</string>
+				<key>Title</key>
+				<string>Вода</string>
+				<key>Body</key>
+				<string>Главный кран находится на кухне, слева от посудомоечной машины. Требуется включить синий кран (положение наверх).</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnGas</string>
+				<key>Title</key>
+				<string>Газ</string>
+				<key>Body</key>
+				<string>Газовые вентили находятся под раковиной. Во включенном состоянии все вентили должны быть в положении «вдоль трубы» (для поворота, возможно, нужно надавить на вентиль). Соблюдайте правила безопасности при работе с газом.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnBoiler</string>
+				<key>Title</key>
+				<string>Нагревательный котел</string>
+				<key>Body</key>
+				<string>Перед влючением газового котла, убедитесь, что все коммуникации, перечисленные выше, подключены. Нижний левый переключатель отвечает за включение ( | -вкл, О -выкл).Правый нижний – за режим работы (посередине – отопление и горячая вода, вниз – только горячая вода).Если вы будете использовать отопление, то обратите внимание, что блок управления находится в большой комнате.</string>
+			</dict>
+		</array>
+		<key>Section-title</key>
+		<string>Включение коммуникаций</string>
+		<key>Section-comment</key>
+		<string>Если коммуникации не были предварительно включены, воспользуйтесь следующей инструкцией</string>
+	</dict>
+</array>
+</plist>

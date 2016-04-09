@@ -12,13 +12,13 @@
         <!--Menu Table View Controller-->
         <scene sceneID="mhe-jY-2w4">
             <objects>
-                <tableViewController id="lRc-qS-sEa" customClass="CABMenuTableViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lRc-qS-sEa" customClass="CABMenuTableViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="hUn-gU-8UO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Item Cell" rowHeight="75" id="Tae-G5-RmB" customClass="CABMenuTableViewCell" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Item Cell" rowHeight="75" id="Tae-G5-RmB" customClass="CABMenuTableViewCell" customModule="Calpe_Apt_" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tae-G5-RmB" id="JrB-Nv-exM">
@@ -61,156 +61,12 @@
             </objects>
             <point key="canvasLocation" x="1182" y="-330"/>
         </scene>
-        <!--Welcome View Controller-->
-        <scene sceneID="R6Z-Hp-Aey">
-            <objects>
-                <viewController id="ZZ5-vv-NIm" customClass="CABWelcomeViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ak4-DN-v3s"/>
-                        <viewControllerLayoutGuide type="bottom" id="2re-43-NEM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="o5z-HF-45A">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro04" translatesAutoresizingMaskIntoConstraints="NO" id="L0z-gi-7JM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f94-fQ-hvj">
-                                <rect key="frame" x="234" y="515" width="132" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4XK-PD-ztJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <inset key="contentEdgeInsets" minX="30" minY="15" maxX="30" maxY="15"/>
-                                <state key="normal" title="EXPLORE">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4XK-PD-ztJ"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="showMenu:" destination="ZZ5-vv-NIm" eventType="touchUpInside" id="QSE-nU-mvL"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-O2-9DK">
-                                <rect key="frame" x="20" y="30" width="560" height="226"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="YOUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsd-a7-qMu">
-                                        <rect key="frame" x="3" y="20" width="557" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="760" height="45"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                            <rect key="frame" x="0.0" y="0.0" width="760" height="45"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="754" text="CALPE" textAlignment="natural" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhi-3A-HQT">
-                                        <rect key="frame" x="0.0" y="41.5" width="560" height="84"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="45" width="760" height="84"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="90"/>
-                                            <rect key="frame" x="0.0" y="45" width="760" height="84"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" text="APARTMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="inH-eY-mNA">
-                                        <rect key="frame" x="0.0" y="108" width="560" height="84"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="129" width="760" height="83"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="90"/>
-                                            <rect key="frame" x="0.0" y="129" width="760" height="83"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guest's instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zho-vz-6p2">
-                                        <rect key="frame" x="2" y="184.5" width="280" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="211" width="760" height="33"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="211" width="760" height="33"/>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Zho-vz-6p2" secondAttribute="centerX" id="1e9-Gp-Wm6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hsd-a7-qMu" secondAttribute="trailing" id="FDt-Ly-InD"/>
-                                    <constraint firstItem="inH-eY-mNA" firstAttribute="leading" secondItem="c2h-O2-9DK" secondAttribute="leading" id="IuG-ag-AQm"/>
-                                    <constraint firstItem="mhi-3A-HQT" firstAttribute="leading" secondItem="c2h-O2-9DK" secondAttribute="leading" id="O9M-3i-20P"/>
-                                    <constraint firstAttribute="trailing" secondItem="mhi-3A-HQT" secondAttribute="trailing" id="OTG-ER-z5a"/>
-                                    <constraint firstItem="inH-eY-mNA" firstAttribute="top" secondItem="mhi-3A-HQT" secondAttribute="bottom" constant="-18" id="P5a-Ck-Cfe"/>
-                                    <constraint firstItem="mhi-3A-HQT" firstAttribute="top" secondItem="Hsd-a7-qMu" secondAttribute="bottom" constant="-10" id="RNn-IF-db8"/>
-                                    <constraint firstItem="Zho-vz-6p2" firstAttribute="width" secondItem="c2h-O2-9DK" secondAttribute="width" multiplier="0.5" id="UUS-nm-wd0"/>
-                                    <constraint firstItem="Hsd-a7-qMu" firstAttribute="top" secondItem="c2h-O2-9DK" secondAttribute="top" constant="20" id="ake-do-3M7">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstItem="Zho-vz-6p2" firstAttribute="top" secondItem="inH-eY-mNA" secondAttribute="baseline" constant="10" id="eTH-MW-04x"/>
-                                    <constraint firstAttribute="bottom" secondItem="Zho-vz-6p2" secondAttribute="bottom" constant="10" id="ejF-wE-mNK"/>
-                                    <constraint firstAttribute="trailing" secondItem="inH-eY-mNA" secondAttribute="trailing" id="hBT-sG-5rM"/>
-                                    <constraint firstItem="Zho-vz-6p2" firstAttribute="leading" secondItem="c2h-O2-9DK" secondAttribute="leading" constant="2" id="nQq-Ie-i4Y"/>
-                                    <constraint firstItem="Hsd-a7-qMu" firstAttribute="leading" secondItem="c2h-O2-9DK" secondAttribute="leading" constant="3" id="qKr-8P-orD"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1e9-Gp-Wm6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="30" width="760" height="235"/>
-                                </variation>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.83529411760000005" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="L0z-gi-7JM" firstAttribute="top" secondItem="o5z-HF-45A" secondAttribute="top" id="2z2-pi-f4V"/>
-                            <constraint firstItem="L0z-gi-7JM" firstAttribute="leading" secondItem="o5z-HF-45A" secondAttribute="leading" id="6Hq-YI-TSV"/>
-                            <constraint firstItem="2re-43-NEM" firstAttribute="top" secondItem="f94-fQ-hvj" secondAttribute="bottom" constant="35" id="EKr-cR-oS1"/>
-                            <constraint firstItem="f94-fQ-hvj" firstAttribute="centerX" secondItem="o5z-HF-45A" secondAttribute="centerX" id="f2w-Ek-Bvb"/>
-                            <constraint firstItem="c2h-O2-9DK" firstAttribute="leading" secondItem="o5z-HF-45A" secondAttribute="leadingMargin" id="ghd-nI-kcU"/>
-                            <constraint firstAttribute="trailing" secondItem="L0z-gi-7JM" secondAttribute="trailing" id="s6V-Ve-NVj"/>
-                            <constraint firstItem="c2h-O2-9DK" firstAttribute="top" secondItem="Ak4-DN-v3s" secondAttribute="bottom" constant="10" id="ueX-Xr-5eP"/>
-                            <constraint firstItem="c2h-O2-9DK" firstAttribute="trailing" secondItem="o5z-HF-45A" secondAttribute="trailingMargin" id="weh-W9-j4m"/>
-                            <constraint firstAttribute="bottom" secondItem="L0z-gi-7JM" secondAttribute="bottom" id="xD5-Hj-pLU"/>
-                        </constraints>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <exclude reference="f94-fQ-hvj"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="backgroundImageView" destination="L0z-gi-7JM" id="diZ-cb-uNO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IK8-tK-cAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="370" y="-1141"/>
-        </scene>
         <!--Split View Controller-->
         <scene sceneID="dJB-L2-0Pn">
             <objects>
-                <splitViewController id="Tje-UY-qHp" customClass="CABSplitViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="Tje-UY-qHp" customClass="CABSplitViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="ZZ5-vv-NIm" kind="relationship" relationship="detailViewController" id="73F-2d-8yY"/>
+                        <segue destination="YbF-0m-hWS" kind="relationship" relationship="detailViewController" id="73F-2d-8yY"/>
                         <segue destination="Z5M-dV-IZr" kind="relationship" relationship="masterViewController" id="CP6-r9-XT7"/>
                     </connections>
                 </splitViewController>
@@ -251,12 +107,12 @@
                 <viewControllerPlaceholder storyboardName="BaseSectionBackground" id="CAP-cD-KJq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69c-vj-ZRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="1299"/>
+            <point key="canvasLocation" x="429" y="1299"/>
         </scene>
         <!--Routing View Controller-->
         <scene sceneID="owV-WF-FXw">
             <objects>
-                <viewController id="8tk-or-Xnz" customClass="CABRoutingViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8tk-or-Xnz" customClass="CABRoutingViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gno-HA-f4U"/>
                         <viewControllerLayoutGuide type="bottom" id="RO8-BW-RUU"/>
@@ -286,7 +142,7 @@
                         <constraints>
                             <constraint firstItem="5hS-0u-2JE" firstAttribute="leading" secondItem="XAQ-R4-ZuE" secondAttribute="leadingMargin" id="Awn-tZ-OMu"/>
                             <constraint firstItem="RO8-BW-RUU" firstAttribute="top" secondItem="5hS-0u-2JE" secondAttribute="bottom" id="FPS-06-9kL"/>
-                            <constraint firstItem="g8i-g7-180" firstAttribute="top" secondItem="gno-HA-f4U" secondAttribute="bottom" constant="-20" id="IbT-Z2-tI0"/>
+                            <constraint firstItem="g8i-g7-180" firstAttribute="top" secondItem="gno-HA-f4U" secondAttribute="bottom" priority="999" constant="-20" id="IbT-Z2-tI0"/>
                             <constraint firstItem="g8i-g7-180" firstAttribute="top" secondItem="XAQ-R4-ZuE" secondAttribute="top" id="Kqe-4S-wWo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5hS-0u-2JE" secondAttribute="trailing" id="Ldt-kh-UuE"/>
                             <constraint firstItem="A82-6E-mWY" firstAttribute="trailing" secondItem="XAQ-R4-ZuE" secondAttribute="trailingMargin" id="PH9-xs-sXf"/>
@@ -306,9 +162,9 @@
                                 <exclude reference="Kqe-4S-wWo"/>
                                 <exclude reference="Awn-tZ-OMu"/>
                                 <exclude reference="Ldt-kh-UuE"/>
+                                <exclude reference="hTi-RL-fJK"/>
                                 <exclude reference="PH9-xs-sXf"/>
                                 <exclude reference="bjJ-kF-JAV"/>
-                                <exclude reference="hTi-RL-fJK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -345,10 +201,15 @@
                                         <color key="textColor" red="1" green="0.98039215690000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7RU-Jt-mXF">
+                                        <rect key="frame" x="222" y="29.5" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DfU-RA-1MP" firstAttribute="centerX" secondItem="GSq-MK-TPk" secondAttribute="centerX" id="CCP-Le-IBA"/>
                                     <constraint firstItem="DfU-RA-1MP" firstAttribute="centerY" secondItem="GSq-MK-TPk" secondAttribute="centerY" id="GyL-SZ-dzy"/>
+                                    <constraint firstItem="DfU-RA-1MP" firstAttribute="leading" secondItem="7RU-Jt-mXF" secondAttribute="trailing" constant="8" id="Jhd-hY-Utx"/>
+                                    <constraint firstItem="7RU-Jt-mXF" firstAttribute="centerY" secondItem="DfU-RA-1MP" secondAttribute="centerY" id="YEg-f0-Ofi"/>
                                 </constraints>
                             </view>
                             <blurEffect style="dark"/>
@@ -401,7 +262,7 @@
         <!--Base Section Generated View Controller-->
         <scene sceneID="o4D-TT-sac">
             <objects>
-                <viewController storyboardIdentifier="GeneratedView" id="sPE-0g-bIR" customClass="CABBaseSectionGeneratedViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GeneratedView" id="sPE-0g-bIR" customClass="CABBaseSectionGeneratedViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aeq-aj-use"/>
                         <viewControllerLayoutGuide type="bottom" id="sSL-hu-ePg"/>
@@ -480,7 +341,7 @@
         <!--Rule Section View Controller-->
         <scene sceneID="hwj-Nm-rcu">
             <objects>
-                <viewController id="uKk-FR-F3a" customClass="CABRuleSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uKk-FR-F3a" customClass="CABRuleSectionViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T2t-iI-pdb"/>
                         <viewControllerLayoutGuide type="bottom" id="gCe-qo-a0S"/>
@@ -521,7 +382,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Article Cell" rowHeight="82" id="aLz-JC-L14" customClass="CABRuleArticleTableViewCell" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Article Cell" rowHeight="82" id="aLz-JC-L14" customClass="CABRuleArticleTableViewCell" customModule="Calpe_Apt_" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="600" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aLz-JC-L14" id="zSs-Ds-KhJ">
@@ -632,7 +493,7 @@
         <!--Appliances Section View Controller-->
         <scene sceneID="75s-Es-5R8">
             <objects>
-                <viewController id="aN0-SN-8gF" customClass="CABAppliancesSectionViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aN0-SN-8gF" customClass="CABAppliancesSectionViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LJD-OA-QpT"/>
                         <viewControllerLayoutGuide type="bottom" id="MQ4-3P-OHP"/>
@@ -678,7 +539,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Article Imaged Cell" rowHeight="354" id="bzU-bw-49W" customClass="CABAppliancesArticleTableViewCell" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Article Imaged Cell" rowHeight="354" id="bzU-bw-49W" customClass="CABAppliancesArticleTableViewCell" customModule="Calpe_Apt_" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="600" height="354"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bzU-bw-49W" id="PWS-SM-izB">
@@ -722,7 +583,7 @@
                                                         </mask>
                                                     </variation>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-qk-Xpl" customClass="CABInspectableLabel" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-qk-Xpl" customClass="CABInspectableLabel" customModule="Calpe_Apt_" customModuleProvider="target">
                                                     <rect key="frame" x="248" y="4" width="344" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -793,7 +654,7 @@
                                             <outlet property="titleLabel" destination="NPx-qk-Xpl" id="2MU-TM-RH6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Partition Header Cell" rowHeight="97" id="wcR-RL-UCr" customClass="CABAppliancesHeaderTableViewCell" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Partition Header Cell" rowHeight="97" id="wcR-RL-UCr" customClass="CABAppliancesHeaderTableViewCell" customModule="Calpe_Apt_" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="502" width="600" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wcR-RL-UCr" id="leK-wZ-28w">
@@ -911,10 +772,17 @@
             </objects>
             <point key="canvasLocation" x="1971" y="669"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="dx7-MF-qMy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Welcome" id="YbF-0m-hWS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOO-h9-gA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.5" y="-745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="iconCancel" width="44" height="44"/>
-        <image name="intro04" width="736" height="736"/>
         <image name="sample2" width="1212" height="678"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -69,10 +69,19 @@ class CABMenuTableViewController: UITableViewController
 		}
 	}
 	
-	
 	func executeSegueWithSection(section: CABMenuSection) {
-		tableView.selectRowAtIndexPath(NSIndexPath(forRow: 2, inSection: 0), animated: false, scrollPosition: .None)
-		self.tableView(tableView, didSelectRowAtIndexPath: NSIndexPath(forRow: 2, inSection: 0))
+		let indexPath = searchIndexPathForSection(section)
+		tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
+		self.tableView(tableView, didSelectRowAtIndexPath: indexPath)
+	}
+	
+	private func searchIndexPathForSection(section: CABMenuSection) -> NSIndexPath {
+		var index = 0
+		if let justIndex = CABAppResponse.sharedInstance.indexOfMenuItem(section) {
+			index = justIndex
+		}
+		
+		return NSIndexPath(forRow: index, inSection: 0)
 	}
 
 }

@@ -23,7 +23,8 @@ class CABBaseBackgroundViewController: UIViewController
 	private func setupBackground() {
 		
 		if let justSection = section {
-			backgroundLabel.text = justSection.name
+			backgroundLabel.text = CABAppResponse.sharedInstance.nameOfMenuItem(justSection)
+			
 		}
 		
 		let originalX = backgroundLabel.frame.origin.x

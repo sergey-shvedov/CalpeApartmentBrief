@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWiFi</string>
+				<key>Title</key>
+				<string>WiFi</string>
+				<key>Body</key>
+				<string>Um das WLAN-Netzwerk in der Wohnung zuzugreifen, prüfen Sie ob der WiFi Schlüssel in der elektrischen Schalttafel am Eingang eingeschaltet ist, und verwenden Sie die folgenden Kennwörter:Name de WLAN-Netzwerkes: SwedenPasswort: angelika</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHotWater</string>
+				<key>Title</key>
+				<string>Heißes Wasser
+Heißes Wasser</string>
+				<key>Body</key>
+				<string>Öffnen Sie das Ventil an der linken oberen Zustand. Warten Sie etwa 30 Sekunden. Heißes Wasser sollte nun erscheinen. Bitte nicht reduzieren den Wasserfluss.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHeating</string>
+				<key>Title</key>
+				<string>Heizung</string>
+				<key>Body</key>
+				<string>Die Steuereinheit befindet sich im Wohnzimmer und zeigt die gewünschte Temperatur. Stellen Sie sicher, dass der Heizkesselschalter sich in der Betriebsposition &quot;Heizung und Wasser&quot; befindet.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleAC</string>
+				<key>Title</key>
+				<string>Klimaanlage</string>
+				<key>Body</key>
+				<string>Die Steuereinheit befindet sich vor der Tür zum Bad. Betriebsarten: Kälte, Wärme, Geschwindigkeit, Zeit. Bitte vermeiden Sie Benutzung der Klimaanlage bei geöffneten Fenstern, da dies zu einem höheren Energieverbrauch führt. Prüfen Sie in vorher, ob der Schlüssel in der elektrischen Schalttafel am Eingang eingeschaltet ist.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleTV</string>
+				<key>Title</key>
+				<string>TV</string>
+				<key>Body</key>
+				<string>Leider können Sie nur die spanischen Sender empfangen.Allerdings können Sie mit Hilfe der SmartTV-Funktion des Fernsehgerätes über WLAN Videos auf YouTube anschauen. Wir empfehlen, auch ein paar Filme auf einem USB-Stick oder Festplatte mitzubringen, der USB-Anschluss befindet sich neben dem Steckdose. Sie können auch Ihren Laptop mit dem Fernsehgerät über HDMI verbinden (HDMI-Kabel ist nicht enthalten).</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleWashing</string>
+				<key>Title</key>
+				<string>Waschmaschine</string>
+				<key>Body</key>
+				<string>Bitte schütteln Sie die Wäsche vor dem Waschvorgang aus, um darin befindlichen Sand zu entfernen. Anderenfalls wird Ihre Wäsche anschließend zwar sauber, aber sandig sein.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleHood</string>
+				<key>Title</key>
+				<string>Dunst-Abzugshauben</string>
+				<key>Body</key>
+				<string>Um die Dunst-Abzugshaube zu benutzen ziehen Sie sie nach vorne.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleSafe</string>
+				<key>Title</key>
+				<string>Tresor</string>
+				<key>Body</key>
+				<string>Wertvolle Sachen können Sie in dem Tresor aufbewahren der groß genug für Laptops bis zu 15 Zoll ist. Der Code wird separat ausgewiesen.(Der Code: &quot;12041961&quot; + &quot;A&quot;)</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleBin</string>
+				<key>Title</key>
+				<string>Müllcontainer</string>
+				<key>Body</key>
+				<string>Müllentsorgung erfolgt in die grünen Müllcontainer, die sich außerhalb des Apartment-Komplexes befinden, ca.200 m die Straße hinunter. Bitte machen Sie Mülltüten dicht zu und schließen Sie die Deckel der Müllcontainer.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>ruleLounge</string>
+				<key>Title</key>
+				<string>Sonnenliegen</string>
+				<key>Body</key>
+				<string>Jede Wohnung verfügt über einen eigenen Sonnenliegen. Zu der Wohnung gehören 4 Plastikliegestühle, «31F» markiert, die Sie benutzen können. Bitte verlassen Sie den Gemeinschaftsbereich im gleichen Zustand wie der vor Benutzung (z.B. stapeln Sie die Liegestühle übereinander und klappen die Schutzdächer hoch).</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Articles</key>
+		<array>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnElectro</string>
+				<key>Title</key>
+				<string>Strom</string>
+				<key>Body</key>
+				<string>Die elektrische Schalttafel befindet sich direkt am Eingang der Wohnung. Alle Schalter sollten in „Ein“ sein (Position nach oben). Der Schlüssel ist für die Funktion der Klimaanlage und WiFi erforderlich. In der „Ein“-Position kann der Schlüssel nicht herausgezogen werden.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnWater</string>
+				<key>Title</key>
+				<string>Wasser</string>
+				<key>Body</key>
+				<string>Der Haupthahn befindet sich in der Küche, auf der linken Seite von der Geschirrspülmaschine. Der BLAUE Wasserhahn muss nach oben gedreht werden.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnGas</string>
+				<key>Title</key>
+				<string>Gas</string>
+				<key>Body</key>
+				<string>Die Gasventile befinden sich unter der Spüle. Im geöffneten Zustand sollten sich alle Ventile in Stellung &quot;entlang des Rohres&quot; befinden. Befolgen Sie Schutzvorschriften bei der Arbeit mit Gas.</string>
+			</dict>
+			<dict>
+				<key>Image-name</key>
+				<string>turnOnBoiler</string>
+				<key>Title</key>
+				<string>Heizkessel</string>
+				<key>Body</key>
+				<string>Vor dem Einschalten der Gaskessel stellen Sie sicher, dass Gas- und Wasserzufuhrangeschlossen sind.Der Schalter unten links schaltet das Gerät | -An O-Aus. Der Schalter unten rechts regelt den Betrieb (in der Mitte - Heizung und Warmwasser, unten - nur Warmwasser).Wenn Sie Heizung betreiben, beachten Sie bitte eine weitere Steuerungsanlage im Wohnzimmer.</string>
+			</dict>
+		</array>
+		<key>Section-title</key>
+		<string>Einschalten der Haushaltanlagen</string>
+		<key>Section-comment</key>
+		<string>Wenn der Strom, das Gas und das Wasser im Voraus nicht eingeschaltet waren, folgen Sie den Anweisungen</string>
+	</dict>
+</array>
+</plist>

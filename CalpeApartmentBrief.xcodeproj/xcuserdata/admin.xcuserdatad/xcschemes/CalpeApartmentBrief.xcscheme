@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "840860B81C8B6A11000AEC6B"
-               BuildableName = "CalpeApartmentBrief.app"
-               BlueprintName = "CalpeApartmentBrief"
+               BuildableName = "Calpe Apt..app"
+               BlueprintName = "Calpe Apt."
                ReferencedContainer = "container:CalpeApartmentBrief.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "840860B81C8B6A11000AEC6B"
-            BuildableName = "CalpeApartmentBrief.app"
-            BlueprintName = "CalpeApartmentBrief"
+            BuildableName = "Calpe Apt..app"
+            BlueprintName = "Calpe Apt."
             ReferencedContainer = "container:CalpeApartmentBrief.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "840860B81C8B6A11000AEC6B"
-            BuildableName = "CalpeApartmentBrief.app"
-            BlueprintName = "CalpeApartmentBrief"
+            BuildableName = "Calpe Apt..app"
+            BlueprintName = "Calpe Apt."
             ReferencedContainer = "container:CalpeApartmentBrief.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "840860B81C8B6A11000AEC6B"
-            BuildableName = "CalpeApartmentBrief.app"
-            BlueprintName = "CalpeApartmentBrief"
+            BuildableName = "Calpe Apt..app"
+            BlueprintName = "Calpe Apt."
             ReferencedContainer = "container:CalpeApartmentBrief.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

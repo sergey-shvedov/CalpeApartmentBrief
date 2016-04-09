@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-1</string>
+		<key>Post-type</key>
+		<string>Standart</string>
+		<key>Title</key>
+		<string>Wir hoffen, dass Sie Ihren Aufenthalt genossen.</string>
+		<key>Body</key>
+		<string>Bei der Abreise ist die Wohnung in gutem und sauberen Zustand zu verlassen. Bitte spülen Sie verwendetes Geschirr und entsorgen Sie Ihren gesamten Abfall in die Containern. Wird eine Reinigung durch eine externe Firma erforderlich, müssen wir Ihnen dies mit mindestens 40 € in Rechnung stellen, die von der Kaution abgezogen werden.</string>
+		<key>Image-name</key>
+		<string>photoDoor</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-2</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Bitte räumen Sie die Wohnung am Tag der Abreise - nicht später als 11.00 Uhr. </string>
+		<key>Body</key>
+		<string>Ankunfts- und Abreisezeiten können je nach Verfügbarkeit in Absprache mit uns geändert werden. Am Tag der Abreise müssen Sie nicht Elena wieder anrufen. Stattdessen lassen Sie bitte die Schlüssel auf dem Tisch (alle 2 Sätze) und schloss die Tür, wenn Sie verlassen. Vielen Dank, dass Sie sich bei uns zu bleiben!</string>
+	</dict>
+</array>
+</plist>

@@ -26,11 +26,18 @@ class CABAppResponse
 				CABMenuSection.Route,
 				CABMenuSection.Appliances,
 				CABMenuSection.Rules]
+	
 	var numberOfMenuItems: Int {
 		return menu.count
 	}
+	
 	func indexOfMenuItem(secton: CABMenuSection) -> Int? {
 		return menu.indexOf(secton)
+	}
+	
+	func nameOfMenuItem(secton: CABMenuSection) -> String {
+		//return ""
+		return NSLocalizedString(secton.name, comment: "")
 	}
 	
 	func confirmPrimaryState() {

@@ -27,7 +27,7 @@ class CABMenuTableViewCell: UITableViewCell
 		bkgView.layer.masksToBounds = true
 		self.selectedBackgroundView = bkgView
 		
-		nameLabel.text = menuSection.name
+		nameLabel.text = CABAppResponse.sharedInstance.nameOfMenuItem(menuSection)
 		
 		if CABAppResponse.sharedInstance.appState == AppState.Welcome {
 			let originalX = nameLabel.frame.origin.x

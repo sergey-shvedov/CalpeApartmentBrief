@@ -57,8 +57,12 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 		}
 		addDestinationAnnotation()
 		makeLoadingView(visible: true)
-		
     }
+
+	override func viewWillDisappear(animated: Bool) {
+		super.viewWillDisappear(animated)
+		directions?.cancel()
+	}
 	
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		
@@ -99,7 +103,7 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 				if let justSuggestion = justError.localizedRecoverySuggestion { text = justSuggestion }
 				else if let justReason = justError.localizedFailureReason { text = justReason }
 				
-				if self.isBeingPresented() {
+				if self.navigationController != nil || self.splitViewController != nil {
 					self.generateAlertWithTitle(title, message: text)
 				}
 			}
@@ -166,7 +170,7 @@ class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKM
 		mapView.addOverlay(route.polyline)
 		if mapView.overlays.count == 1 {
 				mapView.setVisibleMapRect(route.polyline.boundingMapRect,
-	                          edgePadding: UIEdgeInsetsMake(20.0, 20.0, 20.0, 20.0),
+	                          edgePadding: ConstantMagicNumbers.MapView.MapPadding,
 	                          animated: true)
 		}
 	}

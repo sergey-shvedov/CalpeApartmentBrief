@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-1</string>
+		<key>Post-type</key>
+		<string>Standart</string>
+		<key>Title</key>
+		<string>Надеемся, что Вам понравилось у нас.</string>
+		<key>Body</key>
+		<string>При выезде вы должны оставить апартаменты в хорошем состоянии. Посуда должна быть вымыта, мусор в апартаментах должен быть собран и вынесен в контейнеры. В том случае если апартаменты будут оставлены в плохом состоянии, из депозита будет удержана стоимость дополнительной уборки — 40 евро.</string>
+		<key>Image-name</key>
+		<string>photoDoor</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-2</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Время выезда – до 11:00 утра</string>
+		<key>Body</key>
+		<string>Время выезда может быть изменено при наличии возможности и по согласованию с нами. В день вашего отъезда вам не нужно снова звонить Елене. Вместо этого, просто оставьте все два комплекта ключей на столе и захлопнете дверь при выходе. Спасибо что выбрали наши апартаменты!</string>
+	</dict>
+</array>
+</plist>

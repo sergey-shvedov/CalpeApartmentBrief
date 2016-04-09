@@ -1,0 +1,11 @@
+{
+	Arrival = Arrival;
+	Departure = Departure;
+	Route = Route;
+	POI = POI;
+	Tips = Tips;
+	Appliances = Equipment;
+	Rules = Rules;
+	Phone = Phone;
+	Book = Book;
+}

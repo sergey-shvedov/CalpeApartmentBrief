@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>PinnedMap</string>
+		<key>Annotations</key>
+		<array>
+			<dict>
+				<key>Icon-name</key>
+				<string>iconHome</string>
+				<key>Latitude</key>
+				<string>38.657705</string>
+				<key>Longitude</key>
+				<string>0.0477460</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint1</string>
+				<key>Latitude</key>
+				<string>38.645923</string>
+				<key>Longitude</key>
+				<string>0.0481070</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint2</string>
+				<key>Latitude</key>
+				<string>38.650188</string>
+				<key>Longitude</key>
+				<string>0.0517120</string>
+			</dict>
+			<dict>
+				<key>Icon-name</key>
+				<string>wayPoint3</string>
+				<key>Latitude</key>
+				<string>38.655417</string>
+				<key>Longitude</key>
+				<string>0.049150</string>
+			</dict>
+		</array>
+		<key>Center-latitude</key>
+		<string>38.649156</string>
+		<key>Center-longitude</key>
+		<string>0.053655</string>
+		<key>Span-latitude</key>
+		<string>0.040</string>
+		<key>Span-longitude</key>
+		<string>0.040</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>GPS Koordinaten: 
+38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>ROUTE BERECHNEN</string>
+		<key>Action-id</key>
+		<string>goto-route</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Zuerst folgen Sie der Hauptstraße entlang bis zum Kreisverkehr &quot;Drei Palmen&quot; (neben dem Fußgängerübergang und Einkaufzentrum). In dem Kreisverkehr bitte links abbiegen, die Straße geht abwärts. Es folgt sofort ein zweiter –Kreisverkehr, den Sie geradeaus durchfahren (2. Ausfahrt).</string>
+		<key>Number</key>
+		<string>1</string>
+		<key>Image-name</key>
+		<string>routeStep01</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Nach 500 Metern überqueren Sie einen weiteren Kreisverkehr und biegen sofort (nach etwa 20 Metern) links ab. Verkehrsschilder Richtung Valencia, Restaurant Caviar, Colina Home Resort</string>
+		<key>Number</key>
+		<string>2</string>
+		<key>Image-name</key>
+		<string>routeStep02</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>NumberedItemWithImage</string>
+		<key>Body</key>
+		<string>Fahren Sie weiter geradeaus (ca. 1 km) durch den Wald, bis Sie die 3 beigefarbene Wohnanlage sehen (wie auf dem Bild). Sie sind da! Die Einfahrt erfolgt durch das Tor ein wenig weiter, welches sich mit dem Handsender an dem Schlüsselbund öffnen lässt.</string>
+		<key>Number</key>
+		<string>3</string>
+		<key>Image-name</key>
+		<string>routeStep03</string>
+	</dict>
+</array>
+</plist>

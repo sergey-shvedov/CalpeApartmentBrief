@@ -1,0 +1,11 @@
+{
+	Arrival = Ankunft;
+	Departure = Abfahrt;
+	Route = Route;
+	POI = Sehenswurdigkeit;
+	Tips = Tipps;
+	Appliances = Haushaltsgerate;
+	Rules = Regeln;
+	Phone = Telefonnummern;
+	Book = Reservieren;
+}

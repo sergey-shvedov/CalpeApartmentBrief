@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-1</string>
+		<key>Post-type</key>
+		<string>Standart</string>
+		<key>Title</key>
+		<string>Мы рады Вас приветствовать!</string>
+		<key>Body</key>
+		<string>Наше бунгало – апартаменты на первом этаже с отдельными выходами к бассейну и на парковку. Расположены в тихом районе возле соснового леса, около 2км до центрального пляжа. Закрытая территория, 2 бассейна, кондиционер, отопление, парковка, BBQ, WiFi.</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-2</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Время заезда – гибкое</string>
+		<key>Body</key>
+		<string>Если день вашего приезда совпадет с выездом предыдущих гостей, то понадобится некоторое время на подготовку апартаментов. В этом случае время заезда возможно только после 14:00. В любом случае, позвоните Елене за 20 минут до вашего приезда в Кальпе (+34 693 777 099). Также при возможности сообщите, пожалуйста, примерное время вашего приезда или номер рейса.</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-3</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Для получения ключей – позвоните Елене за 20-30 минут до прибытия</string>
+		<key>Button-text</key>
+		<string>+34 693 777 099</string>
+		<key>Action-id</key>
+		<string>call-elena</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-4</string>
+		<key>Post-type</key>
+		<string>TitledImage</string>
+		<key>Title</key>
+		<string>Кальпе, провинция Аликанте</string>
+		<key>Image-name</key>
+		<string>photoTown</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-5</string>
+		<key>Post-type</key>
+		<string>TitledParagraph</string>
+		<key>Title</key>
+		<string>Адрес: 31F Partida Garduix, Calpe, Spain, 03710</string>
+		<key>Body</key>
+		<string>Время пути от межденародного аэропорта Аликанте – 60 минут, от аэропорта Валенсии – 80 минут. Мы рекомендуем использовать автомобиль для комфортных путешествий. Как правило, навигатор не может правильно указать местоположение апартаментов, поэтому рекомендуем воспользоваться путевой инструкцией или использовать GPS-координаты в вашем навигаторе.</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-6</string>
+		<key>Post-type</key>
+		<string>TitledButton</string>
+		<key>Title</key>
+		<string>Используйте эти координаты в вашем GPS-навигаторе: 38.657705, 0.047746 </string>
+		<key>Button-text</key>
+		<string>КАК ДОБРАТЬСЯ</string>
+		<key>Action-id</key>
+		<string>show-route-section</string>
+	</dict>
+	<dict>
+		<key>Post-id</key>
+		<string>ar-7</string>
+		<key>Post-type</key>
+		<string>TitledImage</string>
+		<key>Title</key>
+		<string>Жилой комплекс</string>
+		<key>Image-name</key>
+		<string>photoResidentalRU</string>
+	</dict>
+</array>
+</plist>

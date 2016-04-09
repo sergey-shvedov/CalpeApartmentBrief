@@ -66,6 +66,11 @@ struct ConstantNibPostIdentifier {
 	static let Postfix = "PostView"
 }
 
+struct ConstantStoryboardIdentifier {
+	static let MainStoryboard = "Main"
+	static let BaseGeneratedVC = "GeneratedView"
+}
+
 struct ConstantRowHeight {
 	private static let multiplier: CGFloat = 1.5
 	static let Small: CGFloat = CGFloat(Int(multiplier * 44.0))
@@ -89,6 +94,7 @@ struct ConstantMagicNumbers {
 		static let Duration: NSTimeInterval = 0.5
 		static let BethDelay: Double = 0.3
 	}
+	
 	struct TableAppearingAnimation {
 		static let Duration: NSTimeInterval = 1.0
 	}
@@ -98,13 +104,20 @@ struct ConstantMagicNumbers {
 		static let TargetAlpha: CGFloat = 0.5
 		static let OutDuration: NSTimeInterval = 0.5
 	}
+	
 	struct MenuBackground {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
 	}
+	
 	struct MapView {
 		static let SpanLatitude: Double = 0.100
 		static let SpanLongitude: Double = 0.100
+		static let MapPadding = UIEdgeInsetsMake(30.0, 30.0, 30.0, 30.0)
+		static let HomeLatitude: Double = 38.657705
+		static let HomeLongitude: Double = 0.0477460
+		static let PointName = "Partida Garduix, 31F"
 	}
+	
 	struct SplitView {
 		static let WidthFraction: CGFloat = 0.3
 		static let MinimumWidth: CGFloat = 70

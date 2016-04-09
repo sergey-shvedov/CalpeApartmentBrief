@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABTitledButtonPostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABTitledButtonPostView" customModule="Calpe_Apt_" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="iAU-xl-ZnN" id="gfO-cE-OLK"/>
                 <outlet property="titleLeftTextView" destination="IXR-sL-Li4" id="bPq-vN-rh8"/>

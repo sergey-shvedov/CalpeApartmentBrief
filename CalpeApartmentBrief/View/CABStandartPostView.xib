@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABStandartPostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABStandartPostView" customModule="Calpe_Apt_" customModuleProvider="target">
             <connections>
                 <outlet property="bodyTextField" destination="Ska-t3-ZFa" id="op8-pL-1Xm"/>
                 <outlet property="imageView" destination="zDz-DF-FUe" id="vBk-WK-Xw8"/>
@@ -58,7 +58,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hHQ-Os-FXR">
                                     <rect key="frame" x="8" y="8" width="224" height="263.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-2N-xPn" customClass="CABInspectableLabel" customModule="CalpeApartmentBrief" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-2N-xPn" customClass="CABInspectableLabel" customModule="Calpe_Apt_" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="224" height="19.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>

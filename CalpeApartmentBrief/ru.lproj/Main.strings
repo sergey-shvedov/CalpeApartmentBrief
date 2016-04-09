@@ -1,0 +1,30 @@
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "; ObjectID = "4Av-hR-qAL"; */
+"4Av-hR-qAL.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "; ObjectID = "8eR-o3-4aI"; */
+"8eR-o3-4aI.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9pR-u4-Fc0"; */
+"9pR-u4-Fc0.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ChY-QO-eoD"; */
+"ChY-QO-eoD.text" = "Label";
+
+/* Class = "UILabel"; text = "Please wait..."; ObjectID = "DfU-RA-1MP"; */
+"DfU-RA-1MP.text" = "Пожалуйста, подождите...";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IBR-Nd-8tv"; */
+"IBR-Nd-8tv.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NPx-qk-Xpl"; */
+"NPx-qk-Xpl.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "LET'S GO"; ObjectID = "c3C-Aa-tMd"; */
+"c3C-Aa-tMd.normalTitle" = "ПОЕХАЛИ";
+
+/* Class = "UILabel"; text = "We thank you for respecting these rules"; ObjectID = "rlt-e8-PJV"; */
+"rlt-e8-PJV.text" = "Благодарим Вас за соблюдение этих правил";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "xPI-nv-h5V"; */
+"xPI-nv-h5V.text" = "1";
+

@@ -24,10 +24,10 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	}
 	
 	private func showPosts() {
-		
 		turnSpinnerOn(true)
 		
 		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
+			
 			self.loadPosts()
 			
 			dispatch_async(dispatch_get_main_queue()) {
@@ -96,7 +96,6 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	}
 	
 	func performActionWithIdentifier(identifier: String) {
-		//TODO: Implement Action Handler
 		switch identifier {
 		case ConstantActionIdentifier.CallElena:
 			if let url = NSURL(string: ConstantActionIdentifier.ElenaNumber) {
@@ -113,8 +112,8 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	private func showRouteSection() {
 		if let justNavController = navigationController {
 			
-			let storyboard = UIStoryboard(name: "Main", bundle: nil)
-			let destinationVC = storyboard.instantiateViewControllerWithIdentifier("GeneratedView")
+			let storyboard = UIStoryboard(name: ConstantStoryboardIdentifier.MainStoryboard, bundle: nil)
+			let destinationVC = storyboard.instantiateViewControllerWithIdentifier(ConstantStoryboardIdentifier.BaseGeneratedVC)
 			if let justDestinationVC = destinationVC as? CABBaseSectionViewController {
 				justDestinationVC.section = CABMenuSection.Route
 			}
@@ -133,7 +132,9 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 			switch justIdentifier {
 			case ConstantSegueIdentifier.RoutingMapView:
 				if let justRoutingVC = segue.destinationViewController as? CABRoutingViewController {
-					justRoutingVC.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 38.657705, longitude: 0.0477460), addressDictionary: nil))
+					let homePoint = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: ConstantMagicNumbers.MapView.HomeLatitude, longitude: ConstantMagicNumbers.MapView.HomeLongitude), addressDictionary: nil))
+					homePoint.name = ConstantMagicNumbers.MapView.PointName
+					justRoutingVC.destination = homePoint
 				}
 			default: break
 			}
