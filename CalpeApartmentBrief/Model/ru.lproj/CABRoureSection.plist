@@ -60,7 +60,7 @@
 		<string>GPS координаты: 
 38.657705, 0.047746 </string>
 		<key>Button-text</key>
-		<string>ПОСТРОИТЬ МАРШРУТ</string>
+		<string>ПРОЛОЖИТЬ ПУТЬ</string>
 		<key>Action-id</key>
 		<string>goto-route</string>
 	</dict>
@@ -82,7 +82,8 @@
 		<key>Post-type</key>
 		<string>NumberedItemWithImage</string>
 		<key>Body</key>
-		<string>Через 500 метров пересеките круговое движение и буквально через 20 метров поверните налево.Указатели на Валенсию, ресторан Caviar, Colina Home Resort</string>
+		<string>Через 500 метров пересеките круговое движение и буквально через 20 метров поверните налево.
+Указатели на Валенсию, ресторан Caviar, Colina Home Resort</string>
 		<key>Number</key>
 		<string>2</string>
 		<key>Image-name</key>
