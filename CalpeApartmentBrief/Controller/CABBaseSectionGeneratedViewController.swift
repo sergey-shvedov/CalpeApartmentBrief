@@ -72,7 +72,7 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 	
 	private func animatePostAppearing() {
 		for (index, justView) in stackView.arrangedSubviews.enumerate() {
-			UIView.animateWithDuration(ConstantMagicNumbers.PostAppearingAnimation.Duration, delay: ConstantMagicNumbers.PostAppearingAnimation.BethDelay * Double(index), options: [], animations: {
+			UIView.animateWithDuration(ConstantMagicNumbers.PostAppearingAnimation.Duration, delay: ConstantMagicNumbers.PostAppearingAnimation.BethDelay * Double(index), options: [.AllowUserInteraction], animations: {
 				justView.hidden = false
 				justView.alpha = 1.0
 				}, completion: nil)
