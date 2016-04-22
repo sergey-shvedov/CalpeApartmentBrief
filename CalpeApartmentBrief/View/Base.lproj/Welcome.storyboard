@@ -11,7 +11,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="R6Z-Hp-Aey">
             <objects>
-                <viewController id="ZZ5-vv-NIm" customClass="CABWelcomeViewController" customModule="CalpeApartmentBrief" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZZ5-vv-NIm" customClass="CABWelcomeViewController" customModule="Calpe_Apt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ak4-DN-v3s"/>
                         <viewControllerLayoutGuide type="bottom" id="2re-43-NEM"/>
