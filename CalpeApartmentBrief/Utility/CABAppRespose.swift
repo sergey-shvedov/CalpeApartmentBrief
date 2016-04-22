@@ -24,6 +24,7 @@ class CABAppResponse
 				CABMenuSection.Arrival,
 				CABMenuSection.Departure,
 				CABMenuSection.Route,
+				CABMenuSection.POI,
 				CABMenuSection.Appliances,
 				CABMenuSection.Rules]
 	
