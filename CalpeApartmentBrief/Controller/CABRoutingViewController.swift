@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class CABRoutingViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
+class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDelegate, MKMapViewDelegate
 {
 	
 	@IBOutlet weak var mapView: MKMapView! {

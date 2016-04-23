@@ -69,6 +69,8 @@
 		84A684161C950472001B4B8E /* CABPostNumberedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684151C950472001B4B8E /* CABPostNumberedItem.swift */; };
 		84A6841A1C950DE3001B4B8E /* CABDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A684191C950DE3001B4B8E /* CABDataProvider.swift */; };
 		84B1E7641C9A6BB4002FD998 /* CABTitledButtonPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B1E7631C9A6BB4002FD998 /* CABTitledButtonPostView.xib */; };
+		84B4AE661CCBF7E60094ED65 /* CABCollapsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AE651CCBF7E60094ED65 /* CABCollapsedViewController.swift */; };
+		84B4AE681CCBF8E00094ED65 /* CABInfoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AE671CCBF8E00094ED65 /* CABInfoMapViewController.swift */; };
 		84B812511CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B812501CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift */; };
 		84DCB0BD1CCA93E100F08071 /* CABPOISectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCB0BC1CCA93E100F08071 /* CABPOISectionViewController.swift */; };
 		84E76C351CAFE09B005A197C /* CABRuleArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E76C341CAFE09B005A197C /* CABRuleArticleTableViewCell.swift */; };
@@ -167,6 +169,8 @@
 		84A684151C950472001B4B8E /* CABPostNumberedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostNumberedItem.swift; path = CalpeApartmentBrief/Model/CABPostNumberedItem.swift; sourceTree = "<group>"; };
 		84A684191C950DE3001B4B8E /* CABDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABDataProvider.swift; path = CalpeApartmentBrief/Model/CABDataProvider.swift; sourceTree = "<group>"; };
 		84B1E7631C9A6BB4002FD998 /* CABTitledButtonPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABTitledButtonPostView.xib; path = CalpeApartmentBrief/View/CABTitledButtonPostView.xib; sourceTree = "<group>"; };
+		84B4AE651CCBF7E60094ED65 /* CABCollapsedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABCollapsedViewController.swift; path = CalpeApartmentBrief/Controller/CABCollapsedViewController.swift; sourceTree = "<group>"; };
+		84B4AE671CCBF8E00094ED65 /* CABInfoMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABInfoMapViewController.swift; path = CalpeApartmentBrief/Controller/CABInfoMapViewController.swift; sourceTree = "<group>"; };
 		84B812501CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAppliancesArticleTableViewCell.swift; path = CalpeApartmentBrief/View/CABAppliancesArticleTableViewCell.swift; sourceTree = "<group>"; };
 		84DCB0BC1CCA93E100F08071 /* CABPOISectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPOISectionViewController.swift; path = CalpeApartmentBrief/Controller/CABPOISectionViewController.swift; sourceTree = "<group>"; };
 		84E76C341CAFE09B005A197C /* CABRuleArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRuleArticleTableViewCell.swift; path = CalpeApartmentBrief/View/CABRuleArticleTableViewCell.swift; sourceTree = "<group>"; };
@@ -274,12 +278,14 @@
 			isa = PBXGroup;
 			children = (
 				840861061C8C8C5D000AEC6B /* CABSplitViewController.swift */,
-				84288F611CA933050042C9A6 /* CABRoutingViewController.swift */,
-				840860EE1C8BA1F0000AEC6B /* CABMenuTableViewController.swift */,
-				840861021C8C7CA8000AEC6B /* CABWelcomeViewController.swift */,
+				84B4AE651CCBF7E60094ED65 /* CABCollapsedViewController.swift */,
 				84705AEE1C94DD0E00EA060A /* CABBaseSectionGeneratedViewController.swift */,
 				840861041C8C7FB1000AEC6B /* CABBaseSectionViewController.swift */,
 				8408612C1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift */,
+				84288F611CA933050042C9A6 /* CABRoutingViewController.swift */,
+				840860EE1C8BA1F0000AEC6B /* CABMenuTableViewController.swift */,
+				84B4AE671CCBF8E00094ED65 /* CABInfoMapViewController.swift */,
+				840861021C8C7CA8000AEC6B /* CABWelcomeViewController.swift */,
 				848970A01CAA91C800065F2D /* CABRuleSectionViewController.swift */,
 				84E76C3C1CB03561005A197C /* CABAppliancesSectionViewController.swift */,
 				84DCB0BC1CCA93E100F08071 /* CABPOISectionViewController.swift */,
@@ -471,6 +477,7 @@
 				8408612D1C8CFB3E000AEC6B /* CABBaseBackgroundViewController.swift in Sources */,
 				84E76C351CAFE09B005A197C /* CABRuleArticleTableViewCell.swift in Sources */,
 				840860F11C8BA245000AEC6B /* CABAppRespose.swift in Sources */,
+				84B4AE681CCBF8E00094ED65 /* CABInfoMapViewController.swift in Sources */,
 				8426BC741C9D269100128B5D /* CABPostPinnedMap.swift in Sources */,
 				84A684121C950433001B4B8E /* CABPostTitledParagraph.swift in Sources */,
 				84288F661CA9510C0042C9A6 /* CABHomeAnnotationView.swift in Sources */,
@@ -480,6 +487,7 @@
 				84B812511CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift in Sources */,
 				840860D81C8B6CFE000AEC6B /* AppDelegate.swift in Sources */,
 				847DCB111C9660100085C08F /* CABTitledParagraphPostView.swift in Sources */,
+				84B4AE661CCBF7E60094ED65 /* CABCollapsedViewController.swift in Sources */,
 				84288F601CA56C970042C9A6 /* CABButtonPostViewDelegate.swift in Sources */,
 				840861071C8C8C5D000AEC6B /* CABSplitViewController.swift in Sources */,
 				840861051C8C7FB1000AEC6B /* CABBaseSectionViewController.swift in Sources */,

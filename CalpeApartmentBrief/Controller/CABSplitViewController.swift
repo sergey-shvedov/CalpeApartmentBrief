@@ -39,8 +39,15 @@ class CABSplitViewController: UISplitViewController, UISplitViewControllerDelega
 	func splitViewController(splitViewController: UISplitViewController, separateSecondaryViewControllerFromPrimaryViewController primaryViewController: UIViewController) -> UIViewController? {
 		var result: UIViewController?
 		if let justNavController = primaryViewController as? UINavigationController {
-			if justNavController.viewControllers.last is CABRoutingViewController {
-				result = justNavController.viewControllers.last
+			if let justCollapsedView = justNavController.viewControllers.last as? CABCollapsedViewController {
+				if justCollapsedView.isPromotedWhileSeparated {
+					result = justNavController.topViewController
+				} else {
+					if justNavController.viewControllers.count > 1 {
+						result = justNavController.viewControllers[1]
+					}
+				}
+				
 				justNavController.popToRootViewControllerAnimated(false)
 			}
 		}

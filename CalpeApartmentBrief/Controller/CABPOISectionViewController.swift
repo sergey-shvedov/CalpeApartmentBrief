@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CABPOISectionViewController: CABBaseSectionViewController
+class CABPOISectionViewController: CABBaseSectionViewController, UIAdaptivePresentationControllerDelegate
 {
 	@IBOutlet var horizontalConstraints: [NSLayoutConstraint]!
 	@IBOutlet var verticalContraints: [NSLayoutConstraint]!
@@ -37,8 +37,8 @@ class CABPOISectionViewController: CABBaseSectionViewController
         super.viewDidLoad()
     }
 	
-	override func viewWillLayoutSubviews() {
-		super.viewWillLayoutSubviews()
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
 		if self.view.frame.height / self.view.frame.width > MagicNumber.OrientationRatio {
 			viewState = .Vertical
 		} else {
@@ -86,6 +86,13 @@ extension CABPOISectionViewController // Draggable View Animation
 		}
 	}
 	
+	override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+		super.traitCollectionDidChange(previousTraitCollection)
+		if traitCollection.horizontalSizeClass == .Compact && previousTraitCollection?.horizontalSizeClass != .Compact {
+			isInfoViewHidden = true
+		}
+	}
+	
 	private func stateOfViewChangedTo(state: ViewState) {
 		if infoView.superview != nil {
 			switch viewState {
@@ -100,7 +107,6 @@ extension CABPOISectionViewController // Draggable View Animation
 			isInfoViewHidden ? activateInfoContraint(false) : activateInfoContraint(true)
 		}
 	}
-	
 
 	private func animateInfoView() {
 		switch viewState {
