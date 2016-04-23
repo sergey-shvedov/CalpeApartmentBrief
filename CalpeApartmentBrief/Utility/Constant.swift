@@ -122,4 +122,14 @@ struct ConstantMagicNumbers {
 		static let WidthFraction: CGFloat = 0.3
 		static let MinimumWidth: CGFloat = 70
 	}
+	
+	struct DraggableView {
+		static let OrientationRatio: CGFloat = 1.2
+		static let DraggingLag: CGFloat = 1 / 5.0
+		static let OutResponseRate: CGFloat = 1 / 3.0
+		static let TempStep: CGFloat = 1.0
+		static let MerginStep: CGFloat = 20.0
+		static let ZeroStep: CGFloat = 0.0
+		static let HiddenStepDelta: CGFloat = 50.0
+	}
 }
