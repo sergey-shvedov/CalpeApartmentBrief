@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABTitledImagePostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABTitledImagePostView" customModule="Calpe_Apt_" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="Hkb-YV-6iP" id="Itl-wS-Xex"/>
                 <outlet property="titleLabel" destination="VuJ-3t-o4K" id="3th-9C-h6Q"/>

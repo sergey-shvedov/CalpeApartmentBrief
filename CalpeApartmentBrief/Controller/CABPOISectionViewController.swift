@@ -8,18 +8,20 @@
 
 import UIKit
 
-class CABPOISectionViewController: CABBaseSectionViewController, UIAdaptivePresentationControllerDelegate
+enum ViewState {
+	case Vertical
+	case Horisontal
+}
+
+class CABPOISectionViewController: CABBaseSectionViewController
 {
 	@IBOutlet var horizontalConstraints: [NSLayoutConstraint]!
 	@IBOutlet var verticalContraints: [NSLayoutConstraint]!
 	@IBOutlet weak var infoHorisontalContraint: NSLayoutConstraint!
 	@IBOutlet weak var infoVerticalConstraint: NSLayoutConstraint!
 	@IBOutlet weak var infoView: UIView!
-
-	enum ViewState {
-		case Vertical
-		case Horisontal
-	}
+	
+	private weak var childInfoController: UIViewController?
 	
 	private var viewState: ViewState = .Horisontal {
 		didSet {
@@ -43,6 +45,19 @@ class CABPOISectionViewController: CABBaseSectionViewController, UIAdaptivePrese
 			viewState = .Vertical
 		} else {
 			viewState = .Horisontal
+		}
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let justIdetifier = segue.identifier {
+			switch justIdetifier {
+			case "Show Info Container":
+				childInfoController = segue.destinationViewController
+			case "Show Info View":
+				childInfoController = segue.destinationViewController
+			default:
+				break
+			}
 		}
 	}
 	
@@ -105,6 +120,17 @@ extension CABPOISectionViewController // Draggable View Animation
 				for constraint in verticalContraints { constraint.active = false }
 			}
 			isInfoViewHidden ? activateInfoContraint(false) : activateInfoContraint(true)
+		}
+		
+		if let justChildController = childInfoController {
+			switch viewState {
+			case .Vertical:
+				let traitCollection = UITraitCollection(horizontalSizeClass: .Regular)
+				self.setOverrideTraitCollection(traitCollection, forChildViewController: justChildController)
+			case .Horisontal:
+				let traitCollection = UITraitCollection(horizontalSizeClass: .Compact)
+				self.setOverrideTraitCollection(traitCollection, forChildViewController: justChildController)
+			}
 		}
 	}
 

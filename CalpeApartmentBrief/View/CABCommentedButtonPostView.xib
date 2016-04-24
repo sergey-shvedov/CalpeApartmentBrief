@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABCommentedButtonPostView" customModule="CalpeApartmentBrief" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CABCommentedButtonPostView" customModule="Calpe_Apt_" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="Bgf-DZ-n4L" id="V1X-iy-km1"/>
                 <outlet property="commentTextView" destination="cB8-tA-Lxq" id="wmB-rr-sbH"/>
