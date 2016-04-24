@@ -125,11 +125,13 @@ extension CABPOISectionViewController // Draggable View Animation
 		if let justChildController = childInfoController {
 			switch viewState {
 			case .Vertical:
-				let traitCollection = UITraitCollection(horizontalSizeClass: .Regular)
-				self.setOverrideTraitCollection(traitCollection, forChildViewController: justChildController)
+				let newTraitCollection = UITraitCollection(horizontalSizeClass: .Regular)
+				self.setOverrideTraitCollection(newTraitCollection, forChildViewController: justChildController)
 			case .Horisontal:
-				let traitCollection = UITraitCollection(horizontalSizeClass: .Compact)
-				self.setOverrideTraitCollection(traitCollection, forChildViewController: justChildController)
+				if traitCollection.verticalSizeClass != .Compact {
+					let newTraitCollection = UITraitCollection(horizontalSizeClass: .Compact)
+					self.setOverrideTraitCollection(newTraitCollection, forChildViewController: justChildController)
+				}
 			}
 		}
 	}
