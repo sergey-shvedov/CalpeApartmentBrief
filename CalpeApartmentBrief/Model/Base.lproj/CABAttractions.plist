@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.657705</string>
+		<key>Longitude</key>
+		<string>0.0477460</string>
+		<key>Title</key>
+		<string>Your apartment</string>
+		<key>Body</key>
+		<string>Our charming bungalow is a ground floor apartment with direct access to the parking and swimming pools. It&apos;s located near pine forest and less than 2 km to the central beach. Small private community, 2 pools, Parking, A/C, Heating, BBQ, WiFi.</string>
+		<key>Type</key>
+		<string>Home</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<false/>
+	</dict>
+</array>
+</plist>

@@ -16,6 +16,7 @@ class CABDataProvider
 	lazy private var parsedSections = [CABMenuSection: [CABPost]]()
 	lazy private var parsedArticles = [CABMenuSection: [String]]()
 	lazy private var parsedPartitions = [CABMenuSection: [CABTablePartition]]()
+	lazy var parsedAttractions = [CABMenuSection: [CABAttractionMapPoint]]()
 	
 	// MARK: Parsing Post Objects
 	

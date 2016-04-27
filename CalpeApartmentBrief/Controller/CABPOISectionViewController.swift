@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 enum ViewState {
 	case Vertical
@@ -29,15 +30,65 @@ class CABPOISectionViewController: CABBaseSectionViewController
 		}
 	}
 
+	private var attractions = [CABAttractionMapPoint]()
 	private var isInfoViewHidden = true
 	private var initialGragPoint: CGPoint = CGPointZero
 	private typealias MagicNumber = ConstantMagicNumbers.DraggableView
+	
+	private enum RegionType {
+		case Local
+		case NorthRegion
+	}
 
+	@IBOutlet weak var mapView: MKMapView! {
+		didSet {
+			//mapView.delegate = self
+			mapView.mapType = .Hybrid
+			
+			switch CLLocationManager.authorizationStatus() {
+			case .AuthorizedAlways: fallthrough
+			case .AuthorizedWhenInUse: mapView.showsUserLocation = true
+			default: break
+			}
+		}
+	}
+	
 	// MARK: Life
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+		loadAttractions()
+	}
+	
+	private func loadAttractions() {
+		if let justSection = section {
+			self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
+			mapView.addAnnotations(attractions)
+			changeRegion(.Local, animated: false)
+		}
+	}
+	
+	@IBAction func tapedRegion(sender: UISegmentedControl) {
+		switch  sender.selectedSegmentIndex {
+		case 0: changeRegion(.Local, animated: true)
+		case 1: changeRegion(.NorthRegion, animated: true)
+		default: break
+		}
+	}
+	
+	private func changeRegion(region: RegionType, animated: Bool) {
+		typealias RLocal = ConstantMagicNumbers.MapView.RegionLocal
+		typealias RNorth = ConstantMagicNumbers.MapView.RegionNorth
+		var targetRegion: MKCoordinateRegion?
+		switch region {
+		case .Local:
+			targetRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: RLocal.Latitude, longitude: RLocal.Longitude), span: MKCoordinateSpanMake(RLocal.SpanLatitude, RLocal.SpanLongitude))
+		case .NorthRegion:
+			targetRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: RNorth.Latitude, longitude: RNorth.Longitude), span: MKCoordinateSpanMake(RNorth.SpanLatitude, RNorth.SpanLongitude))
+		}
+
+		mapView.setRegion(targetRegion!, animated: animated)
+	}
 	
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
@@ -61,6 +112,33 @@ class CABPOISectionViewController: CABBaseSectionViewController
 		}
 	}
 	
+}
+
+extension CABPOISectionViewController // MapView delegate
+{
+	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+		if annotation is MKUserLocation { return nil }
+		
+		var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
+		if nil == view {
+			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
+			view?.canShowCallout = false
+			
+		} else {
+			view!.annotation = annotation
+		}
+		return view
+	}
+	
+	func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
+		for view in views {
+			if let justView = view as? CABHomeAnnotationView {
+				if justView.iconName == ConstantAnnotationIdentifier.HomeIconName {
+					justView.superview?.bringSubviewToFront(justView)
+				}
+			}
+		}
+	}
 }
 
 

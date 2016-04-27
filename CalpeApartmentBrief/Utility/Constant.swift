@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+protocol RegionCoordinates {
+	static var Latitude: Double {get}
+	static var Longitude: Double {get}
+	static var SpanLatitude: Double {get}
+	static var SpanLongitude: Double {get}
+}
+
 struct ConstantGlobal {
 	static let Prefix = "CAB"
 }
@@ -109,6 +116,8 @@ struct ConstantMagicNumbers {
 		static let Size: CGSize = CGSize(width: 1, height: 300)
 	}
 	
+
+	
 	struct MapView {
 		static let SpanLatitude: Double = 0.100
 		static let SpanLongitude: Double = 0.100
@@ -116,6 +125,19 @@ struct ConstantMagicNumbers {
 		static let HomeLatitude: Double = 38.657705
 		static let HomeLongitude: Double = 0.0477460
 		static let PointName = "Partida Garduix, 31F"
+		struct RegionLocal: RegionCoordinates {
+			static let Latitude: Double = 38.657705
+			static let Longitude: Double = 0.0477460
+			static let SpanLatitude: Double = 0.100
+			static let SpanLongitude: Double = 0.100
+		}
+		struct RegionNorth: RegionCoordinates {
+			static let Latitude: Double = 38.657705
+			static let Longitude: Double = 0.0477460
+			static let SpanLatitude: Double = 0.300
+			static let SpanLongitude: Double = 0.300
+		}
+
 	}
 	
 	struct SplitView {

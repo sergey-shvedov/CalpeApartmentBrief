@@ -15,6 +15,7 @@ struct ModelConstant {
 		static let RouteSection =		"CABRoureSection.plist"
 		static let AppliancesSection =	"CABAppliances.plist"
 		static let RulesSection =		"CABCommunityRules.plist"
+		static let POISection =			"CABAttractions.plist"
 	}
 	
 	struct Post {
@@ -56,5 +57,16 @@ struct ModelConstant {
 		static let TitleKey =		"Title"
 		static let BodyKey =		"Body"
 		static let ImageNameKey =	"Image-name"
+	}
+	
+	struct Attraction {
+		static let IconNameKey =	"Icon-name"
+		static let LatitudeKey =	"Latitude"
+		static let LongitudeKey =	"Longitude"
+		static let TypeKey =		"Type"
+		static let TitleKey =		"Title"
+		static let BodyKey =		"Body"
+		static let ImageNameKey =	"Image-name"
+		static let TappableKey =	"Tappable"
 	}
 }

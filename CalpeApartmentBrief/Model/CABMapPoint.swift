@@ -1,5 +1,5 @@
 //
-//  CAPMapPoint.swift
+//  CABMapPoint.swift
 //  CalpeApartmentBrief
 //
 //  Created by Sergey Shvedov on 19.03.16.
