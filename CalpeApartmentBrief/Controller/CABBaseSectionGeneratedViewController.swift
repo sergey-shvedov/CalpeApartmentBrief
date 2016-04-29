@@ -135,6 +135,7 @@ class CABBaseSectionGeneratedViewController: CABBaseSectionViewController, CABBu
 					let homePoint = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: ConstantMagicNumbers.MapView.HomeLatitude, longitude: ConstantMagicNumbers.MapView.HomeLongitude), addressDictionary: nil))
 					homePoint.name = ConstantMagicNumbers.MapView.PointName
 					justRoutingVC.destination = homePoint
+					justRoutingVC.superSection = section
 				}
 			default: break
 			}

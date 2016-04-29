@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 enum AppState: Int {
 	case Welcome = 0
@@ -19,6 +20,8 @@ class CABAppResponse
 	
 	let currentTheme: CABTheme = CABThemeOrange()
 	private(set) var appState: AppState = .Welcome
+	
+	var latestPOIViewSettings: MKCoordinateRegion?
 	
 	let menu: [CABMenuSection] = [
 				CABMenuSection.Arrival,
@@ -46,4 +49,6 @@ class CABAppResponse
 			appState = .Primary
 		}
 	}
+	
+	
 }

@@ -21,6 +21,7 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 	@IBOutlet var loadingView: UIView!
 	@IBOutlet var moveView: UIView!
 	
+	var superSection: CABMenuSection?
 	var destination: MKMapItem?
 	var directions: MKDirections?
 	private let locationManager = CLLocationManager()
@@ -29,12 +30,38 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 		destination?.openInMapsWithLaunchOptions([MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving])
 	}
 	
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if segue.identifier == ConstantSegueIdentifier.BackToRouteView {
-			if let destinationVC = segue.destinationViewController as? CABBaseSectionViewController {
-				destinationVC.section = CABMenuSection.Route
+	@IBAction func tappedCancel(sender: AnyObject) {
+		if let justSuperSection = superSection {
+			switch justSuperSection {
+			case .Route:
+				performSegueWithIdentifier(ConstantSegueIdentifier.BackToRouteView, sender: nil)
+			case .POI:
+				performSegueWithIdentifier(ConstantSegueIdentifier.BackToPOIView, sender: nil)
+			default: break
 			}
-			directions?.cancel()
+		}
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		directions?.cancel()
+		if let identidier = segue.identifier{
+			switch identidier {
+			case ConstantSegueIdentifier.BackToRouteView:
+				if let destinationVC = segue.destinationViewController as? CABBaseSectionViewController {
+					var outsideSection = CABMenuSection.Route
+					if let justSuperSection = superSection { outsideSection = justSuperSection }
+					destinationVC.section = outsideSection
+				}
+			case ConstantSegueIdentifier.BackToPOIView:
+				if let destinationVC = segue.destinationViewController as? CABPOISectionViewController {
+					var outsideSection = CABMenuSection.POI
+					if let justSuperSection = superSection { outsideSection = justSuperSection }
+					destinationVC.section = outsideSection
+				}
+			default:
+				break
+			}
+			
 		}
 	}
 
@@ -77,7 +104,7 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 		let baseColor = CABAppResponse.sharedInstance.currentTheme.baseColor
 		if (overlay is MKPolyline) {
 			polylineRenderer.strokeColor = baseColor
-			polylineRenderer.lineWidth = 5
+			polylineRenderer.lineWidth = 5.0
 		}
 		return polylineRenderer
 	}

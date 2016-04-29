@@ -76,6 +76,7 @@
 		84B4AE661CCBF7E60094ED65 /* CABCollapsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AE651CCBF7E60094ED65 /* CABCollapsedViewController.swift */; };
 		84B4AE681CCBF8E00094ED65 /* CABInfoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AE671CCBF8E00094ED65 /* CABInfoMapViewController.swift */; };
 		84B812511CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B812501CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift */; };
+		84C16F4A1CD34E3100441DC1 /* InfoMapDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C16F491CD34E3100441DC1 /* InfoMapDescriptionTableViewCell.swift */; };
 		84DCB0BD1CCA93E100F08071 /* CABPOISectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCB0BC1CCA93E100F08071 /* CABPOISectionViewController.swift */; };
 		84E76C351CAFE09B005A197C /* CABRuleArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E76C341CAFE09B005A197C /* CABRuleArticleTableViewCell.swift */; };
 		84E76C391CB0290E005A197C /* CABTableArticleWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E76C381CB0290E005A197C /* CABTableArticleWithImage.swift */; };
@@ -180,6 +181,7 @@
 		84B4AE651CCBF7E60094ED65 /* CABCollapsedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABCollapsedViewController.swift; path = CalpeApartmentBrief/Controller/CABCollapsedViewController.swift; sourceTree = "<group>"; };
 		84B4AE671CCBF8E00094ED65 /* CABInfoMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABInfoMapViewController.swift; path = CalpeApartmentBrief/Controller/CABInfoMapViewController.swift; sourceTree = "<group>"; };
 		84B812501CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAppliancesArticleTableViewCell.swift; path = CalpeApartmentBrief/View/CABAppliancesArticleTableViewCell.swift; sourceTree = "<group>"; };
+		84C16F491CD34E3100441DC1 /* InfoMapDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoMapDescriptionTableViewCell.swift; path = CalpeApartmentBrief/View/InfoMapDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		84DCB0BC1CCA93E100F08071 /* CABPOISectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPOISectionViewController.swift; path = CalpeApartmentBrief/Controller/CABPOISectionViewController.swift; sourceTree = "<group>"; };
 		84E76C341CAFE09B005A197C /* CABRuleArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABRuleArticleTableViewCell.swift; path = CalpeApartmentBrief/View/CABRuleArticleTableViewCell.swift; sourceTree = "<group>"; };
 		84E76C381CB0290E005A197C /* CABTableArticleWithImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABTableArticleWithImage.swift; path = CalpeApartmentBrief/Model/CABTableArticleWithImage.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				84E76C341CAFE09B005A197C /* CABRuleArticleTableViewCell.swift */,
 				84B812501CB0440B0066CC7E /* CABAppliancesArticleTableViewCell.swift */,
 				840BA08C1CB2EB58000B5FD0 /* CABAppliancesHeaderTableViewCell.swift */,
+				84C16F491CD34E3100441DC1 /* InfoMapDescriptionTableViewCell.swift */,
 			);
 			name = View;
 			path = ..;
@@ -529,6 +532,7 @@
 				840860F31C8BA256000AEC6B /* CABThemeOrange.swift in Sources */,
 				840860E51C8B79CF000AEC6B /* CABSections.swift in Sources */,
 				840861011C8BD53C000AEC6B /* UIImage+Extension.swift in Sources */,
+				84C16F4A1CD34E3100441DC1 /* InfoMapDescriptionTableViewCell.swift in Sources */,
 				840860F71C8BAC4E000AEC6B /* CABMenuTableViewCell.swift in Sources */,
 				8484F61F1C8E648700F84218 /* CABStandartPostView.swift in Sources */,
 				84EED0CA1C91323F0027A153 /* CABInspectableTextView.swift in Sources */,

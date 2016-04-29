@@ -66,6 +66,9 @@ struct ConstantSegueIdentifier {
 	static let BackgroundView = "Show Background View"
 	static let RoutingMapView = "Show Route"
 	static let BackToRouteView = "Back to Route"
+	static let InfoView = "Show Info View"
+	static let InfoContainer = "Show Info Container"
+	static let BackToPOIView = "Back to POI"
 }
 
 struct ConstantNibPostIdentifier {

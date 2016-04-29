@@ -14,14 +14,14 @@ enum ViewState {
 	case Horisontal
 }
 
-class CABPOISectionViewController: CABBaseSectionViewController
+class CABPOISectionViewController: CABBaseSectionViewController, MKMapViewDelegate
 {
 	@IBOutlet var horizontalConstraints: [NSLayoutConstraint]!
 	@IBOutlet var verticalContraints: [NSLayoutConstraint]!
 	@IBOutlet weak var infoHorisontalContraint: NSLayoutConstraint!
 	@IBOutlet weak var infoVerticalConstraint: NSLayoutConstraint!
 	@IBOutlet weak var infoView: UIView!
-	
+	@IBOutlet weak var baseSegmentController: UISegmentedControl!
 	private weak var childInfoController: UIViewController?
 	
 	private var viewState: ViewState = .Horisontal {
@@ -30,6 +30,7 @@ class CABPOISectionViewController: CABBaseSectionViewController
 		}
 	}
 
+	private var lastSelectedSegment: Int?
 	private var attractions = [CABAttractionMapPoint]()
 	private var isInfoViewHidden = true
 	private var initialGragPoint: CGPoint = CGPointZero
@@ -42,7 +43,6 @@ class CABPOISectionViewController: CABBaseSectionViewController
 
 	@IBOutlet weak var mapView: MKMapView! {
 		didSet {
-			//mapView.delegate = self
 			mapView.mapType = .Hybrid
 			
 			switch CLLocationManager.authorizationStatus() {
@@ -53,22 +53,74 @@ class CABPOISectionViewController: CABBaseSectionViewController
 		}
 	}
 	
-	// MARK: Life
+	// MARK:- Life Cycle
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		setupRegion()
 		loadAttractions()
+		updateSegmentController()
 	}
 	
 	private func loadAttractions() {
 		if let justSection = section {
 			self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
 			mapView.addAnnotations(attractions)
-			changeRegion(.Local, animated: false)
 		}
 	}
 	
+	private func setupRegion() {
+		if let lastRegion = CABAppResponse.sharedInstance.latestPOIViewSettings {
+			mapView.setRegion(lastRegion, animated: false)
+		} else {
+			changeRegion(.Local, animated: false)
+			lastSelectedSegment = 0
+		}
+	}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		if self.view.frame.height / self.view.frame.width > MagicNumber.OrientationRatio {
+			viewState = .Vertical
+		} else {
+			viewState = .Horisontal
+		}
+	}
+	
+	override func viewDidDisappear(animated: Bool) {
+		super.viewDidDisappear(animated)
+		CABAppResponse.sharedInstance.latestPOIViewSettings = mapView.region
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let justIdetifier = segue.identifier {
+			switch justIdetifier {
+			case ConstantSegueIdentifier.InfoContainer:
+				childInfoController = segue.destinationViewController
+			case ConstantSegueIdentifier.InfoView:
+				if let justPoint = sender as? CABAttractionMapPoint, let justInfoVC = segue.destinationViewController as? CABInfoMapViewController {
+					justInfoVC.mapPoint = justPoint
+					
+					UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0.1)
+					view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+					let image = UIGraphicsGetImageFromCurrentImageContext()
+					UIGraphicsEndImageContext()
+					justInfoVC.backgroundImage = image
+				}
+			default:
+				break
+			}
+		}
+	}
+	
+}
+
+
+// MARK:- SegmentController handler
+extension CABPOISectionViewController
+{
 	@IBAction func tapedRegion(sender: UISegmentedControl) {
+		lastSelectedSegment = sender.selectedSegmentIndex
 		switch  sender.selectedSegmentIndex {
 		case 0: changeRegion(.Local, animated: true)
 		case 1: changeRegion(.NorthRegion, animated: true)
@@ -86,35 +138,35 @@ class CABPOISectionViewController: CABBaseSectionViewController
 		case .NorthRegion:
 			targetRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: RNorth.Latitude, longitude: RNorth.Longitude), span: MKCoordinateSpanMake(RNorth.SpanLatitude, RNorth.SpanLongitude))
 		}
-
+		
 		mapView.setRegion(targetRegion!, animated: animated)
 	}
 	
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
-		if self.view.frame.height / self.view.frame.width > MagicNumber.OrientationRatio {
-			viewState = .Vertical
-		} else {
-			viewState = .Horisontal
-		}
-	}
-	
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if let justIdetifier = segue.identifier {
-			switch justIdetifier {
-			case "Show Info Container":
-				childInfoController = segue.destinationViewController
-			case "Show Info View":
-				childInfoController = segue.destinationViewController
-			default:
-				break
+	private func updateSegmentController() {
+		if let justNavController = self.navigationController {
+			if !(justNavController.navigationItem.titleView is UISegmentedControl) {
+				let segmenter = UISegmentedControl(items: ["Calpe", "C-Blanca"])
+				segmenter.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+				segmenter.sizeToFit()
+				segmenter.addTarget(self, action:#selector(CABPOISectionViewController.tapedRegion(_:)), forControlEvents: .ValueChanged)
+				justNavController.navigationBar.topItem?.titleView = segmenter
+				
+				if let last = lastSelectedSegment { segmenter.selectedSegmentIndex = last }
+				baseSegmentController.hidden = true
+				segmenter.hidden = (traitCollection.verticalSizeClass == .Compact) ? true : false
 			}
+			
+		} else {
+			if let last = lastSelectedSegment { baseSegmentController.selectedSegmentIndex = last }
+			baseSegmentController.hidden = false
 		}
 	}
 	
 }
 
-extension CABPOISectionViewController // MapView delegate
+
+// MARK:- MapView delegate
+extension CABPOISectionViewController
 {
 	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
 		if annotation is MKUserLocation { return nil }
@@ -139,10 +191,23 @@ extension CABPOISectionViewController // MapView delegate
 			}
 		}
 	}
+	
+	func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+		mapView.deselectAnnotation(view.annotation, animated: true)
+		if traitCollection.horizontalSizeClass == .Compact {
+			performSegueWithIdentifier(ConstantSegueIdentifier.InfoView, sender: view.annotation)
+		} else {
+			if let justPoint = view.annotation as? CABAttractionMapPoint, let justInfoVC = childInfoController as? CABInfoMapViewController {
+				justInfoVC.mapPoint = justPoint
+				activateInfoView(self)
+			}
+		}
+	}
 }
 
 
-extension CABPOISectionViewController // Draggable View Animation
+// MARK:- Draggable View Animation
+extension CABPOISectionViewController
 {
 	@IBAction func activateInfoView(sender: AnyObject) {
 		executeAnimationClosure{
@@ -184,6 +249,7 @@ extension CABPOISectionViewController // Draggable View Animation
 		if traitCollection.horizontalSizeClass == .Compact && previousTraitCollection?.horizontalSizeClass != .Compact {
 			isInfoViewHidden = true
 		}
+		updateSegmentController()
 	}
 	
 	private func stateOfViewChangedTo(state: ViewState) {
