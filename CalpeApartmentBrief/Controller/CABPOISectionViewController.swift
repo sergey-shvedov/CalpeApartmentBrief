@@ -44,6 +44,8 @@ class CABPOISectionViewController: CABBaseSectionViewController, MKMapViewDelega
 	@IBOutlet weak var mapView: MKMapView! {
 		didSet {
 			mapView.mapType = .Hybrid
+			//addParallaxToView(mapView)
+			mapView.layoutMargins = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 30)
 			
 			switch CLLocationManager.authorizationStatus() {
 			case .AuthorizedAlways: fallthrough
@@ -63,9 +65,14 @@ class CABPOISectionViewController: CABBaseSectionViewController, MKMapViewDelega
 	}
 	
 	private func loadAttractions() {
-		if let justSection = section {
-			self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
-			mapView.addAnnotations(attractions)
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
+			if let justSection = self.section {
+				self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
+				self.addParallaxToView(self.mapView)
+				dispatch_async(dispatch_get_main_queue()) {
+					self.mapView.addAnnotations(self.attractions)
+				}
+			}
 		}
 	}
 	
@@ -171,15 +178,43 @@ extension CABPOISectionViewController
 	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
 		if annotation is MKUserLocation { return nil }
 		
-		var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
-		if nil == view {
-			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
-			view?.canShowCallout = false
-			
-		} else {
-			view!.annotation = annotation
+		var result: MKAnnotationView?
+		
+		if let justAttraction = annotation as? CABAttractionMapPoint {
+			switch justAttraction.type {
+				
+			case .Home:
+				var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
+				if nil == view {
+					view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
+					view?.canShowCallout = false
+				} else { view!.annotation = annotation }
+				result = view
+				
+			default:
+				var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.StandartPin)
+				if nil == view { view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.StandartPin) }
+				else { view!.annotation = annotation }
+				
+				if let pin = view as? MKPinAnnotationView {
+					typealias ConstantPin = ConstantMagicNumbers.ConstantPin
+					switch justAttraction.type {
+					case .Nature: pin.pinTintColor = ConstantPin.colorFromType(.Nature)
+					case .Store: pin.pinTintColor = ConstantPin.colorFromType(.Store)
+					case .ChineseStore: pin.pinTintColor = ConstantPin.colorFromType(.ChineseStore)
+					case .Entertainment: pin.pinTintColor = ConstantPin.colorFromType(.Entertainment)
+					case .Infrastructure: pin.pinTintColor = ConstantPin.colorFromType(.Infrastructure)
+					case .Standart: pin.pinTintColor = ConstantPin.colorFromType(.Standart)
+					default: pin.tintColor = ConstantPin.colorFromType(.Standart)
+					}
+					pin.canShowCallout = justAttraction.isTappable
+				}
+				
+				result = view
+			}
 		}
-		return view
+		
+		return result 
 	}
 	
 	func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
@@ -213,6 +248,22 @@ extension CABPOISectionViewController
 		executeAnimationClosure{
 			self.activateInfoContraint(true)
 		}
+	}
+	
+	func addParallaxToView(vw: UIView) {
+		let amount = 30
+		
+		let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .TiltAlongHorizontalAxis)
+		horizontal.minimumRelativeValue = amount
+		horizontal.maximumRelativeValue = -amount
+		
+		let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .TiltAlongVerticalAxis)
+		vertical.minimumRelativeValue = amount
+		vertical.maximumRelativeValue = -amount
+		
+		let group = UIMotionEffectGroup()
+		group.motionEffects = [horizontal, vertical]
+		vw.addMotionEffect(group)
 	}
 	
 	@IBAction func pannedInfoView(sender: UIPanGestureRecognizer) {

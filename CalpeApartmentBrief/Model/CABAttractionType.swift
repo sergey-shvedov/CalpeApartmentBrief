@@ -11,4 +11,9 @@ import Foundation
 enum CABAttractionType: String {
 	case Home
 	case Standart
+	case Nature
+	case Store
+	case ChineseStore
+	case Entertainment
+	case Infrastructure
 }

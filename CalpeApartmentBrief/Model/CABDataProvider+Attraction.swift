@@ -51,19 +51,38 @@ extension CABDataProvider
 		let iconName = aDictionary[ModelConstant.Attraction.IconNameKey] as? String
 		let rawLatitude = aDictionary[ModelConstant.Attraction.LatitudeKey] as? String
 		let rawLongitude = aDictionary[ModelConstant.Attraction.LongitudeKey] as? String
-		let type = aDictionary[ModelConstant.Attraction.TypeKey] as? CABAttractionType
+		let type = aDictionary[ModelConstant.Attraction.TypeKey] as? String
 		let title = aDictionary[ModelConstant.Attraction.TitleKey] as? String
 		let body = aDictionary[ModelConstant.Attraction.BodyKey] as? String
 		let imageName = aDictionary[ModelConstant.Attraction.ImageNameKey] as? String
 		let isTappable = aDictionary[ModelConstant.Attraction.TappableKey] as? Bool
+		let id = aDictionary[ModelConstant.Attraction.ImageNameKey] as? String
 		
 		if let justRawLatitude = rawLatitude, let justRawLongitude = rawLongitude, justLatitude = Double(justRawLatitude), let justLongitude = Double(justRawLongitude), let justTitle = title
 		{
-			result = CABAttractionMapPoint(latitude: justLatitude, longitude: justLongitude, iconName: iconName, type: type, title: justTitle, body: body, imageName: imageName, isTappable: isTappable)
+			let attractionType = convertToAttractionType(type)
+			result = CABAttractionMapPoint(latitude: justLatitude, longitude: justLongitude, iconName: iconName, type: attractionType, title: justTitle, body: body, imageName: imageName, isTappable: isTappable, id: id)
 		} else {
 			print("Latitude, Longitude and Title are required to create CABAttractionMapPoint")
 		}
 		
+		return result
+	}
+	
+	private func convertToAttractionType(string: String?) -> CABAttractionType {
+		var result = CABAttractionType.Standart
+		if let justString = string {
+			switch justString {
+			case CABAttractionType.Home.rawValue: result = .Home
+			case CABAttractionType.Nature.rawValue: result = .Nature
+			case CABAttractionType.Store.rawValue: result = .Store
+			case CABAttractionType.Standart.rawValue: result = .Standart
+			case CABAttractionType.ChineseStore.rawValue: result = .ChineseStore
+			case CABAttractionType.Entertainment.rawValue: result = .Entertainment
+			case CABAttractionType.Infrastructure.rawValue: result = .Infrastructure
+			default: break
+			}
+		}
 		return result
 	}
 	

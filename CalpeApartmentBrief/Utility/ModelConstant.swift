@@ -68,5 +68,6 @@ struct ModelConstant {
 		static let BodyKey =		"Body"
 		static let ImageNameKey =	"Image-name"
 		static let TappableKey =	"Tappable"
+		static let IdKey =			"POI-id"
 	}
 }

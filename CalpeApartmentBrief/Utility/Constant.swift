@@ -44,6 +44,7 @@ struct ConstantMenuIdentifier {
 
 struct ConstantAnnotationIdentifier {
 	static let MapPost = "MapPost"
+	static let StandartPin = "StandartPin"
 	static let HomeIconName = "iconHome"
 }
 
@@ -157,4 +158,22 @@ struct ConstantMagicNumbers {
 		static let ZeroStep: CGFloat = 0.0
 		static let HiddenStepDelta: CGFloat = 50.0
 	}
+	
+	struct ConstantPin {
+		static func colorFromType(type: CABAttractionType) -> UIColor {
+			var result = UIColor.blackColor()
+			switch type {
+			case .Standart:			result = UIColor.redColor()
+			case .Nature:			result = UIColor(red:  33.0/255.0, green: 230.0/255.0, blue:  103.0/255.0, alpha: 1.0)
+			case .Store:			result = UIColor(red: 240.0/255.0, green:  74.0/255.0, blue:  83.0/255.0, alpha: 1.0)
+			case .ChineseStore:		result = UIColor(red: 248.0/255.0, green: 171.0/255.0, blue:  45.0/255.0, alpha: 1.0)
+			case .Entertainment:	result = UIColor(red: 104.0/255.0, green: 196.0/255.0, blue: 185.0/255.0, alpha: 1.0)
+			case .Infrastructure:	result = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
+			default: break
+			}
+			return result
+		}
+	}
+	
+	
 }

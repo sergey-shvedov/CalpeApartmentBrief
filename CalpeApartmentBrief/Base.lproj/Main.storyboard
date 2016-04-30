@@ -787,8 +787,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="9T6-ZZ-o7o">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9T6-ZZ-o7o">
+                                <rect key="frame" x="-30" y="-30" width="660" height="630"/>
                                 <connections>
                                     <outlet property="delegate" destination="bB0-tL-pr9" id="aYb-nt-RYS"/>
                                 </connections>
@@ -819,14 +819,19 @@
                                     <outletCollection property="gestureRecognizers" destination="5wZ-tN-kq8" appends="YES" id="dVk-Xy-pzk"/>
                                 </connections>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="QLQ-hT-hSe">
-                                <rect key="frame" x="205.5" y="28" width="189" height="29"/>
+                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="QLQ-hT-hSe">
+                                <rect key="frame" x="205" y="28" width="189" height="29"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10028029580152671" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="Calpe"/>
                                     <segment title="Costa Blanca"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapedRegion:" destination="bB0-tL-pr9" eventType="valueChanged" id="iHk-XF-KUf"/>
                                 </connections>
@@ -835,18 +840,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jnD-Qq-ToS" firstAttribute="height" secondItem="KXk-jv-xrB" secondAttribute="height" multiplier="0.25" priority="999" id="1N9-3o-rRV"/>
-                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="leading" secondItem="KXk-jv-xrB" secondAttribute="leading" id="5Dp-pz-xS3"/>
-                            <constraint firstAttribute="trailing" secondItem="9T6-ZZ-o7o" secondAttribute="trailing" id="FLf-eH-ERO"/>
+                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="leading" secondItem="KXk-jv-xrB" secondAttribute="leading" constant="-30" id="5Dp-pz-xS3"/>
+                            <constraint firstAttribute="trailing" secondItem="9T6-ZZ-o7o" secondAttribute="trailing" constant="-30" id="FLf-eH-ERO"/>
                             <constraint firstItem="jnD-Qq-ToS" firstAttribute="leading" secondItem="KXk-jv-xrB" secondAttribute="leading" constant="20" id="JQK-mK-s31"/>
                             <constraint firstItem="QLQ-hT-hSe" firstAttribute="top" secondItem="cf1-xB-Vh1" secondAttribute="bottom" constant="8" id="Nso-SR-94j"/>
                             <constraint firstItem="QLQ-hT-hSe" firstAttribute="leading" secondItem="KXk-jv-xrB" secondAttribute="leadingMargin" id="PUD-aa-sBC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jnD-Qq-ToS" secondAttribute="trailing" id="X6y-CQ-5WJ"/>
                             <constraint firstItem="jnD-Qq-ToS" firstAttribute="top" secondItem="cf1-xB-Vh1" secondAttribute="bottom" constant="48" id="YYQ-GW-cqL"/>
                             <constraint firstItem="OWF-FE-WXH" firstAttribute="top" secondItem="jnD-Qq-ToS" secondAttribute="bottom" constant="20" id="dWG-JD-oMk"/>
-                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="top" secondItem="KXk-jv-xrB" secondAttribute="top" id="e2z-2B-acQ"/>
+                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="top" secondItem="KXk-jv-xrB" secondAttribute="top" constant="-30" id="e2z-2B-acQ"/>
                             <constraint firstItem="jnD-Qq-ToS" firstAttribute="width" secondItem="KXk-jv-xrB" secondAttribute="width" multiplier="0.333333" priority="999" id="j4N-en-mTc"/>
                             <constraint firstItem="QLQ-hT-hSe" firstAttribute="centerX" secondItem="KXk-jv-xrB" secondAttribute="centerX" id="q8i-VB-iQN"/>
-                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="bottom" secondItem="OWF-FE-WXH" secondAttribute="top" priority="750" id="whD-Wb-FbY"/>
+                            <constraint firstItem="9T6-ZZ-o7o" firstAttribute="bottom" secondItem="OWF-FE-WXH" secondAttribute="top" priority="750" id="whD-Wb-FbY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -919,12 +926,12 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ohb-Ae-Ps6">
                                                             <rect key="frame" x="0.0" y="0.0" width="584" height="209"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Penon de Ifach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEL-p5-TaY">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Penon de Ifach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JEL-p5-TaY">
                                                                     <rect key="frame" x="0.0" y="0.0" width="584" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="26" id="wlR-en-nKe"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -951,7 +958,7 @@
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGr-hQ-dtx">
-                                                                                <rect key="frame" x="0.0" y="9" width="584" height="2"/>
+                                                                                <rect key="frame" x="25" y="9" width="534" height="2"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="2" id="vRK-3y-2dh"/>
@@ -960,8 +967,8 @@
                                                                         </subviews>
                                                                         <constraints>
                                                                             <constraint firstItem="UGr-hQ-dtx" firstAttribute="centerY" secondItem="hJb-Zb-RGR" secondAttribute="centerY" id="Es3-E8-3vb"/>
-                                                                            <constraint firstItem="UGr-hQ-dtx" firstAttribute="leading" secondItem="hJb-Zb-RGR" secondAttribute="leading" id="xqV-lV-ggq"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="UGr-hQ-dtx" secondAttribute="trailing" id="zFz-nl-IvW"/>
+                                                                            <constraint firstItem="UGr-hQ-dtx" firstAttribute="leading" secondItem="hJb-Zb-RGR" secondAttribute="leading" constant="25" id="xqV-lV-ggq"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="UGr-hQ-dtx" secondAttribute="trailing" constant="25" id="zFz-nl-IvW"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <constraints>
@@ -1070,10 +1077,12 @@
                                                                                 <subviews>
                                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-Fn-aNE">
                                                                                         <rect key="frame" x="8" y="8" width="572" height="64.5"/>
+                                                                                        <color key="tintColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <string key="text">Полуостров Penon de Ifach. является символом Коста Бланка и природным заповедником. У основания горы есть музей, к которому можно подъехать на машине. залах музея представлены животные и цветы Средиземноморья. От музея начинаются пешие маршруты до вершины горы, также на горе проложены 20 трасс для скалолазов. В награду за терпение (неспешный пеший путь на гору занимает 60-90 минут) с вершины откроется потрясающий вид на море и окрестности с уютными виллами.</string>
                                                                                         <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                                                     </textView>
                                                                                 </subviews>
                                                                                 <constraints>

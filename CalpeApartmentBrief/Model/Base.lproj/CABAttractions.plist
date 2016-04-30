@@ -20,5 +20,910 @@
 		<key>Tappable</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646094</string>
+		<key>Longitude</key>
+		<string>0.049149</string>
+		<key>Title</key>
+		<string>Masymas</string>
+		<key>Body</key>
+		<string>The nearest supermarket. 
+Masymas supermarkets is the distribution standard of Juan Fornes S.A. A traditional family enterprise based in Pedreguer, Alicante.
+http://www.masymas.com/en/
+«Plaza Central Calpe» Shopping Centre
+Mon-Sat: 9:00 – 21:00
+Free parking (75min)</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-01</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.650016</string>
+		<key>Longitude</key>
+		<string>0.072017</string>
+		<key>Title</key>
+		<string>Mercadona</string>
+		<key>Body</key>
+		<string>Mercadona is a Spanish family-owned supermarket chain.It founded in 1977, which began as a small butcher shop in Valencia. Mercadona has locations in 46 provinces of 17 autonomous communities. Mercadona was ranked the 9th most reputable company in the world in 2009. 
+www.mercadona.es
+Av.Juan Carlos I C/ Jaime I Conquistador
+Mon-Sat: 9:00 – 21:30
+Free parking</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-02</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.638991</string>
+		<key>Longitude</key>
+		<string>0.072685</string>
+		<key>Title</key>
+		<string>Penon de Ifach</string>
+		<key>Body</key>
+		<string>The enigmatic Penon de Ifach stands proudly at 332m at the head of Calpe, surrounded by the shimmering blue of the Mediterranean Sea. It is a huge calcareous rock, joined to the mainland by a detritic isthmus. With a protected surface area of just 45 hectares, Penon de Ifach is one of the smallest nature reserves in Europe. Despite its size, the reserve attracts approximately 100,000 visitors each year.
+It is advisable to walk up Penon de Ifach in either the morning or evening in order to avoid the midday heat. This is particularly the case in summer as the weather in Calpe can be very hot.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-03</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.649675</string>
+		<key>Longitude</key>
+		<string>0.073098</string>
+		<key>Title</key>
+		<string>Consum</string>
+		<key>Body</key>
+		<string>Consum was born in 1975 in Valencia with the opening of its first store in Alacuás. Since then its evolution has been characterized by continuous growth to position itself today as one of the leading companies in the distribution sector in Spain.
+www.consum.com
+Mon-Sat: 9:00 – 21:00
+Free parking</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-04</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.650373</string>
+		<key>Longitude</key>
+		<string>0.068618</string>
+		<key>Title</key>
+		<string>Aldi</string>
+		<key>Body</key>
+		<string>Aldi is a leading global discount supermarket chain with almost 10,000 stores in 18 countries. Based in Germany, the chain was founded by brothers Karl and Theo Albrecht in 1946 when they took over their mother&apos;s store in Essen which had been in operation since 1913. it is one of the world&apos;s largest privately owned companies.
+aldi.es
+Mon-Sat: 9:00 – 21:30
+Sun: 10:00 – 15:00 (Summer time)
+Free parking</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-05</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.645608</string>
+		<key>Longitude</key>
+		<string>0.061900</string>
+		<key>Title</key>
+		<string>Lidl</string>
+		<key>Body</key>
+		<string>Lidl is a German global discount supermarket chain, based in Neckarsulm, Baden-Württemberg, Germany, that operates over 10,000 stores across Europe. Lidl is the chief competitor of the similar German discount chain Aldi.
+http://www.lidl.es
+Mon-Sat: 9:00 – 21:30
+Sun: 9:00 – 15:00 (Summer time)
+Free parking</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-06</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.639250</string>
+		<key>Longitude</key>
+		<string>0.068951</string>
+		<key>Title</key>
+		<string>Calpe Seaport</string>
+		<key>Body</key>
+		<string>Located on the fishing port, the fish market is the building where the fish auction is held. This must-see event allows you to take in the excitement of the daily auction of fresh fish caught by Calpe’s fleet. It is considered to be one of the city’s most important seafaring traditions.
+The auction starts about five o’clock in the afternoon and continues until eight.
+http://goo.gl/uxDoja
+Monday - Friday</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-07</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.642077</string>
+		<key>Longitude</key>
+		<string>0.064229</string>
+		<key>Title</key>
+		<string>Tourist Info Calp</string>
+		<key>Body</key>
+		<string>With over 190 tourist offices throughout the Region of Valencia, the Tourist Info Network offers visitors comprehensive information to organise a trip, enjoy their stay and discover attractive destinations and alternatives. Events, maps, activities, routes, beaches… you can find out everything you want to know about your chosen tourist destination at your nearest Tourist Info office.</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-08</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.642673</string>
+		<key>Longitude</key>
+		<string>0.065696</string>
+		<key>Title</key>
+		<string>Las Salinas </string>
+		<key>Body</key>
+		<string>Las Salinas de Calpe are a natural place that welcomes, at various times of the year, a large number of migratory birds, especially flamingos.
+The Salinas - Salt Flats are an interesting spot close to the Penon de Ifach. There is a circular walking trail that surrounds the salt flats.
+In the 19th &amp; 20th century, the salt flats were important to Calpe. The salt marshes and fishing were key to the economy of the town.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-09</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.645420</string>
+		<key>Longitude</key>
+		<string>0.047607</string>
+		<key>Title</key>
+		<string>Saturday Market</string>
+		<key>Body</key>
+		<string>A weekly Saturday market is devoted to fruit and vegetables.
+Calpe market is busy all year round &amp; very crowded in high season. Parking can be a challenge on market day - it is best to arrive early &amp; park slightly outside of town (near the tennis club is ideal). The market usually finishes around 1.30pm.
+Sat: 9:00 – 14:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-10</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.645697</string>
+		<key>Longitude</key>
+		<string>0.058829</string>
+		<key>Title</key>
+		<string>Saturday goods Market</string>
+		<key>Body</key>
+		<string>This part of the market sells a wide variety of items including clothes, furnishings, leather goods, jewellery, toys &amp; music. </string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-11</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.644179</string>
+		<key>Longitude</key>
+		<string>0.056975</string>
+		<key>Title</key>
+		<string>Private Market</string>
+		<key>Body</key>
+		<string>This new Market is open 2 days a week, Wednesday and Saturday from 08:00 – 14:00.
+You can find fruits, olives, vegetables and bread. 
+Wed, Sat: 9:00 – 14:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-12</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.643959</string>
+		<key>Longitude</key>
+		<string>0.052655</string>
+		<key>Title</key>
+		<string>Baltika Supermarket</string>
+		<key>Body</key>
+		<string>This grocery store provides some kinds of russian and other eastern european food. It also has convenient working time.
+Open 7 days a week
+Mon-Sun: 9:00 – 23:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-13</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.642550</string>
+		<key>Longitude</key>
+		<string>0.049802</string>
+		<key>Title</key>
+		<string>Solymar Supermarket</string>
+		<key>Body</key>
+		<string>One of the largest supermarkets in the town. It is located in the Solymar hotel building.</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-14</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.642257</string>
+		<key>Longitude</key>
+		<string>0.050538</string>
+		<key>Title</key>
+		<string>Taxi</string>
+		<key>Body</key>
+		<string>Calpe Taxi Сabstand
+
+www.taxicalpe.es
++34 965 837 878</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-15</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.644025</string>
+		<key>Longitude</key>
+		<string>0.051952</string>
+		<key>Title</key>
+		<string>Multiprecio</string>
+		<key>Body</key>
+		<string>Chinese store sells a wide variety of cheap household items including clothes, furnishings, tools, kitchenware, stationery, toys &amp; music. </string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-16</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646964</string>
+		<key>Longitude</key>
+		<string>0.045400</string>
+		<key>Title</key>
+		<string>Multiprecio</string>
+		<key>Body</key>
+		<string>Chinese store sells a wide variety of cheap household items including clothes, furnishings, tools, kitchenware, stationery, toys &amp; music. </string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-17</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646398</string>
+		<key>Longitude</key>
+		<string>0.041719</string>
+		<key>Title</key>
+		<string>Hiper Calp</string>
+		<key>Body</key>
+		<string>Chinese store sells a wide variety of cheap household items including clothes, furnishings, tools, kitchenware, stationery, toys &amp; music. </string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-18</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646109</string>
+		<key>Longitude</key>
+		<string>0.041260</string>
+		<key>Title</key>
+		<string>Dia Supermarket</string>
+		<key>Body</key>
+		<string>Dia is a Spanish international hard-discount supermarket chain founded in 1979 which as of 2012 operates 6,914 stores internationally, making it Europe&apos;s third largest food sector franchiser.
+http://www.dia.es
+Mon-Sat: 9:00 – 21:00
+Sun: 9:00 – 14:00 (Summer time)
+Free parking</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-19</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646369</string>
+		<key>Longitude</key>
+		<string>0.045423</string>
+		<key>Title</key>
+		<string>Mercadona</string>
+		<key>Body</key>
+		<string>Mercadona is a Spanish family-owned supermarket chain.It founded in 1977, which began as a small butcher shop in Valencia. Mercadona has locations in 46 provinces of 17 autonomous communities. Mercadona was ranked the 9th most reputable company in the world in 2009. 
+www.mercadona.es
+Av.Juan Carlos I C/ Jaime I Conquistador
+Mon-Sat: 9:00 – 21:30
+Free parking for customers (Time limited)</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-20</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.645024</string>
+		<key>Longitude</key>
+		<string>0.044816</string>
+		<key>Title</key>
+		<string>CALPE OLD TOWN</string>
+		<key>Body</key>
+		<string>A walk around the narrow streets of Calpe&apos;s Old Town are a must for any visitor to Calpe. The original fishing village of Calpe originally consisted of a walled old town constructed around the church, the wall being built to defend the residents against frequent attacks by pirates from North Africa. </string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-21</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.639550</string>
+		<key>Longitude</key>
+		<string>0.040273</string>
+		<key>Title</key>
+		<string>RICARDO BOFILL</string>
+		<key>Body</key>
+		<string>Almost 40 years ago, Ricardo Bofill signed in Valencia one of the most emblematic projects in their early stages, an architectural “oasis” that stands in contrast to the asphalt jungle that had already begun to cover the Mediterranean coast during the years of its tourist expansion.
+The building of the wall red was built in 1973 in the Alicante Town of Calpe, within the set of La Manzanera, the catalan architect had begun to cast ten years earlier.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-22</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.655039</string>
+		<key>Longitude</key>
+		<string>0.047997</string>
+		<key>Title</key>
+		<string>Casa del Cocó</string>
+		<key>Body</key>
+		<string>The Ethnological Museum «Casa del Cocó» is a typical rural building in the Marina Alta. It&apos;s origin available in large compartments for storing homegrown agricultural products, livestock and sheep pens would, warehouses, barns and extensive riu-rau for making the passes, which the estate of Cocó was great producer.
+Telephone: (+34) 965 839 123
+Opening hours: Only prearranged visits for groups, from Monday to Friday in the morning.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-23</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.649792</string>
+		<key>Longitude</key>
+		<string>0.033036</string>
+		<key>Title</key>
+		<string>Tram Station</string>
+		<key>Body</key>
+		<string>Calpe Train Service to Alicante &amp; Denia. From Calpe it is very easy to visit other places on the Costa Blanca. The Alicante - Denia line runs for 93 km along the northern coast of the province of Alicante and has 40 stations. 
+http://www.tramalicante.es</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-24</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646797</string>
+		<key>Longitude</key>
+		<string>0.044559</string>
+		<key>Title</key>
+		<string>Bus Station</string>
+		<key>Body</key>
+		<string>ALSA is the leading operator in the Spanish sector of passenger transport by road.
+With over one hundred years of experience and a vocation of continuous innovation, ALSA is integrated into the National Express Group, an international public transport operator running buses, coaches, and railways in the UK, Continental Europe, North America, North Africa, and the Middle East.
+alsa.es</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-25</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.536427</string>
+		<key>Longitude</key>
+		<string>-0.175173</string>
+		<key>Title</key>
+		<string>Carrefour Hypermarket</string>
+		<key>Body</key>
+		<string>Carrefour is a French multinational retailer headquartered in Boulogne Billancourt, France, in the Hauts-de-Seine Department near Paris. It is one of the largest hypermarket chains in the world.
+Mon-Sun:  9:00 – 22:00
+carrefour.es</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-26</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.818170</string>
+		<key>Longitude</key>
+		<string>0.023965</string>
+		<key>Title</key>
+		<string>Eroski Hypermarket</string>
+		<key>Body</key>
+		<string>Eroski is a Spanish supermarket chain with nearly 1,000 outlets spread across Spain (excluding franchises). It is run as a worker-consumer hybrid co-operative within the Mondragón Corporation group. The establishments vary in size from the largest hypermarkets, simply named &apos;Eroski&apos;, down to smaller &apos;Eroski Center&apos; stores. 
+Mon-Sat:  9:00 – 22:00
+www.eroski.es</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-27</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.538908</string>
+		<key>Longitude</key>
+		<string>-0.175659</string>
+		<key>Title</key>
+		<string>LaMarina Benidorm </string>
+		<key>Body</key>
+		<string>La Marina Shopping Centre was opened the 14th of September of 2000 and it is organized in four levels: one underground floor to park vehicles totally for free, two Comercial floors and a leisure and restaurant industry floor. In this last floor, there are restaurants, cinema and bowling centre, as well as 4.000 squared metres created for children´s leisure (bouncy castles, a small golf court, an American court, karts, a princess castle, merry-go-round…)
+Zara, H&amp;M, Massimo Dutti, Guess, Shana, Celio, C&amp;A, Mango, Benetton, Mayoral, Stradivarius, Tous,… 
+Mon-Sat:  10:00 – 22:00
+http://www.cclamarina.com/</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-28</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.817608</string>
+		<key>Longitude</key>
+		<string>0.022398</string>
+		<key>Title</key>
+		<string>LaMarina Denia</string>
+		<key>Body</key>
+		<string>El Portal de la Marina Shopping Centre is a fashion shopping experience with a wide variety of brands, plus a leisure area with cinemas, restaurants and cafes.
+It is a different, cosmopolitan and modern space filled with Mediterranean charm, which offers a friendly and top quality service, a calendar of events and, above all, an excellent value.
+Mon-Sat:  10:00 – 22:00
+http://www.portaldelamarina.org</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-29</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.744116</string>
+		<key>Longitude</key>
+		<string>-0.018520</string>
+		<key>Title</key>
+		<string>Xaló Winery</string>
+		<key>Body</key>
+		<string>The building itself was constructed in the early sixties and is known locally as the “Bodega” of Jalon. Its original purpose was for storing the equipment that belonged to the first members of the society; presses, wine deposits, wooden oak barrils etc. It was the place where they combined their wisdom and know how as well as their most cared for old wines called “Fondellol”. As the years have passed the “Bodega” has adapted to new tecnology and from those first wines and “Mistelas” (sweet liquors), which were sold exclusively in bulk,we have passed to the bottling of top quality wines, which you will be able to sample in our establishment.
+Mon-Fri:  9:30 – 13:30 / 15:00 – 19:00
+Sat: 10:30 –14:30
+Sun: 9:30 – 13:30
+http://www.bodegasxalo.com</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-30</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.674722</string>
+		<key>Longitude</key>
+		<string>-0.198889</string>
+		<key>Title</key>
+		<string>Guadalest</string>
+		<key>Body</key>
+		<string>El Castell de Guadalest, known usually as Guadalest, is a small town in Valencia, in a mountainous part of the comarca of Marina Baixa, in the province of Alicante, Spain. Guadalest covers an area of 16 sq km, and has a population of around 200 inhabitants.
+El Castell de Guadalest was built during the Moors occupation of Spain in the 12th century. After the Christian re conquest in the 13th century Guadalest still had a very large muslim population and continued thus under the dominion of different Catalan-Aragonese noblemen.
+www.guadalest.eu</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-31</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.658584</string>
+		<key>Longitude</key>
+		<string>-0.097703</string>
+		<key>Title</key>
+		<string>Algar Waterfalls</string>
+		<key>Body</key>
+		<string>It is a real theme park about the importance of Water as a environmental resource, economic and cultural. The visit is a route through a￼ 
+circuit of 1.5 km in length along, where you can walk through the bed of the river Algar (&quot;cave &quot; in Arabic), see the spectacular waterfalls and￼ 
+the numerous sources springs that spring from the rock, the &quot;tolls&quot; (pools of water) where you can take refreshing swims in crystal clear￼ 
+waters, known before as &quot;source of health &quot;, the old dam, the imposing century-old canal and ditches still in use.
+Ticket price: up to 4€
+Mon-Sun: 9:30 – 17:30
+http://www.lasfuentesdelalgar.com/</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-32</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.632678</string>
+		<key>Longitude</key>
+		<string>-0.014100</string>
+		<key>Title</key>
+		<string>Orthodox Church</string>
+		<key>Body</key>
+		<string>First Russian Orthodox church. Between Altea and Calpe, the busier, bustling resort to the north, lies the luxury development of Altea Hills and it is here that the first Russian Orthodox church in Spain was built. The church of Saint Michael the Archangel was opened in 2007 and stands just off the N332 that runs the length of Alicante province. 
+It is an exact replica of a 17th century Orthodox temple in Russia and building materials for the church were flown in from as far away at the Urals. Also, specialist craftsmen from Russia were drafted in for the construction work. 
+Mon-Sun: 10:00 – 18:00
+www.orthodox.es</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-33</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.646944</string>
+		<key>Longitude</key>
+		<string>-0.343056</string>
+		<key>Title</key>
+		<string>Aitana Safari Park</string>
+		<key>Body</key>
+		<string>This safari park in the Aitana Mountains is home to dozens of wild animals (elephants, tigers, lions, etc). The animals roam freely in the park and it is possible to drive through in your own (rental) car.
+The best time of day to visit the park is at feeding time. At 11 hrs and 15 hrs the feed wagon leaves at the entrance of the park. The guard stops at various places in the park and visitors are invited to help feed the animals.
+Ticket price: up to 20€
+Mon-Sun: 11:00 – 19:00
+safariaitana.es </string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-34</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.561194</string>
+		<key>Longitude</key>
+		<string>-0.158336</string>
+		<key>Title</key>
+		<string>Terra Mítica</string>
+		<key>Body</key>
+		<string>Terra Mítica is a theme park located in Benidorm, Comunitat Valenciana, Spain. The park is divided into 5 themed zones: Egypt, Greece, Rome, Iberia, and the Islands (of the Mediterranean). The park opened in 2000. In total, there are 25 rides at the park.
+Ticket price: up to 40€
+Mon-Sun: 10:00 – 20:00
+www.terramiticapark.com</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-35</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.569147</string>
+		<key>Longitude</key>
+		<string>-0.144828</string>
+		<key>Title</key>
+		<string>Terra Natura</string>
+		<key>Body</key>
+		<string>Terra Natura is a zoo theme park and an aqua park located near Benidorm.
+Terra Natura Animal Parks lets visitors make contact with animals with barriers invisible to the human eye. Many species can be viewed, includingelephants, tigers, monkeys, lions, African buffalo, and rhinos.
+The 320,000 square metres of Terra Natura Benidorm are divided into four zones or areas: Pangea (the park entrance area), America, Asia and Europe. Between the areas visitors can see about 1500 animals representing 200 species.
+Aqua Natura Benidorm is a 40,000-square-metre water park with an sea lion show where people can enjoy a show and even swim with sea lions, and a large swimming pool area with over 1 kilometre of flumes and slides.
+Ticket price: up to 30€
+Mon-Sun: 10:00 – 19:00
+http://www.terranatura.com/</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-36</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.542609</string>
+		<key>Longitude</key>
+		<string>-0.093167</string>
+		<key>Title</key>
+		<string>MundoMar</string>
+		<key>Body</key>
+		<string>Mundomar is a marine animal park. It is twinned with the water park Aqualandia, which is directly adjacent to it, and shares the same car park. There is a viewing area at the top of Mundomar next to the Dolphinarium, which gives a view of the majority of Aqualandia.
+Many different species can be viewed at Mundomar, including dolphins, sea lions, penguins, meerkats and many more marine and land animals.
+There are dolphin, sea lion, and parrot displays several times a day at the park, where visitors can watch trained handlers interacting with the animals, and putting on spectacular shows.
+Ticket price: up to 30€
+Mon-Sun: 10:00 – 19:00
+www.mundomar.es</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-37</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.542123</string>
+		<key>Longitude</key>
+		<string>-0.094833</string>
+		<key>Title</key>
+		<string>Aqualandia</string>
+		<key>Body</key>
+		<string>Aqualandia is a waterpark, located in Benidorm in the Costa Blanca, Spain. It is twinned with the marine animal park Mundomar, which is immediately next door to Aqualandia, and shares the same free car park.
+Water is sourced directly from the sea.
+Aqualandia contains many water attractions, including water slides, swimming pools, river rapids and sunbathing areas.
+Ticket price: up to 30€
+Mon-Sun: 10:00 – 19:00
+http://www.aqualandia.net/</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-38</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.349477</string>
+		<key>Longitude</key>
+		<string>-0.477362</string>
+		<key>Title</key>
+		<string>Santa Bárbara</string>
+		<key>Body</key>
+		<string>Santa Bárbara Castle is a fortification in the center of Alicante, Spain. It stands on Mount Benacantil (166 m).
+On its slopes have been found archaeological remains of the Bronze Age, Iberian and Roman, but the origin of the fortress is in the late ninth century with the Muslim rule.
+Mon-Sun: 10:00 – 22:00
+http://www.castillodesantabarbara.com</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-39</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>39.454569</string>
+		<key>Longitude</key>
+		<string>-0.352142</string>
+		<key>Title</key>
+		<string>City of Arts and Sciences</string>
+		<key>Body</key>
+		<string>The City of Arts and Sciences is an entertainment-based cultural and architectural complex in the city of Valencia, Spain. It is the most important modern tourist destination in the city of Valencia and one of the 12 Treasures of Spain.
+The City of Arts and Sciences is situated at the end of the former riverbed of the river Turia, which was drained and rerouted after a catastrophic flood in 1957. The old riverbed was turned into a picturesque sunken park.
+Designed by Santiago Calatrava and Félix Candela, the project underwent the first stages of construction in July 1996 and the finished &quot;city&quot; was inaugurated April 16, 1998 with the opening of L&apos;Hemisfèric. 
+Ticket price: 10-30€
+Mon-Sun: 10:00 – 19:00
+http://www.cac.es</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-40</string>
+	</dict>
 </array>
 </plist>
