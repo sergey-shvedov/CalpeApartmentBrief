@@ -65,11 +65,11 @@ class CABPOISectionViewController: CABBaseSectionViewController, MKMapViewDelega
 	}
 	
 	private func loadAttractions() {
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
 			if let justSection = self.section {
 				self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
 				self.addParallaxToView(self.mapView)
-				dispatch_async(dispatch_get_main_queue()) {
+				dispatch_async(dispatch_get_main_queue()) { 
 					self.mapView.addAnnotations(self.attractions)
 				}
 			}

@@ -30,6 +30,7 @@
 		8408E2C61CD144ED00E7AC43 /* CABAttractionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408E2C51CD144ED00E7AC43 /* CABAttractionType.swift */; };
 		8408E2C81CD147F000E7AC43 /* CABDataProvider+Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408E2C71CD147F000E7AC43 /* CABDataProvider+Attraction.swift */; };
 		840BA08D1CB2EB58000B5FD0 /* CABAppliancesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BA08C1CB2EB58000B5FD0 /* CABAppliancesHeaderTableViewCell.swift */; };
+		842231701CD508560060ECE4 /* POI-images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422316F1CD508560060ECE4 /* POI-images.xcassets */; };
 		8426BC721C9D250E00128B5D /* CABPinnedMapPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8426BC711C9D250E00128B5D /* CABPinnedMapPostView.xib */; };
 		8426BC741C9D269100128B5D /* CABPostPinnedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426BC731C9D269100128B5D /* CABPostPinnedMap.swift */; };
 		8426BC761C9D274800128B5D /* CABPinnedMapPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426BC751C9D274800128B5D /* CABPinnedMapPostView.swift */; };
@@ -116,6 +117,7 @@
 		8408E2C51CD144ED00E7AC43 /* CABAttractionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAttractionType.swift; path = CalpeApartmentBrief/Model/CABAttractionType.swift; sourceTree = "<group>"; };
 		8408E2C71CD147F000E7AC43 /* CABDataProvider+Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CABDataProvider+Attraction.swift"; path = "CalpeApartmentBrief/Model/CABDataProvider+Attraction.swift"; sourceTree = "<group>"; };
 		840BA08C1CB2EB58000B5FD0 /* CABAppliancesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAppliancesHeaderTableViewCell.swift; path = CalpeApartmentBrief/View/CABAppliancesHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		8422316F1CD508560060ECE4 /* POI-images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "POI-images.xcassets"; path = "Resources/POI-images.xcassets"; sourceTree = "<group>"; };
 		8426BC711C9D250E00128B5D /* CABPinnedMapPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABPinnedMapPostView.xib; path = CalpeApartmentBrief/View/CABPinnedMapPostView.xib; sourceTree = "<group>"; };
 		8426BC731C9D269100128B5D /* CABPostPinnedMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostPinnedMap.swift; path = CalpeApartmentBrief/Model/CABPostPinnedMap.swift; sourceTree = "<group>"; };
 		8426BC751C9D274800128B5D /* CABPinnedMapPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPinnedMapPostView.swift; path = CalpeApartmentBrief/View/CABPinnedMapPostView.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				840860DA1C8B6D67000AEC6B /* Assets.xcassets */,
 				840860FE1C8BD289000AEC6B /* Photos.xcassets */,
 				84288F631CA94E3B0042C9A6 /* Icons.xcassets */,
+				8422316F1CD508560060ECE4 /* POI-images.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 			files = (
 				84EB59731C9379B800B778E2 /* CABTitledParagraphPostView.xib in Resources */,
 				8437BC891CB846F90053BA86 /* CABRoureSection.plist in Resources */,
+				842231701CD508560060ECE4 /* POI-images.xcassets in Resources */,
 				8437BC661CB7E25F0053BA86 /* CABArrivalSection.plist in Resources */,
 				8437BC931CB84A670053BA86 /* CABCommunityRules.plist in Resources */,
 				8437BC6B1CB7E6C80053BA86 /* Localizable.strings in Resources */,

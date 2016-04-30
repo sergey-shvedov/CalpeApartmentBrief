@@ -28,6 +28,7 @@ struct ConstantIdentifier {
 	static let CellAppliancesBlank = "Blank Cell"
 	static let CellAppliancesArticle = "Article Imaged Cell"
 	static let CellAppliancesHeader = "Partition Header Cell"
+	static let CellInfoDescription = "Info Map Description Cell"
 }
 
 struct ConstantMenuIdentifier {
@@ -130,16 +131,16 @@ struct ConstantMagicNumbers {
 		static let HomeLongitude: Double = 0.0477460
 		static let PointName = "Partida Garduix, 31F"
 		struct RegionLocal: RegionCoordinates {
-			static let Latitude: Double = 38.657705
-			static let Longitude: Double = 0.0477460
-			static let SpanLatitude: Double = 0.100
-			static let SpanLongitude: Double = 0.100
+			static let Latitude: Double = 38.647721
+			static let Longitude: Double = 0.053062
+			static let SpanLatitude: Double = 0.055
+			static let SpanLongitude: Double = 0.055
 		}
 		struct RegionNorth: RegionCoordinates {
-			static let Latitude: Double = 38.657705
-			static let Longitude: Double = 0.0477460
-			static let SpanLatitude: Double = 0.300
-			static let SpanLongitude: Double = 0.300
+			static let Latitude: Double = 38.675183
+			static let Longitude: Double = -0.064085
+			static let SpanLatitude: Double = 0.350
+			static let SpanLongitude: Double = 0.350
 		}
 
 	}

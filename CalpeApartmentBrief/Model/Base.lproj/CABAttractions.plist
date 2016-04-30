@@ -39,7 +39,7 @@ Free parking (75min)</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_masymas</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -63,7 +63,7 @@ Free parking</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_mercadona</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -84,7 +84,7 @@ It is advisable to walk up Penon de Ifach in either the morning or evening in or
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_ifach</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -107,7 +107,7 @@ Free parking</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_consum</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -131,7 +131,7 @@ Free parking</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_aldi</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -155,7 +155,7 @@ Free parking</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_lidl</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -178,7 +178,7 @@ Monday - Friday</string>
 		<key>Type</key>
 		<string>Infrastructure</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_seaport</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -194,11 +194,12 @@ Monday - Friday</string>
 		<key>Title</key>
 		<string>Tourist Info Calp</string>
 		<key>Body</key>
-		<string>With over 190 tourist offices throughout the Region of Valencia, the Tourist Info Network offers visitors comprehensive information to organise a trip, enjoy their stay and discover attractive destinations and alternatives. Events, maps, activities, routes, beaches… you can find out everything you want to know about your chosen tourist destination at your nearest Tourist Info office.</string>
+		<string>With over 190 tourist offices throughout the Region of Valencia, the Tourist Info Network offers visitors comprehensive information to organise a trip, enjoy their stay and discover attractive destinations and alternatives. Events, maps, activities, routes, beaches… you can find out everything you want to know about your chosen tourist destination at your nearest Tourist Info office.
+Mon-Sat: 9:00 – 14:30 / 16:00 – 19:30</string>
 		<key>Type</key>
 		<string>Infrastructure</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_info</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -220,7 +221,7 @@ In the 19th &amp; 20th century, the salt flats were important to Calpe. The salt
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_salinas</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -242,7 +243,7 @@ Sat: 9:00 – 14:00</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_market</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -262,7 +263,7 @@ Sat: 9:00 – 14:00</string>
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_goods</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -284,7 +285,7 @@ Wed, Sat: 9:00 – 14:00</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_newMarket</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -306,7 +307,7 @@ Mon-Sun: 9:00 – 23:00</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_baltika</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -326,7 +327,7 @@ Mon-Sun: 9:00 – 23:00</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_solymar</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -349,7 +350,7 @@ www.taxicalpe.es
 		<key>Type</key>
 		<string>Infrastructure</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_taxi</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -369,7 +370,7 @@ www.taxicalpe.es
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_multiprecio</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -389,7 +390,7 @@ www.taxicalpe.es
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_multiprecio</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -409,7 +410,7 @@ www.taxicalpe.es
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_hiper</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -433,7 +434,7 @@ Free parking</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_dia</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -457,7 +458,7 @@ Free parking for customers (Time limited)</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_mercadona</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -477,7 +478,7 @@ Free parking for customers (Time limited)</string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_town</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -498,7 +499,7 @@ The building of the wall red was built in 1973 in the Alicante Town of Calpe, wi
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_bofill</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -520,7 +521,7 @@ Opening hours: Only prearranged visits for groups, from Monday to Friday in the 
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_casa</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -541,7 +542,7 @@ http://www.tramalicante.es</string>
 		<key>Type</key>
 		<string>Infrastructure</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_tram</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -563,7 +564,7 @@ alsa.es</string>
 		<key>Type</key>
 		<string>Infrastructure</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_bus</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -585,7 +586,7 @@ carrefour.es</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_carrefour</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -607,7 +608,7 @@ www.eroski.es</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_eroski</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -630,7 +631,7 @@ http://www.cclamarina.com/</string>
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_lamarina</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -653,7 +654,7 @@ http://www.portaldelamarina.org</string>
 		<key>Type</key>
 		<string>ChineseStore</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_lamarina</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -677,7 +678,7 @@ http://www.bodegasxalo.com</string>
 		<key>Type</key>
 		<string>Store</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_xalo</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -699,7 +700,7 @@ www.guadalest.eu</string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_guadalest</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -725,7 +726,7 @@ http://www.lasfuentesdelalgar.com/</string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_algar</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -748,7 +749,7 @@ www.orthodox.es</string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_ortodox</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -772,7 +773,7 @@ safariaitana.es </string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_aitana</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -795,7 +796,7 @@ www.terramiticapark.com</string>
 		<key>Type</key>
 		<string>Entertainment</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_terramitica</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -821,7 +822,7 @@ http://www.terranatura.com/</string>
 		<key>Type</key>
 		<string>Entertainment</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_terranatura</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -846,7 +847,7 @@ www.mundomar.es</string>
 		<key>Type</key>
 		<string>Entertainment</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_mundomar</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -871,7 +872,7 @@ http://www.aqualandia.net/</string>
 		<key>Type</key>
 		<string>Entertainment</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_aqualandia</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -894,7 +895,7 @@ http://www.castillodesantabarbara.com</string>
 		<key>Type</key>
 		<string>Nature</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_santabarbara</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
@@ -919,11 +920,32 @@ http://www.cac.es</string>
 		<key>Type</key>
 		<string>Entertainment</string>
 		<key>Image-name</key>
-		<string>photoHouse</string>
+		<string>poi_cityofarts</string>
 		<key>Tappable</key>
 		<true/>
 		<key>POI-id</key>
 		<string>poi-40</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.644418</string>
+		<key>Longitude</key>
+		<string>0.042780</string>
+		<key>Title</key>
+		<string>Tourist Info Calp</string>
+		<key>Body</key>
+		<string>With over 190 tourist offices throughout the Region of Valencia, the Tourist Info Network offers visitors comprehensive information to organise a trip, enjoy their stay and discover attractive destinations and alternatives. Events, maps, activities, routes, beaches… you can find out everything you want to know about your chosen tourist destination at your nearest Tourist Info office.
+Mon-Sat: 9:00 – 14:30 / 16:00 – 19:30</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_info</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-41</string>
 	</dict>
 </array>
 </plist>

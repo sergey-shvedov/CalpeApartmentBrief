@@ -49,6 +49,9 @@ class CABInfoMapViewController: CABCollapsedViewController {
 			titleLabel.text = justPoint.title
 			attractionDescription = justPoint.body
 			tableView.reloadData()
+			if (tableView.numberOfRowsInSection(0) > 0) && (tableView.numberOfSections > 0) {
+				tableView.scrollToRowAtIndexPath(NSIndexPath.init(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: false)
+			}
 			switch justPoint.imageName {
 			case nil:
 				break
@@ -94,7 +97,7 @@ extension CABInfoMapViewController: UITableViewDelegate, UITableViewDataSource
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let identifier = "Info Map Description Cell"
+		let identifier = ConstantIdentifier.CellInfoDescription
 		
 		let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
 		cell.backgroundColor = UIColor.clearColor()

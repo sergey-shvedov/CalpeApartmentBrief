@@ -958,7 +958,7 @@
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGr-hQ-dtx">
-                                                                                <rect key="frame" x="25" y="9" width="534" height="2"/>
+                                                                                <rect key="frame" x="24" y="9" width="536" height="2"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="2" id="vRK-3y-2dh"/>
@@ -967,8 +967,8 @@
                                                                         </subviews>
                                                                         <constraints>
                                                                             <constraint firstItem="UGr-hQ-dtx" firstAttribute="centerY" secondItem="hJb-Zb-RGR" secondAttribute="centerY" id="Es3-E8-3vb"/>
-                                                                            <constraint firstItem="UGr-hQ-dtx" firstAttribute="leading" secondItem="hJb-Zb-RGR" secondAttribute="leading" constant="25" id="xqV-lV-ggq"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="UGr-hQ-dtx" secondAttribute="trailing" constant="25" id="zFz-nl-IvW"/>
+                                                                            <constraint firstItem="UGr-hQ-dtx" firstAttribute="leading" secondItem="hJb-Zb-RGR" secondAttribute="leading" priority="999" constant="24" id="xqV-lV-ggq"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="UGr-hQ-dtx" secondAttribute="trailing" constant="24" id="zFz-nl-IvW"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <constraints>
