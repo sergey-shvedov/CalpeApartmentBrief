@@ -118,6 +118,7 @@
 		8408E2C71CD147F000E7AC43 /* CABDataProvider+Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CABDataProvider+Attraction.swift"; path = "CalpeApartmentBrief/Model/CABDataProvider+Attraction.swift"; sourceTree = "<group>"; };
 		840BA08C1CB2EB58000B5FD0 /* CABAppliancesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABAppliancesHeaderTableViewCell.swift; path = CalpeApartmentBrief/View/CABAppliancesHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		8422316F1CD508560060ECE4 /* POI-images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "POI-images.xcassets"; path = "Resources/POI-images.xcassets"; sourceTree = "<group>"; };
+		842231711CD586DC0060ECE4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = CalpeApartmentBrief/Model/ru.lproj/CABAttractions.plist; sourceTree = "<group>"; };
 		8426BC711C9D250E00128B5D /* CABPinnedMapPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CABPinnedMapPostView.xib; path = CalpeApartmentBrief/View/CABPinnedMapPostView.xib; sourceTree = "<group>"; };
 		8426BC731C9D269100128B5D /* CABPostPinnedMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPostPinnedMap.swift; path = CalpeApartmentBrief/Model/CABPostPinnedMap.swift; sourceTree = "<group>"; };
 		8426BC751C9D274800128B5D /* CABPinnedMapPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABPinnedMapPostView.swift; path = CalpeApartmentBrief/View/CABPinnedMapPostView.swift; sourceTree = "<group>"; };
@@ -581,6 +582,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8408E2C31CD13EAC00E7AC43 /* Base */,
+				842231711CD586DC0060ECE4 /* ru */,
 			);
 			name = CABAttractions.plist;
 			sourceTree = "<group>";

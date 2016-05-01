@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconHome</string>
+		<key>Latitude</key>
+		<string>38.657705</string>
+		<key>Longitude</key>
+		<string>0.0477460</string>
+		<key>Title</key>
+		<string>Partida Garduix 31F</string>
+		<key>Body</key>
+		<string>Небольшая современная новая квартира с двумя спальнями на первом этаже закрытого двухэтажного жилого комплекса. Отдельная кухня, терраса со столиком и стульями. Площадь апартаментов - 70м2. В гостиной диван-кровать, большой, подключенный к интернет, телевизор с функциями SmartTV. Безлимитный WiFi - интернет включен в стоимость. Тихое спокойное место. Расположение апартаментов восточно-южное. Красивая лесенка ведет из гостиной прямо во двор. Собственные шезлонги.</string>
+		<key>Type</key>
+		<string>Home</string>
+		<key>Image-name</key>
+		<string>photoHouse</string>
+		<key>Tappable</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646094</string>
+		<key>Longitude</key>
+		<string>0.049149</string>
+		<key>Title</key>
+		<string>Супермаркет Masymas</string>
+		<key>Body</key>
+		<string>Ближайший супермаркет к апартаментам.
+Masymas  – это сеть супермаркетов, выросшая из традиционного семейного предприятия. Основано в Pedreguer, Аликанте.
+http://www.masymas.com/en/
+Торговый центр «Plaza Central Calpe» 
+Пн-Сб: 9:00 – 21:00
+Бесплатный паркинг (75мин)</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_masymas</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-01</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.650016</string>
+		<key>Longitude</key>
+		<string>0.072017</string>
+		<key>Title</key>
+		<string>Mercadona</string>
+		<key>Body</key>
+		<string>Mercadona – это испанская семейная сеть супермаркетов. Она основана в 1977 году как небольшая мясная лавка в Валенсии. Магазины расположены в 46 провинциях, в 17 автономных сообществах. В 2009 году Mercadona заняла 9-е место в рейтинге наиболее авторитетных компаний в мире.
+www.mercadona.es
+Пн-Сб: 9:00 – 21:30
+Бесплатная парковка</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_mercadona</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-02</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.638991</string>
+		<key>Longitude</key>
+		<string>0.072685</string>
+		<key>Title</key>
+		<string>Penon de Ifach</string>
+		<key>Body</key>
+		<string>Полуостров Penon de Ifach. является символом Коста Бланка и природным заповедником. У основания горы есть музей, к которому можно подъехать на машине. залах музея представлены животные и цветы Средиземноморья. От музея начинаются пешие маршруты до вершины горы, также на горе проложены 20 трасс для скалолазов. В награду за терпение (неспешный пеший путь на гору занимает 60-90 минут) с вершины откроется потрясающий вид на море и окрестности с уютными виллами.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_ifach</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-03</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.649675</string>
+		<key>Longitude</key>
+		<string>0.073098</string>
+		<key>Title</key>
+		<string>Consum</string>
+		<key>Body</key>
+		<string>Consum основан в 1975 году в Валенсии с открытием своего первого магазина в Alacuás. С тех пор осуществляется непрерывная экспансия, что позволяет позиционировать себя как одну из ведущих компаний в секторе продуктовых магазинов в Испании.
+www.consum.com
+Пн-Сб: 9:00 - 21:00
+Бесплатная парковка</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_consum</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-04</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.650373</string>
+		<key>Longitude</key>
+		<string>0.068618</string>
+		<key>Title</key>
+		<string>Aldi</string>
+		<key>Body</key>
+		<string>Aldi, являясь сетью магазинов-жёстких дискаунтеров, экономит на торговых площадях, оборудовании, персонале, поддерживая, однако, единый уровень обслуживания, качества товаров и их ассортимента. Основанна в Германии братьями Карлом и Тео Альбрехтами в 1946 году.
+www.aldi.es
+Пн-Сб: 9:00 - 21:30
+Вс: 10:00 - 15:00 (летнее время)
+Бесплатная парковка</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_aldi</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-05</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.645608</string>
+		<key>Longitude</key>
+		<string>0.061900</string>
+		<key>Title</key>
+		<string>Lidl</string>
+		<key>Body</key>
+		<string>Lidl – немецкая сеть супермаркетов. Первые супермаркеты LIDL появились на юге Германии, неся за собой первые ценовые войны, что впоследствии стало традицией LIDL. Постепенно сеть росла и ширилась, достигнув уровня «больших братьев» «ALDI» и «REAL». В отличие от своего конкурента ALDI (800—900 наименований товаров), LIDL предлагает более широкий ассортимент товаров (около 2000 наименований).
+www.lidl.es
+Пн-Сб: 9:00 - 21:30
+Вс: 9:00 - 15:00 (летнее время)
+Бесплатная парковка</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_lidl</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-06</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.639250</string>
+		<key>Longitude</key>
+		<string>0.068951</string>
+		<key>Title</key>
+		<string>Морской порт Кальпе</string>
+		<key>Body</key>
+		<string>В порту находится знаменитая рыбная биржа, снабжающая морскими продуктами все побережье Коста Бланка. Для частных лиц есть возможность купить свежие морепродукты и рыбу в специальном торговом отделе биржи. Также у подножия Penon de Ifach находится гавань с яхт-клубом, фешенебельным рестораном при яхт-клубе (доступным не только для членов клуба) и рыбными ресторанами. В открытых витринах представлены всевозможные виды рыбы и морепродуктов, это стоит посмотреть даже тем, кто не ест дары моря.</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_seaport</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-07</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.642077</string>
+		<key>Longitude</key>
+		<string>0.064229</string>
+		<key>Title</key>
+		<string>Tourist Info Calp</string>
+		<key>Body</key>
+		<string>Посетите один из офисов Туристической информации, где вам бесплатно предоставят карты и всю необходимую информацию о ближайших достопримечательностях. 
+Пн-Сб: 9:00 - 14:30 / 16:00 - 19:30</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_info</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-08</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.642673</string>
+		<key>Longitude</key>
+		<string>0.065696</string>
+		<key>Title</key>
+		<string>Озеро Лас-Салинас</string>
+		<key>Body</key>
+		<string>Лас-Салинас-дель-Кальпе — уникальная природная зона курорта. Это соленое озеро, по берегам которого в летний период селятся стаи фламинго.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_salinas</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-09</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.645420</string>
+		<key>Longitude</key>
+		<string>0.047607</string>
+		<key>Title</key>
+		<string>Субботний рынок</string>
+		<key>Body</key>
+		<string>Еженедельный субботний рынок предлагает свежие фрукты и овощи.
+Рынок в Кальпе популярен круглый год и особенно многолюден в высокий сезон. В базарный день найти парковку может быть проблемой - лучше приходите пораньше и паркуйтесь немного за пределами города (например, недалеко от теннисного клуба). Рынок обычно закрывается около 13:30.
+Сб: 9:00 - 14:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_market</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-10</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.645697</string>
+		<key>Longitude</key>
+		<string>0.058829</string>
+		<key>Title</key>
+		<string>Субботний вещевой рынок</string>
+		<key>Body</key>
+		<string>Эта часть рынка продает широкий ассортимент промышленных товаров, включая одежду, мебель, изделия из кожи, ювелирные изделия, игрушки и музыку.
+Сб: 9:00 - 14:00</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_goods</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-11</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.644179</string>
+		<key>Longitude</key>
+		<string>0.056975</string>
+		<key>Title</key>
+		<string>Новый продуктовый рынок</string>
+		<key>Body</key>
+		<string>Рынок работает по средам и субботам в первой половине дня. Фрукты, овощи, цветы, сухофрукты, мед…
+Ср, Сб: 9:00 - 14:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_newMarket</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-12</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.643959</string>
+		<key>Longitude</key>
+		<string>0.052655</string>
+		<key>Title</key>
+		<string>Супермаркет Baltika</string>
+		<key>Body</key>
+		<string>Супермаркет русских продуктов (гречка, селедка и пр.) и некоторых других видов восточно-европейских продуктов питания. Также имеет очень удобное рабочее время – открыт 7 дней в неделю.
+Пн-Вс: 9:00 - 23:00</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_baltika</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-13</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.642550</string>
+		<key>Longitude</key>
+		<string>0.049802</string>
+		<key>Title</key>
+		<string>Супермаркет Solymar</string>
+		<key>Body</key>
+		<string>Один из крупнейших супермаркетов в городе. Он расположен в здании отеля Solymar.</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_solymar</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-14</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.642257</string>
+		<key>Longitude</key>
+		<string>0.050538</string>
+		<key>Title</key>
+		<string>Taxi</string>
+		<key>Body</key>
+		<string>Постоянная стоянка такси в Кальпе.
+
+www.taxicalpe.es
++34 965 837 878</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_taxi</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-15</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.644025</string>
+		<key>Longitude</key>
+		<string>0.051952</string>
+		<key>Title</key>
+		<string>Multiprecio</string>
+		<key>Body</key>
+		<string>Китайский магазин продает очень широкий ассортимент дешевых предметов домашнего обихода, включая одежду, мебель, инструменты, посуду, канцелярские товары, игрушки и музыку.</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_multiprecio</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-16</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646964</string>
+		<key>Longitude</key>
+		<string>0.045400</string>
+		<key>Title</key>
+		<string>Multiprecio</string>
+		<key>Body</key>
+		<string>Китайский магазин продает очень широкий ассортимент дешевых предметов домашнего обихода, включая одежду, мебель, инструменты, посуду, канцелярские товары, игрушки и музыку.</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_multiprecio</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-17</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646398</string>
+		<key>Longitude</key>
+		<string>0.041719</string>
+		<key>Title</key>
+		<string>Hiper Calp</string>
+		<key>Body</key>
+		<string>Китайский магазин продает очень широкий ассортимент дешевых предметов домашнего обихода, включая одежду, мебель, инструменты, посуду, канцелярские товары, игрушки и музыку.</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_hiper</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-18</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646109</string>
+		<key>Longitude</key>
+		<string>0.041260</string>
+		<key>Title</key>
+		<string>Супермаркет Dia</string>
+		<key>Body</key>
+		<string>Dia – испанская международная сеть магазинов-жёстких дискаунтеров, основана в 1979 году, с 2012 года работает на международном уровне. Насчитывает 6,914 магазинов, что делает её третьей сетью по величине в Европе.
+www.dia.es
+Пн-Сб: 9:00 - 21:00
+Вс: 9:00 - 14:00 (летнее время)
+Бесплатная парковка</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_dia</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-19</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646369</string>
+		<key>Longitude</key>
+		<string>0.045423</string>
+		<key>Title</key>
+		<string>Mercadona</string>
+		<key>Body</key>
+		<string>Mercadona – это испанская семейная сеть супермаркетов. Она основана в 1977 году как небольшая мясная лавка в Валенсии. Магазины расположены в 46 провинциях, в 17 автономных сообществах. В 2009 году Mercadona заняла 9-е место в рейтинге наиболее авторитетных компаний в мире.
+www.mercadona.es
+Пн-Сб: 9:00 – 21:30
+Бесплатная парковка для клиентов (ограничена по времени)</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_mercadona</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-20</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.645024</string>
+		<key>Longitude</key>
+		<string>0.044816</string>
+		<key>Title</key>
+		<string>Старый город Кальпе</string>
+		<key>Body</key>
+		<string>В традиционном для испанских курортов Старом городе в Кальпе сохранились остатки крепостной стены времен мавританского владычества и единственный в Испании собор, построенный в готическо-мавританском стиле «мудехар». Интерес представляют часовни Сан-Сальвадор и Комета 18 века, а также мельница Торе-Моли-дель-Морелло 19 века. Также стоит посетить две живописные местные церкви — Iglesia Antigua и Senora de las Nieves.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_town</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-21</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.639550</string>
+		<key>Longitude</key>
+		<string>0.040273</string>
+		<key>Title</key>
+		<string>Рикардо Боффиль</string>
+		<key>Body</key>
+		<string>Знаменитые дома необычной архитектуры, спроектированные известным испанским архитектором Рикардо Боффилем. Легко дойти пешком от центра города.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_bofill</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-22</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.655039</string>
+		<key>Longitude</key>
+		<string>0.047997</string>
+		<key>Title</key>
+		<string>Casa del Cocó</string>
+		<key>Body</key>
+		<string>Этнологический музей «Casa del Cocó» – типичный сельский дом в Марина Альта. Вы сможете ознакомиться с традиционными помещениями для хранения сельскохозяйственной продукции, с площадками выгула скота и овец, с различными складскими помещениями, амбарами и ремесленными мастерскими.
+Телефон: (+34) 965 839 123
+Часы работы: только заранее согласованные посещения для групп с понедельника по пятницу в первой половине дня.</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_casa</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-23</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.649792</string>
+		<key>Longitude</key>
+		<string>0.033036</string>
+		<key>Title</key>
+		<string>Станция ТРАМ</string>
+		<key>Body</key>
+		<string>Железнодорожная станция с отправлением из Кальпе в Аликанте или в Дению. Линия Аликанте - Дения работает на протяжении 93 км вдоль всего северного побережья провинции Аликанте и имеет 40 станций.
+http://www.tramalicante.es
+Расписание местного автобуса: 
+http://www.autobusesifach.net</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_tram</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-24</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646797</string>
+		<key>Longitude</key>
+		<string>0.044559</string>
+		<key>Title</key>
+		<string>Автобусная станция</string>
+		<key>Body</key>
+		<string>Междугородняя автобусная станция компании ALSA (ведущим оператор в испанском секторе пассажирских перевозок). ALSA интегрирован в National Express Group и предлагает автобусные и железнодорожные маршруты в Великобританию, континентальную Европе, Северную Америку, Северную Африку, и в Средний Восток.
+www.alsa.es</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_bus</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-25</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.536427</string>
+		<key>Longitude</key>
+		<string>-0.175173</string>
+		<key>Title</key>
+		<string>Гипермаркет Carrefour</string>
+		<key>Body</key>
+		<string>Carrefour – французская международная розничная торговая сеть со штаб-квартирой в городе Булонь-Бийанкур, Франция. Это одна из крупнейших сетей гипермаркетов в мире.
+Пн-Вс: 9:00 - 22:00
+www.carrefour.es</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_carrefour</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-26</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.818170</string>
+		<key>Longitude</key>
+		<string>0.023965</string>
+		<key>Title</key>
+		<string>Гипермаркет Eroski</string>
+		<key>Body</key>
+		<string>Eroski – испанский сеть супермаркетов с почти 1000 торговыми точками, разбросанными по Испании. Магазины различаются по размеру – от крупнейших гипермаркетов с названием &apos;Eroski&apos;, вплоть до небольших магазинов «Eroski Center».
+Пн-Сб: 9:00 - 22:00
+www.eroski.es</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_eroski</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-27</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.538908</string>
+		<key>Longitude</key>
+		<string>-0.175659</string>
+		<key>Title</key>
+		<string>ТРЦ LaMarina (Бенидорм)</string>
+		<key>Body</key>
+		<string>Один из ближайших больших торгово-развлекательных центров. La Marina был открыт 14 сентября 2000 года, и имеет четыре уровня: один подземный этаж для бесплатной парковки, два торговых этажа и зона отдыха и ресторанный дворик на последнем этаже. В зоне развлечений представлены рестораны, кинотеатр и боулинг-центр, а также 4000 квадратных метров детского городка (детские надувные замки, небольшой гольф-корт, американские горки, карты, замок принцессы, круглая карусель ...)
+Zara, H&amp;M, Massimo Dutti, Guess, Shana, Celio, C&amp;A, Mango, Benetton, Mayoral, Stradivarius, Tous,… 
+Пн-Сб: 10:00 - 22:00
+www.cclamarina.com/</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_lamarina</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-28</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.817608</string>
+		<key>Longitude</key>
+		<string>0.022398</string>
+		<key>Title</key>
+		<string>ТРЦ LaMarina (Дения) </string>
+		<key>Body</key>
+		<string>Один из ближайших больших торгово-развлекательных центров. В торговом центре представлен широкий спектр марок, плюс зона отдыха с кинотеатрами, ресторанами и кафе.
+Пн-Сб: 10:00 - 22:00
+www.portaldelamarina.org</string>
+		<key>Type</key>
+		<string>ChineseStore</string>
+		<key>Image-name</key>
+		<string>poi_lamarina</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-29</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.744116</string>
+		<key>Longitude</key>
+		<string>-0.018520</string>
+		<key>Title</key>
+		<string>Винодельня Xaló</string>
+		<key>Body</key>
+		<string>Винный завод с магазином. Компания имеет более чем полувековую историю и предлагает широкий выбор местного вина в том числе и на розлив. Имеется дегустационная стойка.
+Пн-Пт: 9:30 - 13:30 / 15:00 - 19:00
+Сб: 10:30 -14: 30
+Вс: 9:30 - 13:30
+http://www.bodegasxalo.com</string>
+		<key>Type</key>
+		<string>Store</string>
+		<key>Image-name</key>
+		<string>poi_xalo</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-30</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.674722</string>
+		<key>Longitude</key>
+		<string>-0.198889</string>
+		<key>Title</key>
+		<string>Гуадалест</string>
+		<key>Body</key>
+		<string>Замок, расположенный в горах. Гуадалест был последним оплотом мавров на полуострове, сокровищница арабских правителей. Со смотровых площадок замка открываются потрясающие виды на окрестные долины с земледельческими террасами, водохранилище с бирюзовой водой и реку протекающую у подножия скалы. В малюсеньком городке, расположенном вокруг замка вы найдете множество маленьких, но интересных музеев, а так же лавок с кустарными изделиями местных мастеров. 
+www.guadalest.eu</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_guadalest</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-31</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.658584</string>
+		<key>Longitude</key>
+		<string>-0.097703</string>
+		<key>Title</key>
+		<string>Водопады Альгара</string>
+		<key>Body</key>
+		<string>Это настоящий тематический парк о важности воды в качестве экологического, экономического и культурного ресурса. Маршрут длиной 1,5 км вдоль русла реки Альгар (&quot;пещеры&quot; на арабском языке). Вы увидите впечатляющие водопады и многочисленные лагуны, где вы сможете принять освежающие ванны в кристально чистой ￼воде, известные ранее как «Источник здоровья».
+Стоимость билета: до 4 €
+Пн-Вс: 9:30 - 17:30
+http://www.lasfuentesdelalgar.com/</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_algar</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-32</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.632678</string>
+		<key>Longitude</key>
+		<string>-0.014100</string>
+		<key>Title</key>
+		<string>Православная церковь </string>
+		<key>Body</key>
+		<string>Первая русская православная церковь. Это точная копия православного храма 17-го века в России. Церковь Святого Михаила Архангела была открыта в 2007 году. Для строительства храма были использованы уральские материалы. Кроме того, в строительных работах участвовали мастера из России.
+Пн-Вс: 10:00 - 18:00
+www.orthodox.es</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_ortodox</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-33</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.646944</string>
+		<key>Longitude</key>
+		<string>-0.343056</string>
+		<key>Title</key>
+		<string>Сафари-парк Айтана</string>
+		<key>Body</key>
+		<string>Прекрасно организованный парк, въезжаете в него на своем автомобиле, катаетесь по проложенной дорожке и выходите из машины там, где Вам понравится. Интересно приехать к открытию — самым первым едет служитель на своей машине и кормит всех зверей — всех увидите в самом лучшем виде! 
+Стоимость билетов: до 20 €
+Пн-Вс: 11:00 - 19:00
+www.safariaitana.es</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_aitana</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-34</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.561194</string>
+		<key>Longitude</key>
+		<string>-0.158336</string>
+		<key>Title</key>
+		<string>Terra Mítica</string>
+		<key>Body</key>
+		<string>Terra Митика – тематический парк развлечений, расположенный в Бенидорме. Парк разделен на 5 тематических зон: Египет, Греция, Рим, Иберия и острова (Средиземноморья). Парк был открыт в 2000 г. В общей сложности насчитывает 25 аттракционов.
+Стоимость билетов: до 40 €
+Пн-Вс: 10:00 - 20:00
+www.terramiticapark.com</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>poi_terramitica</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-35</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.569147</string>
+		<key>Longitude</key>
+		<string>-0.144828</string>
+		<key>Title</key>
+		<string>Terra Natura</string>
+		<key>Body</key>
+		<string>Terra Natura – тематический парк (зоопарк и аквапарк).
+Terra Natura Animal Parks позволяет посетителям контактировать с животными с невидимыми для человеческого глаза барьерами. Многие виды можно рассмотреть вблизи, в том числе слонов, тигров, обезьян, львов, африканских буйволов, и носорогов.
+320000 квадратных метров Terra Natura Benidorm разделены на четыре зоны или зоны: Pangea (входная зона), Америки, Азии и Европы. Посетители могут увидеть около 1500 животных, представляющих 200 видов.
+Аква Натура Бенидорм – 40 000 квадратных метров водного парка, где люди могут наслаждаться шоу морских львов и даже поплавать с ними. В комплекс включен большой бассейн с более чем 1 километром горок.
+Стоимость билетов: до 30 €
+Пн-Вс: 10:00 - 19:00
+http://www.terranatura.com/</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>poi_terranatura</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-36</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.542609</string>
+		<key>Longitude</key>
+		<string>-0.093167</string>
+		<key>Title</key>
+		<string>MundoMar</string>
+		<key>Body</key>
+		<string>Мундомар – морской парк животных. Это побратим аквапарка Aqualandia, который находится в непосредственной близости, и имеет ту же парковку. Смотровая площадка в верхней части Мундомара, рядом с дельфинарием, открывает вид на всю Акваландию.
+В парке представлено много различных видов животных, в том числе и дельфины, морские львы, пингвины, сурикаты и многих других морских и наземных животных.
+В течение дня проходят различные представления с участием дельфинов, морских львов, и попугаев.
+Стоимость билетов: до 30 €
+Пн-Вс: 10:00 - 19:00
+www.mundomar.es</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>poi_mundomar</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-37</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.542123</string>
+		<key>Longitude</key>
+		<string>-0.094833</string>
+		<key>Title</key>
+		<string>Aqualandia</string>
+		<key>Body</key>
+		<string>Акваландия – аквапарк, побратимом морского парка животных Mundomar, расположенного по соседству и разделяющего ту же бесплатную парковку. Вода в парке поступает прямо из моря.
+Акваландия включает множество водных аттракционов, включая водные горки, бассейны, речные пороги и зоны для солнечных ванн.
+Стоимость билетов: до 30 €
+Пн-Вс: 10:00 - 19:00
+http://www.aqualandia.net/</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>poi_aqualandia</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-38</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.349477</string>
+		<key>Longitude</key>
+		<string>-0.477362</string>
+		<key>Title</key>
+		<string>Санта-Барбара</string>
+		<key>Body</key>
+		<string>Крепость Святой Варвары расположена на горе Бенакантиль (Mount Benacantil) на высоте 166 метров над уровнем моря.
+Внутри горы Бенакантиль установлен скоростной лифт, поднимающий посетителей в крепость (подъем на лифте платный). Доступ в крепость свободный. На склонах горы Бенакантиль были обнаружены предметы материальной культуры Бронзового века, а также культуры иберов и римлян. Однако, возникновение самой крепости датируется IХ веком н. э. — периодом арабского владычества на Пиренейском полуострове.
+Пн-Вс: 10:00 - 22:00
+http://www.castillodesantabarbara.com</string>
+		<key>Type</key>
+		<string>Nature</string>
+		<key>Image-name</key>
+		<string>poi_santabarbara</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-39</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>39.454569</string>
+		<key>Longitude</key>
+		<string>-0.352142</string>
+		<key>Title</key>
+		<string>Город искусств и наук</string>
+		<key>Body</key>
+		<string>Город искусств и наук — архитектурный комплекс из пяти сооружений на осушенном дне реки Турия в городе Валенсия. Дизайн принадлежит валенсианскому архитектору Сантьяго Калатраве, строительство началось в 1996 году. Комплекс является одним из выдающихся образцов современной архитектуры. Посетителям представлены: оперный театр и сцена для других театральных постановок, кинотеатр IMAX, планетарий, театр лазерных постановок, галерея / сад, научный музей, океанографический парк на открытом воздухе.
+Комплекс окружен парками, ручьями и бассейнами, эта территория — популярное место отдыха жителей и гостей города, здесь работают бары и кафе.
+Стоимость билета: 10-30 €
+Пн-Вс: 10:00 - 19:00
+http://www.cac.es</string>
+		<key>Type</key>
+		<string>Entertainment</string>
+		<key>Image-name</key>
+		<string>poi_cityofarts</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-40</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string></string>
+		<key>Latitude</key>
+		<string>38.644418</string>
+		<key>Longitude</key>
+		<string>0.042780</string>
+		<key>Title</key>
+		<string>Tourist Info Calp</string>
+		<key>Body</key>
+		<string>Посетите один из офисов Туристической информации, где вам бесплатно предоставят карты и всю необходимую информацию о ближайших достопримечательностях. 
+Пн-Сб: 9:00 - 14:30 / 16:00 - 19:30</string>
+		<key>Type</key>
+		<string>Infrastructure</string>
+		<key>Image-name</key>
+		<string>poi_info</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-41</string>
+	</dict>
+</array>
+</plist>
