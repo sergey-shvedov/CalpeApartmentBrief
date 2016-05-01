@@ -22,7 +22,7 @@
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646094</string>
 		<key>Longitude</key>
@@ -47,7 +47,7 @@ Free parking (75min)</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.650016</string>
 		<key>Longitude</key>
@@ -71,7 +71,7 @@ Free parking</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.638991</string>
 		<key>Longitude</key>
@@ -92,7 +92,7 @@ It is advisable to walk up Penon de Ifach in either the morning or evening in or
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.649675</string>
 		<key>Longitude</key>
@@ -115,7 +115,7 @@ Free parking</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.650373</string>
 		<key>Longitude</key>
@@ -139,7 +139,7 @@ Free parking</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.645608</string>
 		<key>Longitude</key>
@@ -163,7 +163,7 @@ Free parking</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.639250</string>
 		<key>Longitude</key>
@@ -186,7 +186,7 @@ Monday - Friday</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.642077</string>
 		<key>Longitude</key>
@@ -207,7 +207,7 @@ Mon-Sat: 9:00 – 14:30 / 16:00 – 19:30</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.642673</string>
 		<key>Longitude</key>
@@ -229,7 +229,7 @@ In the 19th &amp; 20th century, the salt flats were important to Calpe. The salt
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.645420</string>
 		<key>Longitude</key>
@@ -251,7 +251,7 @@ Sat: 9:00 – 14:00</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.645697</string>
 		<key>Longitude</key>
@@ -271,7 +271,7 @@ Sat: 9:00 – 14:00</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.644179</string>
 		<key>Longitude</key>
@@ -293,7 +293,7 @@ Wed, Sat: 9:00 – 14:00</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.643959</string>
 		<key>Longitude</key>
@@ -315,7 +315,7 @@ Mon-Sun: 9:00 – 23:00</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.642550</string>
 		<key>Longitude</key>
@@ -335,7 +335,7 @@ Mon-Sun: 9:00 – 23:00</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.642257</string>
 		<key>Longitude</key>
@@ -358,7 +358,7 @@ www.taxicalpe.es
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.644025</string>
 		<key>Longitude</key>
@@ -378,7 +378,7 @@ www.taxicalpe.es
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646964</string>
 		<key>Longitude</key>
@@ -398,7 +398,7 @@ www.taxicalpe.es
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646398</string>
 		<key>Longitude</key>
@@ -418,7 +418,7 @@ www.taxicalpe.es
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646109</string>
 		<key>Longitude</key>
@@ -442,7 +442,7 @@ Free parking</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646369</string>
 		<key>Longitude</key>
@@ -466,7 +466,7 @@ Free parking for customers (Time limited)</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.645024</string>
 		<key>Longitude</key>
@@ -486,7 +486,7 @@ Free parking for customers (Time limited)</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.639550</string>
 		<key>Longitude</key>
@@ -507,7 +507,7 @@ The building of the wall red was built in 1973 in the Alicante Town of Calpe, wi
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.655039</string>
 		<key>Longitude</key>
@@ -529,7 +529,7 @@ Opening hours: Only prearranged visits for groups, from Monday to Friday in the 
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.649792</string>
 		<key>Longitude</key>
@@ -550,7 +550,7 @@ http://www.tramalicante.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646797</string>
 		<key>Longitude</key>
@@ -572,7 +572,7 @@ alsa.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.536427</string>
 		<key>Longitude</key>
@@ -594,7 +594,7 @@ carrefour.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.818170</string>
 		<key>Longitude</key>
@@ -616,7 +616,7 @@ www.eroski.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.538908</string>
 		<key>Longitude</key>
@@ -639,7 +639,7 @@ http://www.cclamarina.com/</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.817608</string>
 		<key>Longitude</key>
@@ -662,7 +662,7 @@ http://www.portaldelamarina.org</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.744116</string>
 		<key>Longitude</key>
@@ -686,7 +686,7 @@ http://www.bodegasxalo.com</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.674722</string>
 		<key>Longitude</key>
@@ -708,7 +708,7 @@ www.guadalest.eu</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.658584</string>
 		<key>Longitude</key>
@@ -734,7 +734,7 @@ http://www.lasfuentesdelalgar.com/</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.632678</string>
 		<key>Longitude</key>
@@ -757,7 +757,7 @@ www.orthodox.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.646944</string>
 		<key>Longitude</key>
@@ -781,7 +781,7 @@ safariaitana.es </string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.561194</string>
 		<key>Longitude</key>
@@ -804,7 +804,7 @@ www.terramiticapark.com</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.569147</string>
 		<key>Longitude</key>
@@ -830,7 +830,7 @@ http://www.terranatura.com/</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.542609</string>
 		<key>Longitude</key>
@@ -855,7 +855,7 @@ www.mundomar.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.542123</string>
 		<key>Longitude</key>
@@ -880,7 +880,7 @@ http://www.aqualandia.net/</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.349477</string>
 		<key>Longitude</key>
@@ -903,7 +903,7 @@ http://www.castillodesantabarbara.com</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>39.454569</string>
 		<key>Longitude</key>
@@ -928,7 +928,7 @@ http://www.cac.es</string>
 	</dict>
 	<dict>
 		<key>Icon-name</key>
-		<string>iconHome</string>
+		<string></string>
 		<key>Latitude</key>
 		<string>38.644418</string>
 		<key>Longitude</key>

@@ -1076,7 +1076,7 @@
                                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                                 <subviews>
                                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-Fn-aNE">
-                                                                                        <rect key="frame" x="8" y="8" width="572" height="64.5"/>
+                                                                                        <rect key="frame" x="8" y="0.0" width="572" height="72.5"/>
                                                                                         <color key="tintColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <string key="text">Полуостров Penon de Ifach. является символом Коста Бланка и природным заповедником. У основания горы есть музей, к которому можно подъехать на машине. залах музея представлены животные и цветы Средиземноморья. От музея начинаются пешие маршруты до вершины горы, также на горе проложены 20 трасс для скалолазов. В награду за терпение (неспешный пеший путь на гору занимает 60-90 минут) с вершины откроется потрясающий вид на море и окрестности с уютными виллами.</string>
                                                                                         <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1089,7 +1089,7 @@
                                                                                     <constraint firstAttribute="trailing" secondItem="m7K-Fn-aNE" secondAttribute="trailing" priority="999" constant="4" id="0iU-6G-3B3"/>
                                                                                     <constraint firstItem="m7K-Fn-aNE" firstAttribute="leading" secondItem="BAb-gA-ky3" secondAttribute="leadingMargin" id="3Do-iU-Tzw"/>
                                                                                     <constraint firstAttribute="bottomMargin" secondItem="m7K-Fn-aNE" secondAttribute="bottom" id="G1S-cR-Ouh"/>
-                                                                                    <constraint firstItem="m7K-Fn-aNE" firstAttribute="top" secondItem="BAb-gA-ky3" secondAttribute="topMargin" id="cJ9-BV-nd2"/>
+                                                                                    <constraint firstItem="m7K-Fn-aNE" firstAttribute="top" secondItem="BAb-gA-ky3" secondAttribute="top" id="cJ9-BV-nd2"/>
                                                                                 </constraints>
                                                                             </tableViewCellContentView>
                                                                             <connections>
