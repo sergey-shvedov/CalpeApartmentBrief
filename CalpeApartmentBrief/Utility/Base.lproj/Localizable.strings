@@ -2,7 +2,7 @@
 	Arrival = Arrival;
 	Departure = Departure;
 	Route = Route;
-	POI = POI;
+	POI = Attractions;
 	Tips = Tips;
 	Appliances = Equipment;
 	Rules = Rules;

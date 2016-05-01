@@ -27,9 +27,18 @@ class CABHomeAnnotationView: MKAnnotationView
 	
 	convenience init(annotation: MKAnnotation?, reuseIdentifier: String?, withIconName iconName: String?) {
 		self.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-		if reuseIdentifier == ConstantAnnotationIdentifier.MapPost, let justIconName = iconName {
-			image = UIImage(named: justIconName)
-			self.iconName = justIconName
+		if let justIdentifier = reuseIdentifier, let justIconName = iconName {
+			switch justIdentifier {
+			case ConstantAnnotationIdentifier.MapPost:
+				fallthrough
+			case ConstantAnnotationIdentifier.ParkingPin:
+				image = UIImage(named: justIconName)
+				self.iconName = justIconName
+			default:
+				break
+			}
 		}
+		
+		
 	}
 }

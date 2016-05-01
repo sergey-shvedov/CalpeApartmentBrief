@@ -65,7 +65,7 @@ class CABPOISectionViewController: CABBaseSectionViewController, MKMapViewDelega
 	}
 	
 	private func loadAttractions() {
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)) {
 			if let justSection = self.section {
 				self.attractions = CABDataProvider.sharedInstance.provideBasedAttractionsForSection(justSection)
 				self.addParallaxToView(self.mapView)
@@ -186,7 +186,15 @@ extension CABPOISectionViewController
 			case .Home:
 				var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.MapPost)
 				if nil == view {
-					view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
+					view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: justAttraction.iconName )
+					view?.canShowCallout = false
+				} else { view!.annotation = annotation }
+				result = view
+				
+			case .Parking:
+				var view = mapView.dequeueReusableAnnotationViewWithIdentifier(ConstantAnnotationIdentifier.ParkingPin)
+				if nil == view {
+					view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.ParkingPin, withIconName: justAttraction.iconName )
 					view?.canShowCallout = false
 				} else { view!.annotation = annotation }
 				result = view

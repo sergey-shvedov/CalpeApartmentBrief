@@ -16,4 +16,5 @@ enum CABAttractionType: String {
 	case ChineseStore
 	case Entertainment
 	case Infrastructure
+	case Parking
 }

@@ -80,6 +80,7 @@ extension CABDataProvider
 			case CABAttractionType.ChineseStore.rawValue: result = .ChineseStore
 			case CABAttractionType.Entertainment.rawValue: result = .Entertainment
 			case CABAttractionType.Infrastructure.rawValue: result = .Infrastructure
+			case CABAttractionType.Parking.rawValue: result = .Parking
 			default: break
 			}
 		}

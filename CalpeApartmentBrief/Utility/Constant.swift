@@ -45,6 +45,7 @@ struct ConstantMenuIdentifier {
 
 struct ConstantAnnotationIdentifier {
 	static let MapPost = "MapPost"
+	static let ParkingPin = "ParkingPin"
 	static let StandartPin = "StandartPin"
 	static let HomeIconName = "iconHome"
 }

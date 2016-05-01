@@ -947,5 +947,125 @@ Mon-Sat: 9:00 – 14:30 / 16:00 – 19:30</string>
 		<key>POI-id</key>
 		<string>poi-41</string>
 	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.647041</string>
+		<key>Longitude</key>
+		<string>0.071363</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-42</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.643454</string>
+		<key>Longitude</key>
+		<string>0.069867</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-43</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.644270</string>
+		<key>Longitude</key>
+		<string>0.058243</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-44</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.645692</string>
+		<key>Longitude</key>
+		<string>0.051605</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-45</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.646872</string>
+		<key>Longitude</key>
+		<string>0.047112</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-46</string>
+	</dict>
+	<dict>
+		<key>Icon-name</key>
+		<string>iconParking</string>
+		<key>Latitude</key>
+		<string>38.646940</string>
+		<key>Longitude</key>
+		<string>0.043653</string>
+		<key>Title</key>
+		<string>Free Parking</string>
+		<key>Body</key>
+		<string></string>
+		<key>Type</key>
+		<string>Parking</string>
+		<key>Image-name</key>
+		<string>poi_parking</string>
+		<key>Tappable</key>
+		<true/>
+		<key>POI-id</key>
+		<string>poi-47</string>
+	</dict>
 </array>
 </plist>
