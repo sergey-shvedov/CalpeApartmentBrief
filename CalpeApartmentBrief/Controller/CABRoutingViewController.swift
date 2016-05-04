@@ -23,6 +23,7 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 	
 	var superSection: CABMenuSection?
 	var destination: MKMapItem?
+	var attraction: CABAttractionMapPoint?
 	var directions: MKDirections?
 	private let locationManager = CLLocationManager()
 	
@@ -138,9 +139,13 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 	}
 	
 	private func addDestinationAnnotation() {
-		if let justCoordinate = destination?.placemark.coordinate {
-			let annotation = CABMapPoint(latitude: justCoordinate.latitude, longitude: justCoordinate.longitude, withIconName: ConstantAnnotationIdentifier.HomeIconName)
-			mapView.addAnnotation(annotation)
+		if let justAttraction = attraction {
+			mapView.addAnnotation(justAttraction)
+		} else {
+			if let justCoordinate = destination?.placemark.coordinate {
+				let annotation = CABMapPoint(latitude: justCoordinate.latitude, longitude: justCoordinate.longitude, withIconName: ConstantAnnotationIdentifier.HomeIconName)
+				mapView.addAnnotation(annotation)
+			}
 		}
 	}
 	
@@ -167,7 +172,6 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 		if nil == view {
 			view = CABHomeAnnotationView(annotation: annotation, reuseIdentifier: ConstantAnnotationIdentifier.MapPost, withIconName: (annotation as! CABMapPoint).iconName )
 			view?.canShowCallout = false
-			
 		} else {
 			view!.annotation = annotation
 		}

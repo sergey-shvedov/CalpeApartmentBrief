@@ -29,10 +29,15 @@ class CABAppResponse
 				CABMenuSection.Route,
 				CABMenuSection.POI,
 				CABMenuSection.Appliances,
-				CABMenuSection.Rules]
+				CABMenuSection.Rules,
+				CABMenuSection.Book]
 	
 	var numberOfMenuItems: Int {
 		return menu.count
+	}
+	
+	var outBookLink: String {
+		return NSLocalizedString(ConstantGlobal.OutBooking, comment: "")
 	}
 	
 	func indexOfMenuItem(secton: CABMenuSection) -> Int? {

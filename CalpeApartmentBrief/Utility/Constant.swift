@@ -18,6 +18,7 @@ protocol RegionCoordinates {
 
 struct ConstantGlobal {
 	static let Prefix = "CAB"
+	static let OutBooking = "OutBooking"
 }
 
 struct ConstantIdentifier {
@@ -85,7 +86,7 @@ struct ConstantStoryboardIdentifier {
 }
 
 struct ConstantRowHeight {
-	private static let multiplier: CGFloat = 1.5
+	private static let multiplier: CGFloat = 1.25
 	static let Small: CGFloat = CGFloat(Int(multiplier * 44.0))
 	static let Medium: CGFloat = CGFloat(Int(multiplier * 65.0))
 	static let Large: CGFloat = CGFloat(Int(multiplier * 80.0))

@@ -8,4 +8,5 @@
 	Rules = Regeln;
 	Phone = Telefonnummern;
 	Book = Reservieren;
+	OutBooking = "https://de.airbnb.com/rooms/3055064";
 }

@@ -74,6 +74,7 @@ class CABInfoMapViewController: CABCollapsedViewController {
 					let coordinate = justMapPont.coordinate
 					let point = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
 					point.name = justMapPont.title
+					justRoutingVC.attraction = justMapPont
 					justRoutingVC.destination = point
 					justRoutingVC.superSection = CABMenuSection.POI
 				}

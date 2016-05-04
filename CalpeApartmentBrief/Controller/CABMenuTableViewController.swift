@@ -56,8 +56,17 @@ class CABMenuTableViewController: UITableViewController
 	
 	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		if let justCell = tableView.cellForRowAtIndexPath(indexPath) as? CABMenuTableViewCell, let justSection = justCell.section {
-			performSegueWithIdentifier(justSection.generateSegueIdentifier(), sender: justCell)
-			CABAppResponse.sharedInstance.confirmPrimaryState()
+			
+			switch justSection {
+			case .Book:
+				if let requestUrl = NSURL(string: CABAppResponse.sharedInstance.outBookLink) {
+					UIApplication.sharedApplication().openURL(requestUrl)
+					tableView.deselectRowAtIndexPath(indexPath, animated: false)
+				}
+			default:
+				performSegueWithIdentifier(justSection.generateSegueIdentifier(), sender: justCell)
+				CABAppResponse.sharedInstance.confirmPrimaryState()
+			}
 		}
 	}
 	
