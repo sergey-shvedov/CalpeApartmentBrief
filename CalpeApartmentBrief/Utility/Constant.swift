@@ -49,6 +49,7 @@ struct ConstantAnnotationIdentifier {
 	static let ParkingPin = "ParkingPin"
 	static let StandartPin = "StandartPin"
 	static let HomeIconName = "iconHome"
+	static let StandartIconName = "StandartIcon"
 }
 
 struct ConstantIntro {

@@ -140,7 +140,14 @@ class CABRoutingViewController: CABCollapsedViewController, CLLocationManagerDel
 	
 	private func addDestinationAnnotation() {
 		if let justAttraction = attraction {
-			mapView.addAnnotation(justAttraction)
+			switch justAttraction.type {
+			case .Home:
+				mapView.addAnnotation(justAttraction)
+			default:
+				let annotation = CABMapPoint(latitude: justAttraction.coordinate.latitude, longitude: justAttraction.coordinate.longitude, withIconName: ConstantAnnotationIdentifier.StandartIconName)
+				mapView.addAnnotation(annotation)
+			}
+			
 		} else {
 			if let justCoordinate = destination?.placemark.coordinate {
 				let annotation = CABMapPoint(latitude: justCoordinate.latitude, longitude: justCoordinate.longitude, withIconName: ConstantAnnotationIdentifier.HomeIconName)
