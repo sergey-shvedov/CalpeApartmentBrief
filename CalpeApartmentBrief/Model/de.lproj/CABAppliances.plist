@@ -11,7 +11,9 @@
 				<key>Title</key>
 				<string>WiFi</string>
 				<key>Body</key>
-				<string>Um das WLAN-Netzwerk in der Wohnung zuzugreifen, prüfen Sie ob der WiFi Schlüssel in der elektrischen Schalttafel am Eingang eingeschaltet ist, und verwenden Sie die folgenden Kennwörter:Name de WLAN-Netzwerkes: SwedenPasswort: angelika</string>
+				<string>Um das WLAN-Netzwerk in der Wohnung zuzugreifen, prüfen Sie ob der WiFi Schlüssel in der elektrischen Schalttafel am Eingang eingeschaltet ist, und verwenden Sie die folgenden Kennwörter:
+Name de WLAN-Netzwerkes: Sweden
+Passwort: angelika</string>
 			</dict>
 			<dict>
 				<key>Image-name</key>
@@ -20,7 +22,7 @@
 				<string>Heißes Wasser
 Heißes Wasser</string>
 				<key>Body</key>
-				<string>Öffnen Sie das Ventil an der linken oberen Zustand. Warten Sie etwa 30 Sekunden. Heißes Wasser sollte nun erscheinen. Bitte nicht reduzieren den Wasserfluss.</string>
+				<string>Öffnen Sie den Einhebelmischer - stellen sie den Hebel nach links und nach oben. Warten Sie etwa 30 Sekunden. Heißes Wasser sollte nun erscheinen. Bitte den Wasserfluss nicht reduzieren.</string>
 			</dict>
 			<dict>
 				<key>Image-name</key>
@@ -68,7 +70,8 @@ Heißes Wasser</string>
 				<key>Title</key>
 				<string>Tresor</string>
 				<key>Body</key>
-				<string>Wertvolle Sachen können Sie in dem Tresor aufbewahren der groß genug für Laptops bis zu 15 Zoll ist. Der Code wird separat ausgewiesen.(Der Code: &quot;12041961&quot; + &quot;A&quot;)</string>
+				<string>Wertvolle Sachen können Sie in dem Tresor aufbewahren der groß genug für Laptops bis zu 15 Zoll ist. Der Code wird separat ausgewiesen.
+(Der Code: &quot;12041961&quot; + &quot;A&quot;)</string>
 			</dict>
 			<dict>
 				<key>Image-name</key>
@@ -121,7 +124,10 @@ Heißes Wasser</string>
 				<key>Title</key>
 				<string>Heizkessel</string>
 				<key>Body</key>
-				<string>Vor dem Einschalten der Gaskessel stellen Sie sicher, dass Gas- und Wasserzufuhrangeschlossen sind.Der Schalter unten links schaltet das Gerät | -An O-Aus. Der Schalter unten rechts regelt den Betrieb (in der Mitte - Heizung und Warmwasser, unten - nur Warmwasser).Wenn Sie Heizung betreiben, beachten Sie bitte eine weitere Steuerungsanlage im Wohnzimmer.</string>
+				<string>Vor dem Einschalten der Gaskessel stellen Sie sicher, dass Gas- und Wasserzufuhr
+angeschlossen sind.
+Der Schalter unten links schaltet das Gerät | -An O-Aus. Der Schalter unten rechts regelt den Betrieb (in der Mitte - Heizung und Warmwasser, unten - nur Warmwasser).
+Wenn Sie Heizung betreiben, beachten Sie bitte eine weitere Steuerungsanlage im Wohnzimmer.</string>
 			</dict>
 		</array>
 		<key>Section-title</key>

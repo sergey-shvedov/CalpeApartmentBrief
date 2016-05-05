@@ -2,7 +2,7 @@
 	Arrival = Ankunft;
 	Departure = Abfahrt;
 	Route = Route;
-	POI = Sehenswurdigkeit;
+	POI = Sehenswurdigkeiten;
 	Tips = Tipps;
 	Appliances = Haushaltsgerate;
 	Rules = Regeln;
