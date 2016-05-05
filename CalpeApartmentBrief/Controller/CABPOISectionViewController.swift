@@ -152,7 +152,9 @@ extension CABPOISectionViewController
 	private func updateSegmentController() {
 		if let justNavController = self.navigationController {
 			if !(justNavController.navigationItem.titleView is UISegmentedControl) {
-				let segmenter = UISegmentedControl(items: ["Calpe", "C-Blanca"])
+				let calpe = NSLocalizedString(ConstantSegment.Calpe, comment: "")
+				let costa = NSLocalizedString(ConstantSegment.CostaBlanca, comment: "")
+				let segmenter = UISegmentedControl(items: [calpe, costa])
 				segmenter.tintColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
 				segmenter.sizeToFit()
 				segmenter.addTarget(self, action:#selector(CABPOISectionViewController.tapedRegion(_:)), forControlEvents: .ValueChanged)

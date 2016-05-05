@@ -9,4 +9,6 @@
 	Phone = Telefonnummern;
 	Book = Reservieren;
 	OutBooking = "https://de.airbnb.com/rooms/3055064";
+	Calpe = Calpe;
+	CostaBlanca = "C-Blanca";
 }

@@ -86,6 +86,11 @@ struct ConstantStoryboardIdentifier {
 	static let BaseGeneratedVC = "GeneratedView"
 }
 
+struct ConstantSegment {
+	static let Calpe = "Calpe"
+	static let CostaBlanca = "CostaBlanca"
+}
+
 struct ConstantRowHeight {
 	private static let multiplier: CGFloat = 1.25
 	static let Small: CGFloat = CGFloat(Int(multiplier * 44.0))

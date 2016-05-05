@@ -28,3 +28,8 @@
 /* Class = "UILabel"; text = "1"; ObjectID = "xPI-nv-h5V"; */
 "xPI-nv-h5V.text" = "1";
 
+/* Class = "UISegmentedControl"; QLQ-hT-hSe.segmentTitles[0] = "Calpe"; ObjectID = "QLQ-hT-hSe"; */
+"QLQ-hT-hSe.segmentTitles[0]" = "Calpe";
+
+/* Class = "UISegmentedControl"; QLQ-hT-hSe.segmentTitles[1] = "Costa Blanca"; ObjectID = "QLQ-hT-hSe"; */
+"QLQ-hT-hSe.segmentTitles[1]" = "Costa Blanca";
